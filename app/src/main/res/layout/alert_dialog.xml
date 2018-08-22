@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+<com.zhy.autolayout.AutoRelativeLayout
+    android:id="@+id/rl_ooo"
+    android:layout_width="match_parent"
+    android:layout_height="146px"
+    android:layout_alignParentBottom="true"
+    ></com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@color/white"
+       android:layout_above="@id/rl_ooo"
+
+        >
+
+
+
+        <Button
+            android:id="@+id/btn_take_photo"
+            android:layout_marginLeft="120px"
+            android:layout_marginRight="120px"
+            android:layout_marginTop="24px"
+            android:layout_width="840px"
+            android:layout_height="156px"
+            android:textSize="@dimen/dimen_px_48"
+            android:gravity="center"
+            android:layout_marginBottom="24px"
+            android:text="@string/airpurifier_more_show_takephoto_text"
+            android:textColor="@color/more_setting_text"
+            android:background="@color/white"
+            />
+        <View
+            android:layout_width="840px"
+            android:layout_height="1px"
+            android:layout_marginLeft="120px"
+            android:layout_marginRight="120px"
+            android:background="@color/gray_line"></View>
+
+        <Button
+            android:id="@+id/btn_pick_photo"
+            android:layout_marginLeft="120px"
+            android:layout_marginRight="120px"
+            android:layout_marginTop="24px"
+            android:layout_width="840px"
+            android:layout_height="156px"
+            android:textSize="@dimen/dimen_px_48"
+            android:gravity="center"
+            android:layout_marginBottom="24px"
+            android:text="@string/airpurifier_more_show_selectfromalbum_text"
+            android:textColor="@color/more_setting_text"
+            android:background="@color/white"
+            />
+
+        <View
+            android:layout_width="840px"
+            android:layout_height="1px"
+            android:layout_marginLeft="120px"
+            android:layout_marginRight="120px"
+            android:layout_marginBottom="24px"
+            android:background="@color/gray_line"></View>
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_marginLeft="@dimen/dimen_px_90"
+            android:layout_marginRight="@dimen/dimen_px_90"
+            android:layout_marginBottom="@dimen/dimen_px_48"
+            android:layout_width="900px"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_px_48"
+            android:text="@string/airpurifier_more_show_cancel_button"
+           style="@style/LoginBtnStyle"
+
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

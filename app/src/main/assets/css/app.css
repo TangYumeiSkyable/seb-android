@@ -1,0 +1,51 @@
+/*
+ *这是单独为hello mui准备的个性化css，可以覆盖标准mui的css定义；
+ * 在实际项目开发时，建议为App单独写一个css文件，从而实现项目的自定义皮肤功能；
+ * 
+ * */
+.mui-plus.mui-android header.mui-bar{
+	display: none;
+}
+.mui-plus.mui-android .mui-bar-nav~.mui-content{
+	padding: 0;
+}
+@font-face {
+    font-family: 'pingfang';
+    src: url('../fonts/Ubuntu-R.ttf');
+}
+@font-face {
+    font-family: 'dinregular';
+    src: url('../fonts/mui.ttf');
+}
+@font-face {
+    font-family: 'din';
+    src: url('../fonts/mui.ttf');
+}
+@font-face {
+    font-family: 'pflight';
+    src: url('../fonts/Ubuntu-L.ttf');
+}
+@font-face {
+    font-family: 'pflight2';
+    src: url('../fonts/Ubuntu-L.ttf');
+}
+@font-face {
+    font-family: 'pfbold';
+    src: url('../fonts/Ubuntu-M.ttf');
+}
+@font-face {
+    font-family: 'pfmedium';
+    src: url('../fonts/Ubuntu-M.ttf');
+}
+@font-face {
+    font-family: 'hiragino';
+    src: url('../fonts/mui.ttf');
+}
+@font-face {
+    font-family: 'hans';
+    src: url('../fonts/mui.ttf');
+}
+@font-face {
+    font-family: 'outda';
+    src: url('../fonts/mui.ttf');
+}

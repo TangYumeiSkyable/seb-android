@@ -1,0 +1,83 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_grey"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_px_1"
+            android:layout_marginTop="@dimen/dimen_px_42"
+            android:background="@color/line_gray"></View>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_qrcode"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="@dimen/dimen_px_150">
+
+            <TextView
+                android:id="@+id/tv_qrcode"
+                android:layout_width="wrap_content"
+                android:text="@string/airpurifier_moredevice_show_scanqrcode_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_px_42"
+                android:textSize="@dimen/dimen_px_48"
+                android:layout_height="wrap_content"
+                android:textColor="@color/more_setting_text"/>
+            <ImageView
+                android:id="@+id/iv_startico"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ico_more"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_px_24"
+                android:paddingBottom="@dimen/dimen_px_24"
+                android:layout_marginRight="@dimen/dimen_px_30" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_px_6"
+            android:background="@color/white">
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_px_1"
+                android:background="@color/line_gray"
+                android:layout_marginLeft="@dimen/dimen_px_36"
+                android:layout_marginRight="@dimen/dimen_px_36"></View>
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_manual"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="@dimen/dimen_px_150">
+
+            <TextView
+                android:id="@+id/tv_manual"
+                android:layout_width="wrap_content"
+                android:text="@string/airpurifier_moredevice_show_manuallyadd_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_px_42"
+                android:textSize="@dimen/dimen_px_48"
+                android:layout_height="wrap_content"
+                android:textColor="@color/more_setting_text"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/ico_more"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_px_24"
+                android:paddingBottom="@dimen/dimen_px_24"
+                android:layout_marginRight="@dimen/dimen_px_30"/>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_px_1"
+            android:background="@color/line_gray"></View>
+
+</com.zhy.autolayout.AutoLinearLayout>

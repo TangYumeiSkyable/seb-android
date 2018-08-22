@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="180px"
+    android:paddingTop="@dimen/dimen_px_48"
+    android:paddingLeft="@dimen/dimen_px_48"
+    android:paddingRight="@dimen/dimen_px_48"
+    android:background="@drawable/maintitlecolor"
+    >
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_maintitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_city"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_change"
+                android:layout_width="44px"
+                android:layout_height="44px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ico_more4"/>
+
+            <TextView
+                android:id="@+id/nowCity"
+                android:layout_width="@dimen/dimen_px_320"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18px"
+                android:layout_toRightOf="@+id/iv_change"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="--"
+                android:textColor="@color/bg_grey"
+                android:textSize="@dimen/dimen_px_48"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <include
+            layout="@layout/outdoor_banner"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:id="@+id/iv_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ico_more5"/>
+
+        <TextView
+            android:id="@+id/tv_airQuality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18px"
+            android:layout_toLeftOf="@+id/iv_row"
+            android:ellipsize="end"
+            android:maxEms="5"
+            android:singleLine="true"
+            android:text="--"
+            android:textColor="@color/bg_grey"
+            android:textSize="@dimen/dimen_px_30"
+            />
+
+        <ImageView
+            android:id="@+id/pm25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18px"
+            android:layout_toLeftOf="@+id/tv_airQuality"
+            android:scaleType="fitXY"
+            />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

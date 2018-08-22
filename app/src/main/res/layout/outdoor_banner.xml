@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_outdoor_banner"
+    android:orientation="vertical">
+
+    <com.rihuisoft.loginmode.view.InfiniteBanner
+        android:id="@+id/picslooper2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <com.com.loopview.drawableindicator.widget.AnimIndicator
+        android:id="@+id/pageIndexor2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:indicator_gravity="CENTER"
+        app:indicator_height="8dp"
+        app:indicator_margin="4dp"
+        app:indicator_moving_background="#00000000"
+        app:indicator_moving_src="@drawable/circle_white_stoke_bg"
+        app:indicator_background="#00000000"
+        app:indicator_src="@drawable/circle_white_stoke_bg"
+        app:indicator_isSnap="true"
+        app:indicator_width="8dp" />
+</LinearLayout>

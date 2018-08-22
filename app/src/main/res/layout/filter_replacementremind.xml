@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/crop__button_bar"
+    >
+    <ListView
+        android:id="@+id/lv_fmsg_List"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dimen_px_60"
+        android:paddingTop="24px"
+        android:paddingBottom="24px"
+        android:paddingRight="@dimen/dimen_px_60"
+        android:paddingLeft="@dimen/dimen_px_60"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

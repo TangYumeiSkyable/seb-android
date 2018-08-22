@@ -1,0 +1,19 @@
+<resources>
+
+    <!--
+         Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
+    -->
+   
+	<dimen name="bigTextSize">40dp</dimen> 
+	<dimen name="gifWith">162dp</dimen> 
+    <dimen name="gifHeight">180dp</dimen>  
+    <dimen name="add_margin">40dp</dimen> 
+     <dimen name="add_padding">20dp</dimen> 
+     <dimen name="add_tab_text_size">15dip</dimen> 
+      <dimen name="error_pic_size">120dp</dimen>
+     <dimen name="btn_size">48dp</dimen> 
+       <dimen name="air_level_size">22dp</dimen> 
+       <dimen name="air_level_size_l">65dp</dimen> 
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <com.rihuisoft.loginmode.view.DotsView
+        android:id="@+id/dotsview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/desc_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="@string/aplink_desc_p9"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dotsview" />
+
+
+    <View
+        android:id="@+id/divider_one"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/color_c8c8c8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desc_one" />
+
+    <LinearLayout
+        android:id="@+id/edittext_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_53"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_one">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="30dp"
+            android:text="@string/name" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="@null"
+            android:textColor="@color/color_c8c8c8" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp_10"
+            android:src="@drawable/reveal_pwd"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_two"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/color_c8c8c8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edittext_one" />
+
+    <LinearLayout
+        android:id="@+id/edittext_two"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_53"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_two">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="30dp"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="@null"
+            android:hint="@string/input_password"
+            android:imeOptions="actionGo"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/color_c8c8c8" />
+
+        <ImageView
+            android:id="@+id/iv_reveal_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp_10"
+            android:src="@drawable/reveal_pwd" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_three"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/color_c8c8c8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edittext_two" />
+
+    <TextView
+        android:id="@+id/tv_request_permission_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_20"
+        android:text="@string/airpurifier_aplink_request_permission_tip"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_three" />
+
+    <Button
+        android:id="@+id/btn_addDevice"
+        style="@style/btn_style"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:text="@string/start"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</android.support.constraint.ConstraintLayout>

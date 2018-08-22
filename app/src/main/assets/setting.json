@@ -1,0 +1,97 @@
+{
+  "fallback_market": "GS_GB",
+  "must_upgrade": false,
+  "markets": [{
+    "name": "GS_FR",
+    "available_lang": [
+      "fr"
+    ],
+    "default_lang": "fr",
+    "brand": "ROWENTA",
+    "feature_ionizer": false
+  },
+    {
+      "name": "GS_DE",
+      "available_lang": [
+        "de"
+      ],
+      "default_lang": "de",
+      "brand": "ROWENTA",
+      "feature_ionizer": false
+    },
+    {
+      "name": "GS_ES",
+      "available_lang": [
+        "es"
+      ],
+      "default_lang": "es",
+      "brand": "ROWENTA",
+      "feature_ionizer": false
+    },
+    {
+      "name": "GS_IT",
+      "available_lang": [
+        "it"
+      ],
+      "default_lang": "it",
+      "brand": "ROWENTA",
+      "feature_ionizer": false
+    },
+    {
+      "name": "GS_BE",
+      "available_lang": [
+        "nl",
+        "fr"
+      ],
+      "default_lang": "fr",
+      "brand": "ROWENTA",
+      "feature_ionizer": false
+    },
+    {
+      "name": "GS_HK",
+      "available_lang": [
+        "zh",
+        "en"
+      ],
+      "default_lang": "en",
+      "brand": "TEFAL",
+      "feature_ionizer": true
+    },
+    {
+      "name": "GS_SG",
+      "available_lang": [
+        "en"
+      ],
+      "default_lang": "en",
+      "brand": "TEFAL",
+      "feature_ionizer": true
+    },
+    {
+      "name": "GS_NL",
+      "available_lang": [
+        "nl"
+      ],
+      "default_lang": "nl",
+      "brand": "ROWENTA",
+      "feature_ionizer": false
+    },
+    {
+      "name": "GS_GB",
+      "available_lang": [
+        "en"
+      ],
+      "default_lang": "en",
+      "brand": "Rowenta",
+      "feature_ionizer": false
+    },
+    {
+      "name": "GS_US",
+      "available_lang": [
+        "en"
+      ],
+      "default_lang": "en",
+      "brand": "Rowenta",
+      "feature_ionizer": false
+    }
+  ]
+}

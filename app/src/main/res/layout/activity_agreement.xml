@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/airpurifier_login_show_registerwelcome_text"
+        android:textColor="@color/more_gray_text"
+        android:textSize="@dimen/dimen_px_36"
+        android:lineSpacingExtra="15px"
+        android:layout_marginTop="@dimen/dimen_px_90"
+        android:layout_marginLeft="@dimen/dimen_px_90"
+        android:layout_marginRight="@dimen/dimen_px_90"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_marginTop="132px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/more_setting_text"
+        android:text="@string/airpurifier_login_show_register_agreementtitle_text"
+        android:layout_marginBottom="72px"
+        android:layout_below="@id/textView"
+        android:textSize="@dimen/dimen_px_48"/>
+
+
+    <Button
+        android:id="@+id/btn_accept"
+        android:layout_width="900px"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_px_48"
+        android:text="@string/airpurifier_login_show_registeracceptagreement_text"
+        android:layout_marginBottom="174px"
+        style="@style/LoginBtnStyle"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selectors_btn_disabled"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/all_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="110px"
+        android:layout_marginLeft="@dimen/dimen_px_90"
+        android:layout_marginRight="@dimen/dimen_px_90"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@id/btn_accept"
+        >
+        <CheckBox
+            android:id="@+id/cb_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24px"
+
+            android:button="@drawable/checkbox_style_square"/>
+        <TextView
+            android:id="@+id/tv_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_px_42"
+            android:text="@string/airpurifier_login_show_registerreadagreement_text"
+            android:textColor="@color/more_gray_text"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <ScrollView
+        android:id="@+id/sll"
+        android:layout_above="@id/all_"
+        android:layout_width="900px"
+        android:layout_height="750px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="72px"
+        android:layout_below="@id/tv_title"
+        >
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:layout_gravity="center_horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_px_42"
+                android:lineSpacingExtra="15px"
+                android:layout_gravity="center_horizontal"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoRelativeLayout>

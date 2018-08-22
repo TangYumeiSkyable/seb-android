@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_grey"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <TextView
+            android:id="@+id/tv_cookiestitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/airpurifier_more_show_cookiestitle_text"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="132px"
+            android:layout_marginBottom="72px"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_cookiestitle"
+            android:layout_marginLeft="@dimen/dimen_px_90"
+            android:layout_marginRight="@dimen/dimen_px_90"
+            android:textSize="@dimen/dimen_px_42"
+            android:text="@string/airpurifier_more_show_cookiestitle2item_text"
+            android:lineSpacingExtra="15px"
+            />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    </ScrollView>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        >
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_cookies"
+            android:layout_width="match_parent"
+            android:layout_height="132px"
+            android:background="@color/white"
+            android:layout_marginBottom="54px"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/airpurifier_more_show_cookiestitles_text"
+                android:textStyle="bold"
+                android:textSize="@dimen/dimen_px_48"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_px_90"
+                />
+
+            <com.rihuisoft.loginmode.view.SwitchView
+                android:id="@+id/switchview"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_px_90"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_cookies"
+            android:layout_marginBottom="15px"
+            >
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_px_90"
+                    android:layout_marginRight="@dimen/dimen_px_90"
+                    android:textSize="@dimen/dimen_px_42"
+                    android:text="@string/airpurifier_more_show_cookiestitleitem_text"
+                    android:lineSpacingExtra="15px"
+                    />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+        </ScrollView>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

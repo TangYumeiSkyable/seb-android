@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/bg"
+    android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_capture"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <com.zxing.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+        <FrameLayout
+            android:id="@+id/loading_root"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="160px"
+            android:layout_marginRight="160px"
+            android:layout_height="fill_parent"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_add"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.5">
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                >
+                <ImageView
+                    android:id="@+id/iv_devHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/img_device"/>
+            </RelativeLayout>
+             <TextView
+                android:id="@+id/tv_device_code"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:layout_width="wrap_content"
+                android:textSize="16dp"
+                android:text="@string/airpurifier_moredevice_show_type_text"
+                android:textColor="@color/default_text"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.6">
+            <Button
+                android:id="@+id/btn_addDevice"
+                style="@style/btn_style"
+                android:text="@string/airpurifier_moredevice_show_addnewdevice_text"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>
+

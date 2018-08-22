@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_cm_san_qrcode">Scan the QR code located behind your purifier</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_cm_san_qrcode_msg">Please allow Rowenta to access to your camera, in your privacy settings / Camera</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_public_ok">OK</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_public_cancel">Cancel</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_public_refuse">Refuse</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_public_confirm">Confirm</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_public_nodata">No Data</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_public_fail">Fail</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_public_success">Success</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_cookies_title">Cookies</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_cookies_more">Settings</string>
+    <!-- Forgot password -->
+    <string name="airpurifier_login_show_forgetpwd_text">Forgotten password</string>
+    <!-- Registered users -->
+    <string name="airpurifier_login_show_register_text">Create an account</string>
+    <!-- The login -->
+    <string name="airpurifier_login_show_button_text">Log in</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_email_hint">Input email address</string>
+    <!-- Please enter the password -->
+    <string name="airpurifier_login_show_pwd_hint">Input password</string>
+    <!-- Account or password is not correct -->
+    <string name="airpurifier_login_show_toswrongpwdaccount_text">Account or password is wrong</string>
+    <!-- Network error -->
+    <string name="airpurifier_login_show_tosneterror_text">Network connection error</string>
+    <!-- Are logged in, please wait... -->
+    <string name="airpurifier_login_show_toslogining_text">Being logged in, please hold on...</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_registepasswordrule_text">Minimum 8 characters, including 1 capital letter, 1 small letter, 1 number.</string>
+    <!-- login -->
+    <string name="airpurifier_login_show_email_text">E-mail</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_currentpassword_text">Current password</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_pwd_text">Password</string>
+    <!-- submit -->
+    <string name="airpurifier_login_show_button_submittext">Submit</string>
+    <!-- This number has been registered -->
+    <string name="airpurifier_login_show_registertosphonealreadyregidter_text">This account already exists</string>
+    <!-- Mobile phone number is invalid -->
+    <string name="airpurifier_login_show_registertosinvalidphonenumber_text">Wrong email address</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_registerwelcome_text">Welcome to Rowenta universe! Please first read the agreement and confirm to accept it.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_register_agreementtitle_text">Rowenta User Agreement</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_registeracceptagreement_text">Confirm</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_registerreadagreement_text">I have read and accept the Rowenta User Agreement</string>
+    <!-- Confirm password -->
+    <string name="airpurifier_login_show_registeconfirmpwd_text">Confirm password</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_changepassword_text">Reset password</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_login_text">Sign in</string>
+    <!-- Retrieve password -->
+    <string name="airpurifier_login_show_reset_title_text">Retrieve password</string>
+    <!-- Registration failed -->
+    <string name="airpurifier_login_show_registertosregistfailed_text">Login has failed</string>
+    <!-- No equipment -->
+    <string name="airpurifier_login_show_tosnodevice_text">No device</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_register_show_registertext_title">Register</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_register_findpwd">Retrieve password</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_register_show_pwd_placeholder">Input here</string>
+    <!-- registered -->
+    <string name="airpurifier_register_show_inputemailaddress_hint">Input email address</string>
+    <!-- You haven't connected devices -->
+    <string name="airpurifier_more_show_havenodevice_text">You haven\'t connected the device</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_rightcovers_text">The front cover is open, please check it!</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_deviceFailure_text">Device failure</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_settings_text">Settings</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_nothank_text">No thank you</string>
+    <!-- Open the booking -->
+    <string name="airpurifier_dialog_show_openopintment_text">Start programming</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_dialog_show_slidingremind_text">Swipe to switch to other products</string>
+    <!-- Head portrait -->
+    <string name="airpurifier_more_show_head_text">Avatar</string>
+    <!-- nickname -->
+    <string name="airpurifier_more_show_nickname_text">Nickname</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_change_password_text">Change password</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_area">Space area of device</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_start">Start</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_end">End</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_worktime">Workdays</string>
+    <!-- Exit from the current account -->
+    <string name="airpurifier_more_show_exitcurrentaccount_text">Logout</string>
+    <!-- Are you sure you want to exit? -->
+    <string name="airpurifier_more_show_areyousureexit_text">Are you sure you want to disconnect?</string>
+    <!-- Improve the personal information -->
+    <string name="airpurifier_more_show_personaltitle_text">Complete personal information</string>
+    <!-- Taking pictures -->
+    <string name="airpurifier_more_show_takephoto_text">Take a picture</string>
+    <!-- From the album to choose -->
+    <string name="airpurifier_more_show_selectfromalbum_text">Select from album</string>
+    <!-- Modify the nickname -->
+    <string name="airpurifier_more_show_modifyName_title">Modify nickname</string>
+    <!-- Please enter a name -->
+    <string name="airpurifier_more_show_modifyname_hint">Input product name</string>
+    <!-- Exit from the current account -->
+    <string name="airpurifier_push_alert_pm_no">No more warning</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_push_alert_pm_yes">Turn on immediately</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_push_alert_lv_yes">Change</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_push_msg">We advise to turn the air purifier on %s minutes before coming home</string>
+    <!-- open -->
+    <string name="airpurifier_more_show_open_text"> On</string>
+    <!-- close -->
+    <string name="airpurifier_more_show_close_text"> Off</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_preferences_text">Preferences &amp; Legal Issues</string>
+    <!-- A total of -->
+    <string name="airpurifier_more_show_gong_text">Gas</string>
+    <!-- A device -->
+    <string name="airpurifier_more_show_gongdevice_text"> Device</string>
+    <!-- My reservation -->
+    <string name="airpurifier_more_show_myorder_text"> My scheduling</string>
+    <!-- My news( -->
+    <string name="airpurifier_more_show_mynews_text">My news</string>
+    <!-- Set up time -->
+    <string name="airpurifier_more_show_setbusinesstime_text">Set a time schedule</string>
+    <!-- Free service hotline -->
+    <string name="airpurifier_more_show_freeaftersaleshotline_text">Free hotline</string>
+    <!-- After-sales service network -->
+    <string name="airpurifier_more_show_aftersalesservicenetwork_text">Service network after sales</string>
+    <!-- Setting -->
+    <string name="airpurifier_more_show_setting_title">Setting</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_theifuofproduct_text">User guide</string>
+    <!-- Equipment management -->
+    <string name="airpurifier_moredevice_show_mydevice_title">My device</string>
+    <!-- model -->
+    <string name="airpurifier_moredevice_show_type_text">Rowenta XL in EU</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_devicemodelnumber_text">%s</string>
+    <!-- Equipment information -->
+    <string name="airpurifier_moredevice_show_deviceinfo_text">Device Information</string>
+    <!-- Equipment qr code -->
+    <string name="airpurifier_moredevice_show_devicecode_text">Product sharing</string>
+    <!-- Remove the binding equipment -->
+    <string name="airpurifier_more_show_sureremovebinddevice_text">Remove the pairing</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_warning_text">WARNING</string>
+    <!-- Members of the management -->
+    <string name="airpurifier_moredevice_show_membermenage_text">Information on sharing</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_devicemac_text">Mac add</string>
+    <!-- Control failure -->
+    <string name="airpurifier_moredevice_show_controlfailed_text">Check your phone network</string>
+    <!-- Network anomalies -->
+    <string name="airpurifier_moredevice_show_netnormal_text">Network error</string>
+    <!-- Scan the qr code -->
+    <string name="airpurifier_moredevice_show_scanqrcode_text">Scan QR code</string>
+    <!-- Manually add -->
+    <string name="airpurifier_moredevice_show_manuallyadd_text">Manually Add</string>
+    <!-- My device -->
+    <string name="airpurifier_moredevice_show_deviceList_title">My devices</string>
+    <!-- Air purifier KJ600G_530 SUPOR -->
+    <string name="airpurifier_more_show_suporttreater_text">Rowenta air purifier %s</string>
+    <!-- open -->
+    <string name="airpurifier_moredevice_show_addsuccess">Successfully added</string>
+    <!-- Select models -->
+    <string name="airpurifier_moredevice_show_choose_type">Select model</string>
+    <!-- WIFI Settings -->
+    <string name="airpurifier_moredevice_show_wifi_set">Wi-Fi settings</string>
+    <!-- Equipment binding -->
+    <string name="airpurifier_moredevice_show_device_bind">Device pairing</string>
+    <!-- Work mode, long press light regulation and at the same time in the equipment side mesh Settings key 3 seconds (pictured above), the equipment after the "ding" 1, the WIFI light flash indicates that the equipment has to enter configuration mode.Type in the name wi-fi password, then click start configuration. -->
+    <string name="airpurifier_moredevice_show_usemethod_text">Once the purifier is on, Push the Wi-Fi button on the device for 3 seconds. After hearing a \"Ding\" from the device, the Wi-Fi indicator starts flashing, showing the device is now in configuration mode. Then, input the name and password of the network and click \"Start Configuration\".</string>
+    <!-- Add a new device -->
+    <string name="airpurifier_moredevice_show_addnewdevice_text">Add new device</string>
+    <!-- The name of the -->
+    <string name="airpurifier_moredevice_show_name_text">Name</string>
+    <!-- Password -->
+    <string name="airpurifier_moredevice_show_wifipwd_text">Password</string>
+    <!-- Please remove the power supply equipment, connected the power again, and then click retry. -->
+    <string name="airpurifier_moredevice_show_pullelectricretry_text">Please unplug the device and plug it again.</string>
+    <!-- I want to try again -->
+    <string name="airpurifier_moredevice_show_retry_text">Try again</string>
+    <!-- Scan the qr code to add -->
+    <string name="airpurifier_moredevice_show_scanqrcode_add">Scan the QR code located behind your purifier </string>
+    <!-- Device name -->
+    <string name="airpurifier_more_show_modifydevicename_title">Name</string>
+    <!-- The MAC address: -->
+    <string name="airpurifier_moredevice_show_macaddress_text">MAC Address</string>
+    <!-- Is the search equipment please wait patiently. -->
+    <string name="airpurifier_moredevice_show_searchdevicewait_text">Searching device, please wait...</string>
+    <!-- Add equipment -->
+    <string name="airpurifier_moredevice_show_adddevice_text">Add device</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_checkwifi_text">Please check if the Wi-Fi is active on your phone and if you are connected to the same Wi-Fi as your product.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_shareqrcode_text">Share pairing by QR code or login</string>
+    <!-- Refresh automatically after 5 minutes -->
+    <string name="airpurifier_more_show_fiveminutesrefreshago_text">This QR code is valid for 5 minutes</string>
+    <!-- Through the mobile phone number to share -->
+    <string name="airpurifier_more_show_sharethroughphone_text"> Share by login</string>
+    <!-- Cancel the alignment to share -->
+    <string name="airpurifier_more_show_cancelsharealign_text">Cancel</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_emailtip_text">Please correctly enter the e-mail address. This user must have already installed the application and have created an account.</string>
+    <!-- Mobile phone number to share -->
+    <string name="airpurifier_moredevice_show_phoneshare_text">Share e-mail</string>
+    <!-- Sharing equipment failure -->
+    <string name="airpurifier_moredevice_show_devicesharefailed_text">Device sharing failed</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_sharetophone_hint">Please input email</string>
+    <!-- Modify the nickname failure -->
+    <string name="airpurifier_more_show_virifynicknamefailed_text">Nickname modification failed</string>
+    <!-- Confirm the change -->
+    <string name="airpurifier_more_show_modifyname_button">Confirm modification</string>
+    <!-- Select models -->
+    <string name="airpurifier_more_show_modifyname_text">Create an account</string>
+    <!-- Formaldehyde concentration -->
+    <string name="airpurifier_more_show_olfactory_text">Formaldehyde concentration</string>
+    <!-- Equipment is not online -->
+    <string name="airpurifier_moredevice_show_devicenotonline_text">Device is not online</string>
+    <!-- To make an appointment time overlap -->
+    <string name="airpurifier_more_show_appointmenttimeoverlap_text">The scheduled time is overlapped</string>
+    <!-- The operation failure -->
+    <string name="airpurifier_more_show_operatorfailed_text">Operate unsuccessfully</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_addscheduling_text">Add scheduling time</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_deleteword_text">Delete</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_suretodelete_text">Do you want to delete?</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_saveword_text">Save</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_sundayword_text">Sunday</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_mondayword_text">Monday</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_tuesdayword_text">Tuesday</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_wednesdayword_text">Wednesday</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_thursdayword_text">Thursday</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_fridayword_text">Friday</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_saturdayword_text">Saturday</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_myscheduling_tex">My scheduling</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_editscheduling_tex">Edit schedule</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_deletescheduling_tex">Delete schedule</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_repeatsetting_tex">Repeat</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_sunword_text">Sun.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_monword_text">Mon.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_tuesword_text">Tues.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_wedword_text">Wed.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_thurword_text">Thur.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_friword_text">Fri.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_satword_text">Sat.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_choosedevice_text">Choose device</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_choosemode_text">Choose mode</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_ontime_text">Start</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_offtime_text">Stop</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_repeatword_text">Repeat</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_devicename_tex">Device name</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_devicemode_tex">Device mode</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_autoday_tex">Auto day</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_autonight_tex">Auto night</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_boostword_tex">Boost</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_silentword_tex">Silent</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_onceword_tex">Once</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_filtercondition_tex">Filters condition</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_prefilter_tex">Pre-filter</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_activefilter_tex">Active carbon filter</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_hepafilter_tex">Allergy+ filter</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_nanofilter_tex">NanoCaptur filter</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_overplus_tex">Remaining capacity</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_tobuy_tex">Buy</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_cleanfilter_tex">Remember to clean the filter</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_replacementremind_text">Filter replacement reminder</string>
+    <!-- Suggest open air purifier -->
+    <string name="airpurifier_more_show_openairpurifier_text">We advise you to turn your air purifier on</string>
+    <!-- Being pushed -->
+    <string name="airpurifier_more_show_msgsend_text">Indoor air quality</string>
+    <!-- Air quality report to the police -->
+    <string name="airpurifier_more_show_airqualityalerm_text">Outdoor air quality</string>
+    <!-- Parts update alert -->
+    <string name="airpurifier_more_show_memberupdatemetion_text">Filter replacement</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_wifiupdatemetion_text">Wi-Fi module update</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_show_outdoortitle_text">Outdoor air quality</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_airquality_text">Air quality level</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_headline">Headline</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_description">Description</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_fresh_headline">No risk</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_fresh_description">The air is pure, ideal for outdoor activities!</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_moderate_headline">Impact risk if chronic exposure</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_moderate_description">The air is moderately polluted. Greater than the maximum limit established for one year by WHO. A long-term exposure may be risky for your health</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_high_headline">Impact on health in case of chronic exposure</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_high_description">The air has reached a high level of pollution. Higher than the maximum limit for 24 hours established by WHO.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_very_headline">Immediate impact on health</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_very_description">The air has reached a very high level of pollution. Effects can be immediately felt by sensitive individuals. Everybody feels the effects of a prolonged exposure.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_excessive_headline">Immediate effects on sensitive people.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_excessive_description">The pollution level has reached a critical level. Sensitive people feel immediate effects. Even healthy people may show symptoms for short exposure.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_extreme_headline">Immediate effects on everybody</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_extreme_description">Pollution has reached extreme levels. Immediate effects on health. </string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_airpocalypse_headline">Major immediate effects</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_airpocalypse_description">Airpocalypse! Immediate and heavy effects on everybody.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_fresh">Fresh air</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_moderate">Moderate pollution</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_high">High pollution</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_very">Very high pollution</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_excessive">Excessive pollution</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_extreme">Extreme pollution</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_airpocalypse">Airpocalypse</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_openair_text">Turn on the air purifier</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_personaldata_text">Personal data policy</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_legalnotice_text">Legal notice</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_cookies_text">Use of cookies</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_termsofuse_text">Terms of use</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_notifications_text">Notifications settings</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_agree_text">I agree</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_cookiestitle_text">Your choice about cookies</string>
+    <!-- Formaldehyde concentration -->
+    <string name="airpurifier_more_show_cookiestitleTwoitem_text">During the use of the application, cookies may be placed on your device. These cookies are used to store information and some are necessary to access certain contents and / or services of the application. Select your choice for each category of cookie then click on «Validate and continue». You can adjust your choices at any time from the page «Use of cookies» in the «Settings» section of the application.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_cookiestitles_text">Hearing measures</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_cookiestitleitem_text">We use audience measurement solutions to analyze traffic, trends and usages and identify malfunctions on the application to improve your user experience.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_adjust_show_modifycity_text">Modify The Display City</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_updatedevice_title">Update tip</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_updatedevice_content">The current version is %1$s, and you can update to version %2$s.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_update_tip_msg_start">A new version is available, please update your current version</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_update_tip_goto">Update</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_update_tip_quit">Quit</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_air_remind_f">The air outside is pure,\nOpen your windows</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_air_remind_s">The outside air is highly polluted. If possible, avoid main roads : Going away from a few tens of meters can make a big difference !</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_air_remind_t">The outside pollution is very high. Avoid intensive sport activities outside.\nAvoid main roads: Going away from a few tens of meters can make a big difference !</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_air_remind_fo">Toxic air outside :( Stay inside as much as possible\nIn case of respiratory and cardiac discomfort, consult your doctor</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_upload_the_avatars">Picture uploading failed</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_avatars_for_failure">Avatars for failure</string>
+    <!-- change password -->
+    <string name="airpurifier_personal_updatePassword_success">Password successfully updated</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_personal_updatePassword_error">Failed to update password</string>
+    <!-- Application name -->
+    <string name="airpurifier_application_show_appname_text">Pure Air</string>
+    <!-- Enter the password for 6 to 30 -->
+    <string name="airpurifier_login_show_registerentercode_text">Minimum 8 characters, including 1 capital letter, 1 small letter, 1 number.</string>
+    <!-- The two passwords don't match -->
+    <string name="airpurifier_login_show_registercodenotconsistent_text">Your passwords don\'t match</string>
+    <!-- Password is changed -->
+    <string name="airpurifier_login_show_verifypwdsuccess_text">Password successfully changed</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_location_show_locationfailed_text">Geolocalisation failed</string>
+    <!-- ifu -->
+    <string name="airpurifier_ifuactivity_show_success_text">Success</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_ifuactivity_show_syncContent_text">Content synchronization</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_inactivity_show_Finishingactivityduetoinactivity_text">Finishing activity due to inactivity</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_invalidmail_toast">Invalid e-mail address</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_psdinfo_text">We have sent to your mailbox %s a confirmation email, please check.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_passwordresetfail_text">Failed to change password</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_demi_text">Demi</string>
+    <!-- network anomaly -->
+    <string name="airpurifier_login_show_registernetworkanomaly_text">Network error: check your internet connection</string>
+    <!-- Please check the network environment! -->
+    <string name="airpurifier_login_show_isnetwork_text">Please check the network environment!</string>
+    <!-- Login successful -->
+    <string name="airpurifier_login_show_tosloginsuccess_text">Successfully logged in</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_tospressagainexit_text">Click again to exit</string>
+    <!-- No news -->
+    <string name="airpurifier_more_show_tosnomsg_text">No news</string>
+    <!-- This number is not registered -->
+    <string name="airpurifier_login_show_tosphonenotregidter_text">This email is not registered</string>
+    <!-- Registered successfully -->
+    <string name="airpurifier_login_show_tosregistsuccessful_text">Registered successfully</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_selfcheck_check_title_text">Self-inspection mode</string>
+    <!-- more -->
+    <string name="airpurifier_more_show_invaliddevice_text">Invalid device</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_cancel_button">Cancel</string>
+    <!-- Stop check -->
+    <string name="airpurifier_more_show_checkend_text">Stop checking</string>
+    <!-- Uploaded successfully -->
+    <string name="airpurifier_more_show_uplode_success">Successfully uploaded</string>
+    <!-- Upload failed -->
+    <string name="airpurifier_more_show_uplode_failed">Upload failed</string>
+    <!-- More and more -->
+    <string name="airpurifier_more_show_titlemore_text">More</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_zero_text">0</string>
+    <!-- A total of 2 equipment -->
+    <string name="airpurifier_more_show_twodevice_text">No device</string>
+    <!-- Mesh state -->
+    <string name="airpurifier_more_show_sievestate_text">Filter condition</string>
+    <!-- With reference to air quality standards -->
+    <string name="airpurifier_more_show_airqualitystandardconsult_text">User guide</string>
+    <!-- change password -->
+    <string name="airpurifier_more_show_changepwd_text">Change password</string>
+    <!-- Change Password title -->
+    <string name="airpurifier_more_show_changepwdtitle_text">Change password</string>
+    <!-- current password -->
+    <string name="airpurifier_more_show_currentpwd_text">Current password</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_fragment_wifi1_text">1. Turn ON the product, then press the blue Wi-Fi button for 3 seconds.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_fragment_wifi2_text">2. The product emits a “ding” and the Wi-Fi indicator flashes to indicate that the device is in configuration mode. </string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_fragment_wifi3_text">3. Enter the home Wi-Fi password.</string>
+    <!-- Software version -->
+    <string name="airpurifier_more_show_softversion_text">Software version</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_typeki_text">Rowenta XL in EU</string>
+    <!-- poor -->
+    <string name="airpurifier_more_show_poor_text">Bad</string>
+    <!-- 1 bedroom -->
+    <string name="airpurifier_moredevice_show_room1_text">Room 1</string>
+    <!-- Configuration failed. Let's see here may be wrong: -->
+    <string name="airpurifier_moredevice_show_configerrorseewhere_text">Configuration failed. Let\'s check the error:</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_runregularornot_text">(1) Is the device operating normally?</string>
+    <!-- (2)The wi-fi network connection open? -->
+    <string name="airpurifier_moredevice_show_wificonnectregular_text">(2) Is your Wi-Fi connection turned on?</string>
+    <!-- Remove the binding equipment -->
+    <string name="airpurifier_moredevice_show_unbinddevice_button">Remove the device binding</string>
+    <!-- ! Missing context ! -->
+    <string name="add_a_product">Add a product</string>
+    <!-- ok -->
+    <string name="airpurifier_moredevice_show_sure_button">OK</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_confirm_text">Confirm</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_refuse_text">Refuse</string>
+    <!-- Please enter a name -->
+    <string name="airpurifier_moredevice_show_hintwifi_hint">Account</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_modulenumber_text">%s</string>
+    <!-- Qr code scanning device, supor add equipment for you -->
+    <string name="airpurifier_barcode_show_laser_tip">Scan the QR code located behind your purifier</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_notification_show_title_text">Title</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_notification_show_message_text">Message</string>
+    <!-- (Hey hey, secretly listen to tell you, I am a custom) -->
+    <string name="airpurifier_notification_show_content_text">custom message</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_tenminutsstartsupor_text">We advise to open the air purifier in living room if there are ten minutes before off duty.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_adjust_show_currentcity_text">Current City</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_adjust_show_none_text">None</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_socialize_show_useexistingaccountcomment_text">Use the existing account to comment</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_socialize_show_netloadfailed_text">Network load failed, please try again.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_socialize_show_qqzone_text">QQqzone</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_needchange_text">Need to change</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_dialog_show_cue_text">prompt</string>
+    <!-- Open the purifier to success -->
+    <string name="airpurifier_more_show_opensupotrsuccess_text">Purifier successfully turned on</string>
+    <!-- A new user -->
+    <string name="airpurifier_more_show_newuser_text">New User</string>
+    <!-- Please enter a nickname under 12 -->
+    <string name="airpurifier_more_show_enternickname_text">Please input the nickname less than 12 letters</string>
+    <!-- Please enter a nickname -->
+    <string name="airpurifier_more_show_pleaseenternickname_text">Please enter the nickname</string>
+    <!-- Please enter the device name -->
+    <string name="airpurifier_more_show_pleaseenterdevicename_text">Please input device name</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_suredeletemember_text">Are you sure you want to delete \"%s\"?</string>
+    <!-- Have no legal power -->
+    <string name="airpurifier_more_show_noauthority_text">Not allowed</string>
+    <!-- Equipment binding Equipment -->
+    <string name="airpurifier_more_show_binddevice_text">Bind Device</string>
+    <!-- Unbundling success -->
+    <string name="airpurifier_more_show_ubbindsuccess_text">Successfully removed</string>
+    <!-- Unbundling failure -->
+    <string name="airpurifier_more_show_ubbindfailed_text">Unsuccessfully removed</string>
+    <!-- Cancel to share success -->
+    <string name="airpurifier_more_show_cancelsharesuccess_text">Cancel sharing successfully</string>
+    <!-- Cancel the sharing failure -->
+    <string name="airpurifier_more_show_cancelsharefailed_text">Cancel sharing unsucessfully</string>
+    <!-- Sharing of success -->
+    <string name="airpurifier_moredevice_show_sharesuccessful_text">Successfully shared</string>
+    <!-- The user does not exist -->
+    <string name="airpurifier_moredevice_show_usernotexist_text">The user does not exist</string>
+    <!-- Please enter a correct phone number -->
+    <string name="airpurifier_moredevice_show_pleaseenterrightphone_text">Please enter correct email</string>
+    <!-- Successfully adding timing -->
+    <string name="airpurifier_more_show_adddingtimesuccess_text">Schedule successfully added</string>
+    <!-- Modify the timing success -->
+    <string name="airpurifier_more_show_verifydingtimesuccess_text">Planning successfully modified</string>
+    <!-- Timing was removed successfully -->
+    <string name="airpurifier_more_show_deletedingtimesuccess_text">Planning successfully deleted</string>
+    <!-- Open the timing success -->
+    <string name="airpurifier_more_show_open_dingtime_success_text">Planning successfully turned on</string>
+    <!-- Closing time success -->
+    <string name="airpurifier_more_show_closedingtimesuccess_text">Planning successfully turned off</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_bindsuccessfuly_text">Successfully paired</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_bindfailed_text">Pairing failed</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_qrcodeidwrong_text">QR code is wrong</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_qrcodeisoverdue_text">QR code has expired</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_additionfailed_text">Addition failed</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_theleft_text">The left</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_getit_text">Get it</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_scanqrcode_text"> Scan QR code</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_callconfirm_text">Are you sure you want to call \"%s\"?</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_updatetipmsg_text">The current version is V%s,</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_nodevice_text">No device</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_noscheduling_text">No scheduling</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_cancelword_text">Cancel</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_cookiesmsg_text">Pure Air uses notifications to send you alerts of indoor and outdoor pollution peaks, and to give you relevant advices to breathe pure air at any time.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_notification_text">Settings of notifications</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_personaldatapolicy_text">Personal data policy</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_legals_text">Legal notice</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_ifu_title">User guide</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_more_text">More</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_preference_text">Preference</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_legal_text">Legal</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_cookiestitle2item_text">During the use of the application, cookies may be  placed on your mobile. These cookies serve to store information and some are nessary to access certaion contents and / or services of the application. Select your choice. You can adjust your choice at any time from the page 《Use of cookies》in the 《Settings》section of the application.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_filtertitile_text">Filter replacement reminder</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_filteritem_text">Composite</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_filteritemone_text">filter of your </string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_filteritemtwo_text">has been working</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_filteritemthree_text">\thours and it has been consumed by</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_percentage">\%%</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_pmtitle_text">We advise you to turn you purifier on</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_pmitem_text">The air quality of </string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_pmitem_text2"> is poor. We advise you to limit oudoor activities and turn on your air purifier</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_pmitems_text">We advise you to limit outdoor activities.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_tvno2">NO₂</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_tvpm25">PM2.5</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_tvo3">O₃</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_tvpm10">PM10</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_pm25">PM2.5 refers to particles with diameter smaller than 2.5 microns that can easily penetrate the membrane of lung cells. </string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_o3">O₃ is a form of oxygen that has three atoms per molecule rather than the usual two. When it is in the upper atmosphere it absorbs ultraviolet rays, hereby being a lifesaver. However, near the earth\'s surface it is a harmful pollutant which contributes to respiratory diseases such as asthma.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_no2">NO₂ (Nitrogen Dioxide) is part of a group of highly reactive gases and primarily gets in the air from the burning of fuel. Breathing air with a high concentration of NO₂ can irritate airways in the human respiratory system.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_pm10">PM10 refers to particles with diameter smaller than 10 microns.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_no_camera_permission">No camera permission: please go to the settings to activate it</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_no_storage_permission">No storage permission: please go to the settings to activate it</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_no_phone_permission">No phone permission: please go to the settings to activate it</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_update_tip_title">Update tip</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_update_tip_msg2"> and you can update to version V%s</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_update_success">Successfully updated</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_update_failed">Failed to update</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_airquality_notification_1_a">The outside air is pure. Enjoy outdoor activities!</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_airquality_notification_1_b">The outside air is pure. Open your windows!</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_airquality_notification_3_a">The outside pollution is high. Avoid intensive outdoor sport activities.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_airquality_notification_3_b">The outside air is polluted. If possible, avoid main roads: going away from a few tens of meters can make a big difference!</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_airquality_notification_4_a">The outside pollution is very high. Avoid intensive outdoor sport activities.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_airquality_notification_4_b">The outside pollution is very high. Avoid main roads: going away from a few tens of meters can make a big difference!</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_airquality_notification_5_a">Toxic air :-(\nStay inside as much as possible</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_airquality_notification_5_b">In case of respiratory and cardiac discomfort, consult your doctor</string>
+    <!-- loading... -->
+    <string name="airpurifier_personal_loading">File uploading...</string>
+    <!-- ! Missing context ! -->
+    <string name="circle_pm25_des">FINE PARTICLES &amp; ALLERGENS</string>
+    <!-- ! Missing context ! -->
+    <string name="pm25_unit">μg/m3</string>
+    <!-- ! Missing context ! -->
+    <string name="circle_gas_des">GAS</string>
+    <!-- ! Missing context ! -->
+    <string name="air_quality_A">PURE AIR</string>
+    <!-- ! Missing context ! -->
+    <string name="firmware_version">Firmware Version</string>
+    <!-- ! Missing context ! -->
+    <string name="start">Start</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p2">Make sure that your phone is connected to your home Wi-Fi network.</string>
+    <!-- ! Missing context ! -->
+    <string name="need_connect_wifi">You are not connected to your home Wi-Fi network yet. Please connect your smartphone to the Wi-Fi.\n</string>
+    <!-- ! Missing context ! -->
+    <string name="know">I get it</string>
+    <!-- ! Missing context ! -->
+    <string name="select_product">Select device</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p4">Turn your purifier on.</string>
+    <!-- ! Missing context ! -->
+    <string name="next">Next</string>
+    <!-- ! Missing context ! -->
+    <string name="active_wifi">Active Wi-Fi</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p5">Hold the Wi-Fi button during 3 seconds, you will hear a double ding and the Wi-Fi button flashes to indicate that the Wi-Fi is ON.</string>
+    <!-- ! Missing context ! -->
+    <string name="turn_on">Turn on the product</string>
+    <!-- ! Missing context ! -->
+    <string name="fragment_p6_title">Connect to purifier</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p6"> 1) Go in your Wi-Fi settings and wait for the network called AIR PURIFIER XXXX to appear\n 2) Connect to the network\n 3) Come back on the application Pure Air.</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p6_bt_text">Go to Wi-Fi settings</string>
+    <!-- ! Missing context ! -->
+    <string name="connect">Connecting...</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p8">Perfect, you\'re almost done…</string>
+    <!-- ! Missing context ! -->
+    <string name="name">Name</string>
+    <!-- ! Missing context ! -->
+    <string name="password">Password</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_desc_p9">Check if the Wi-Fi is your home Wi-Fi hotspot and enter the password</string>
+    <!-- ! Missing context ! -->
+    <string name="fragment_p9_title">Connect to home Wi-Fi</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p9_bt">Add new device</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p10">Your purifier is connecting with your home Wi-Fi network…</string>
+    <!-- ! Missing context ! -->
+    <string name="adresse_mac">MAC address</string>
+    <!-- ! Missing context ! -->
+    <string name="devicename">Device name</string>
+    <!-- ! Missing context ! -->
+    <string name="confirm">Confirm</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p13_desc">Now your purifier can be connected to internet without your smartphone. Control your purifier from anywhere thanks to Pure Air app!</string>
+    <!-- ! Missing context ! -->
+    <string name="ok">OK</string>
+    <!-- ! Missing context ! -->
+    <string name="fragment_p12_title">Name your purifier</string>
+    <!-- ! Missing context ! -->
+    <string name="fragment_p13_title">Congratulations!</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p15_desc">Oops! Your application is not connected to the Wi-Fi network \"AIR PURIFIER\".</string>
+    <!-- ! Missing context ! -->
+    <string name="fragment_p15_title">Connection to purifier failed</string>
+    <!-- ! Missing context ! -->
+    <string name="fragment_p14_one">Check if the password you entered is correct</string>
+    <!-- ! Missing context ! -->
+    <string name="fragment_p14_two">Check if the Wi-Fi is working at your home</string>
+    <!-- ! Missing context ! -->
+    <string name="fragment_p14_three">If the Wi-Fi indicator on your purifier is no longer flashing, hold the Wi-Fi button for 3 seconds.</string>
+    <!-- ! Missing context ! -->
+    <string name="fragment_p14_four">If nothing is working, try to restart the device and start again.</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p11">Your purifier is now connected with your home Wi-Fi network.</string>
+    <!-- ! Missing context ! -->
+    <string name="link_wifi_name_error">Please connect to the specified Wi-Fi network</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p1">You do not have any device linked to your account.</string>
+    <!-- ! Missing context ! -->
+    <string name="fail">Failed to change device name</string>
+    <!-- ! Missing context ! -->
+    <string name="moderate">MODERATE</string>
+    <!-- ! Missing context ! -->
+    <string name="pollution">POLLUTION</string>
+    <!-- ! Missing context ! -->
+    <string name="high">HIGH</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p12">You can give a name to your purifier.</string>
+    <!-- ! Missing context ! -->
+    <string name="device_list_fail">Cannot get product type: please check your internet connection</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_success">APLink Success</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_fail">APlink fail</string>
+    <!-- ! Missing context ! -->
+    <string name="binddevice_fail">BindDevice Fail</string>
+    <!-- ! Missing context ! -->
+    <string name="XL_default_name">Intense Pure Air XL Connect</string>
+    <!-- ! Missing context ! -->
+    <string name="xs_default_name">Intense Pure Air Connect</string>
+    <!-- ! Missing context ! -->
+    <string name="psw_not_empty">password not empty</string>
+    <!-- ! Missing context ! -->
+    <string name="not_found">Not found</string>
+    <!-- ! Missing context ! -->
+    <string name="input_password">Input password</string>
+    <!-- ! Missing context ! -->
+    <string name="relocation">Geo-Tracking</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_mydevice_device_name"> </string>
+    <!-- ! Missing context ! -->
+    <string name="placeholder">%s</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_nickname_hint">Input nickname</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_devices">Devices</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_userinfomation_user_guide">User guide</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_userinfomation_FAQ">FAQ</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_userinfomation">Information</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_contact_us">Help: contact us</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_get_country_list_fail">Failed to get the list of cities: please check your Internet connection</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_failed_get_device_list">Failed to get the list of devices: please check your Internet connection</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_faq_failed_get_data">Failed to retrieve data: please check your Internet connection</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_regist_fail">Failed to register</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_fail">Failed to login</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_regist_login_fail">Your account is created successfully. Please press ‘OK’ to go to the login page.\n \n</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_loading">Loading, please hold on…</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_no_peimission">Check that the location permission in your settings is activated.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_aplink_request_permission_tip">Android may ask for a permission to connect with your product successfully. Please accept.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_aplink_fail_about_permission">Check in your settings that the location permission is activated.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_add_shchedule_tip">If you set the starting time earlier than the current time, your scheduling will start the next day.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_filtercondition_content_key">Filter condition</string>
+    <!-- ! Missing context ! -->
+    <string name="no_permission">No permission</string>
+    <!-- ! Missing context ! -->
+    <string name="prefilter">Pre-filter</string>
+    <!-- ! Missing context ! -->
+    <string name="active_carbon">Active carbon filter</string>
+    <!-- ! Missing context ! -->
+    <string name="hepa">Allergy+ filter</string>
+    <!-- ! Missing context ! -->
+    <string name="nanocapur">NanoCaptur filter</string>
+    <!-- ! Missing context ! -->
+    <string name="umeng_message_alert_choose_ok">OK</string>
+    <!-- ! Missing context ! -->
+    <string name="immediately_turn_on">Turn on now</string>
+    <!-- ! Missing context ! -->
+    <string name="no_more_warn">No more warning</string>
+    <!-- ! Missing context ! -->
+    <string name="to_change">To be changed</string>
+    <!-- ! Missing context ! -->
+    <string name="UmengMessageAlertDialog_content_one">Your device</string>
+    <!-- ! Missing context ! -->
+    <string name="UmengMessageAlertDialog_content_two">filter has consumed above</string>
+    <!-- ! Missing context ! -->
+    <string name="UmengMessageAlertDialog_content_three">\%%. In order to ensure a good air purification quality, please change it.</string>
+    <!-- ! Missing context ! -->
+    <string name="severe_pollution">Highly polluted</string>
+    <!-- ! Missing context ! -->
+    <string name="umeng_message_alert_excellent">Excellent</string>
+    <!-- ! Missing context ! -->
+    <string name="umeng_message_alert_good">Good</string>
+    <!-- ! Missing context ! -->
+    <string name="umeng_message_alert_terrible">Bad</string>
+    <!-- ! Missing context ! -->
+    <string name="umeng_message_alert_advises">We advise you to turn on your air purifier</string>
+    <!-- ! Missing context ! -->
+    <string name="umeng_message_alert_off_duty">Off</string>
+    <!-- ! Missing context ! -->
+    <string name="umeng_message_alert_on_duty">On</string>
+    <!-- ! Missing context ! -->
+    <string name="umeng_message_alert_content_four">We advise you to turn on your air purifier</string>
+    <!-- ! Missing context ! -->
+    <string name="umeng_message_alert_content_five">if there are ten minutes before\n</string>
+    <!-- ! Missing context ! -->
+    <string name="umeng_message_alert_choose_cancel">Cancel</string>
+    <!-- ! Missing context ! -->
+    <string name="umeng_message_alert_current_air_quality">Current air quality</string>
+    <!-- ! Missing context ! -->
+    <string name="logout_failed">Logout failed</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_user_agreement_content">and the personal data policy.</string>
+    <!-- ! Missing context ! -->
+    <string name="request_permission_tip">Wifi and location must be enabled</string>
+    <!-- ! Missing context ! -->
+    <string name="request_permission_has">WiFi and location are enabled</string>
+    <!-- ! Missing context ! -->
+    <string name="request_permission_titile">WiFi and location</string>
+    <!-- ! Missing context ! -->
+    <string name="request_permission_wifi_online">WiFi enabled</string>
+    <!-- ! Missing context ! -->
+    <string name="request_permission_wifi_offline">WiFi disabled</string>
+    <!-- ! Missing context ! -->
+    <string name="request_location_has">Location enabled</string>
+    <!-- ! Missing context ! -->
+    <string name="request_location_no">Location disabled</string>
+    <!-- ! Missing context ! -->
+    <string name="request_location_wifi_button">Activate WiFi</string>
+    <!-- ! Missing context ! -->
+    <string name="request_location_location_button">Enable location</string>
+    <!-- ! Missing context ! -->
+    <string name="request_location_location_and_wifi">Next</string>
+    <!-- ! Missing context ! -->
+    <string name="request_permission_more_info_title">More information</string>
+    <!-- ! Missing context ! -->
+    <string name="request_permission_more_info2">During this process, it will have to use the location permission to obtain information about nearby WiFi networks.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_personalDataPolicy_text">and the personal data policy</string>
+    <!-- ! Missing context ! -->
+    <string name="locate_fail">Locate fail</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_moderate_new">MODERATE\nPOLLUTION</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_high_new">HIGH\nPOLLUTION</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_connect_fail_retry">Retry</string>
+    <!-- ! Missing context ! -->
+    <string name="Reigist_Changepwd_errorcode_2015_toast_text">Your password is not secured enough. Choose a more complex password: avoid name, last name, e-mail…</string>
+    <!-- ! Missing context ! -->
+    <string name="request_permission_more_info1">The pairing with the product is made using your local WiFi network. The product will use the WiFi from your phone to connect with your Internet box.</string>
+    <!-- ! Missing context ! -->
+    <string name="request_permission_can_next_text">Your device is ready for pairing. You can tap \"Next\".</string>
+    <!-- ! Missing context ! -->
+    <string name="password_not_secured_enough">Your password is not secured enough. Choose a more complex password : avoid name, last name, e-mail…</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_cropimage_show_cropsaving_text">Saving picture…</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_cropimage_show_cropwait_text">Please wait…</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_crop_show_pick_error_text">No image sources available</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_crop_show_done_text">OK</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_crop_show_cancel_text">Cancel</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_cookies_title_android">Cookies</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_cookies_msg_android">By clicking &lt;OK&gt;, you agree to use of audience measurement cookies to enhance your user experience.</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_appraise_title_android">Your feedback is important to us!</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_appraise_msg_android">What do you think of the application?</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_appraisetwo_title_android">Help us to improve the application!</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_appraisetwo_msg_android">Give us your feedback and your ideas to improve the application</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_appraisetwo_btn_yes">Yes,I want to partcipate</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_appraisetwo_btn_cancel">Cancel</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_appraisethree_title_android">Share your experience!</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_appraisethree_msg_android">Recommend our application and leave a comment on the store</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_appraisethree_btn_yes">Yes,with pleasure</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_appraisethree_email_title">App feedback</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_appraisethree_email_msg">Enter your message here</string>
+</resources>

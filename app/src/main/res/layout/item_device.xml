@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_px_60"
+        android:background="@color/bg_grey"></View>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="270px"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_insertimg"
+            android:layout_width="186px"
+            android:layout_height="186px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="54px"
+            android:scaleType="centerInside"
+            android:src="@drawable/placeholder" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/dimen_px_36"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textColor="@color/default_text"
+                android:textSize="@dimen/dimen_px_48" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_device"
+                android:layout_marginTop="@dimen/dimen_px_48"
+                android:maxLines="2"
+                android:textColor="@color/gray_text"
+                android:textSize="@dimen/dimen_px_36" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

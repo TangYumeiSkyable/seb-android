@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/viewEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        >
+    <com.zhy.autolayout.AutoLinearLayout
+         android:id="@+id/lv_input"
+         android:orientation="vertical" 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="126px"
+        android:layout_marginLeft="102px"
+        android:layout_marginRight="102px"
+        android:layout_marginTop="24px"
+        android:gravity="center_vertical"
+       >
+
+        <EditText
+            android:id="@+id/et_wifiName"
+            android:layout_width="636px"
+            android:layout_height="125px"
+            android:singleLine="true"
+            android:layout_alignParentRight="true"
+            android:hint="@string/airpurifier_moredevice_show_hintwifi_hint"
+            android:focusable="false"
+            android:maxLength="11"
+            android:textColor="@color/default_text"
+            android:textColorHint="@color/hint_login_color"
+            android:textSize="@dimen/dimen_px_42"
+            android:background="@drawable/radius_white_bg"
+            android:gravity="center"
+            android:editable="false" />
+        <View
+            android:layout_width="636px"
+            android:layout_height="1dp"
+            android:background="#dadada"
+            android:layout_below="@+id/et_wifiName"
+            android:layout_alignRight="@+id/et_wifiName"
+            android:layout_alignParentBottom="true"></View>
+
+        <TextView
+             android:id="@+id/tv_wifiName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/dimen_px_48"
+            android:gravity="center_vertical"
+            android:textColor="@color/more_gray_text"
+            android:text = "@string/airpurifier_moredevice_show_name_text"
+            android:layout_alignBaseline="@+id/et_wifiName"
+            android:layout_alignBottom="@+id/et_wifiName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="126px"
+        android:layout_marginLeft="102px"
+        android:layout_marginRight="102px"
+        android:layout_marginTop="24px"
+        android:gravity="center_vertical"
+        >
+        <TextView
+             android:id="@+id/tv_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/dimen_px_48"
+            android:gravity="center_vertical"
+            android:textColor="@color/more_gray_text"
+            android:text = "@string/airpurifier_moredevice_show_wifipwd_text"/>
+
+        <ToggleButton
+            android:id="@+id/show_password"
+            android:layout_width="66px"
+            android:layout_height="@dimen/dimen_px_48"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:button="@null"
+            android:checked="true"
+            android:drawableRight="@drawable/passwd_selector"
+            android:textColor="@color/link_input_text"
+            android:layout_marginRight="@dimen/dimen_px_48"
+           android:layout_centerVertical="true"
+            android:textOff=""
+            android:textOn=""/>
+        <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="125px"
+        android:layout_toRightOf="@id/tv_pwd"
+        android:background="@drawable/radius_white_bg"
+        android:layout_marginLeft="@dimen/dimen_px_42"
+        android:textColorHint="@color/hint_login_color"
+        android:password="true"
+        android:singleLine="true"
+        android:gravity="center"
+        android:maxLength="28"
+        android:textColor="@color/default_text"
+        android:layout_toLeftOf="@id/show_password"
+        android:textSize="@dimen/dimen_px_42" />
+        <View
+            android:layout_width="636px"
+            android:layout_height="1dp"
+            android:background="#dadada"
+            android:layout_below="@+id/et_pwd"
+            android:layout_alignRight="@+id/et_pwd"
+            android:layout_alignParentBottom="true"></View>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/btn_style"
+        android:layout_margin="@dimen/dimen_px_90"
+        android:text="@string/airpurifier_moredevice_show_addnewdevice_text" />
+    </com.zhy.autolayout.AutoLinearLayout>
+  </com.zhy.autolayout.AutoRelativeLayout>
+    <ScrollView
+        android:id="@+id/sc_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:layout_above="@id/viewEdit"
+        >
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/lv_doc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:adjustViewBounds="true"
+                    android:layout_width="960px"
+                    android:layout_height="438px"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_px_60"
+                    android:layout_marginBottom="72px"
+                    android:src="@drawable/wifi_doc"
+                    android:scaleType="fitStart"></ImageView>
+                <TextView
+                    android:layout_width="960px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/dimen_px_24"
+                    android:textColor="@color/default_text"
+                    android:textSize="@dimen/dimen_px_42"
+                    android:text="@string/airpurifier_more_fragment_wifi1_text"   />
+                <TextView
+                    android:layout_width="960px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/dimen_px_24"
+                    android:textColor="@color/default_text"
+                    android:textSize="@dimen/dimen_px_42"
+                    android:text="@string/airpurifier_more_fragment_wifi2_text"   />
+                <TextView
+                    android:layout_width="960px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/dimen_px_24"
+                    android:textColor="@color/default_text"
+                    android:textSize="@dimen/dimen_px_42"
+                    android:text="@string/airpurifier_more_fragment_wifi3_text"   />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoRelativeLayout>

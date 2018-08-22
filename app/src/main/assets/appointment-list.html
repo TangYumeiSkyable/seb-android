@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<title>My Scheduling</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+		<style>
+		body {
+			background-color: #f2f2f2;
+		}
+           .mui-table-view-cell:after{position:absolute;right:15px;bottom:0;left:15px;height:1px;content:'';-webkit-transform:scaleY(.5);transform:scaleY(.5);background-color:#c8c7cc}
+           .li_inactive {
+				color:#8e8e93;
+				font-family:pingfang;
+			}
+			.li_inactive div {
+				color:#8e8e93;
+				font-family:pingfang;
+			}
+			.li_active {
+				color:#393941;
+				font-family:pingfang;
+			}
+			.li_active div {
+				color:#393941;
+				font-family:pingfang;
+			}
+			.timer-lbl span {
+				font-size: 16px;
+			}
+			.mui-switch {
+				border: 2px solid #c8c8c8;
+				background-color: #c8c8c8;
+			}
+			.mui-switch-orange.mui-active{border:2px solid #009dc2;background-color:#009dc2;font-family: pingfang; font-size: 18px;}
+			.mui-btn-orange {color:#fff;border:1px solid #009dc2;background-color:#009dc2;border-radius:20px;font-family: pingfang; font-size: 18px;}
+			
+			.mui-popup{position: fixed;z-index:10000;width:80%;top:50%;left:50%;display:none;overflow:hidden;-webkit-transition-property:-webkit-transform,opacity;transition-property:transform,opacity;-webkit-transform:translate3d(-50%,-50%,0) scale(1.185);transform:translate3d(-50%,-50%,0) scale(1.185);text-align:center;opacity:0;color:#000;border-radius:13px;}
+		.mui-table-view-cell:after{position:absolute;right:15px;bottom:0;left:15px;height:1px;content:'';-webkit-transform:scaleY(.5);transform:scaleY(.5);background-color:#c8c7cc}
+		.mui-popup-buttons {
+		    	background-color: rgba(255,255,255,.95);
+		    	height: 60px;
+		    }
+		    .mui-popup-button:first-child {
+		    	background-color: #36424a;
+		    	border-radius: 50px;
+		    	width: 90%;
+		    	margin: 5px 3% 5px 7%;
+		    }
+		    .mui-popup-button:last-child {
+		    	background-color: #009dc2;
+		    	border-radius: 50px;
+		    	width: 90%;
+		    	margin: 5px 7% 5px 3%;
+		    }
+		    .mui-popup-inner:after {
+		    	display: none;
+		    }
+		    .mui-popup-button.mui-popup-button-bold {
+		    	font-weight: 100;
+		    }
+		.mui-popup-button {
+			color:#f2f2f2;
+			font-family: pingfang;
+		}
+		.mui-popup-title {
+			color:#393941;
+			font-family: pingfang;
+		}
+        li.mui-table-view-cell {
+				padding:0px 20px;
+				line-height: 52px;
+				min-height: 52px;
+			}
+			li.mui-table-view-cell:first-child {
+				padding-top:8px;
+				min-height: 60px;
+			}
+			li.mui-table-view-cell:last-child {
+				padding-bottom:8px;
+				min-height: 60px;
+			}
+		.mui-table-view {
+				padding:0;
+			}
+		.mui-btn-danger, .mui-btn-negative, .mui-btn-red {
+			background-color: #ff3300;
+			border: 1px solid #FF3300;
+		}	
+		</style>
+	</head>
+<body onload="load()">
+	<div class="mui-content" style = "background-color: #f2f2f2; ">	
+    <ul id = "uls" class = "mui-table-view" style = "margin-top:20px;" >
+ 
+    </ul>
+	</div>
+	<script src="js/mui.min.js"></script>
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();
+      	var flg = true;
+      	var no_device = "No scheduling";
+      	var add_scheduling = "Add scheduling";
+      	var sure_to_delete = "Are you sure to delete?";
+      	var delete_word = "Delete";
+      	
+      	var weeks = ["Sun.", "Mon.", "Tues.", "Wed.", "Thur.", "Fri.", "Sat."];
+      	var wordMap = {no_device:no_device, add_scheduling:add_scheduling,
+      	sure_to_delete:sure_to_delete, delete_word:delete_word,
+      	ok_word:"OK", cancel_word: "Cancel", sun_word:weeks[0], mon_word:weeks[1],
+      	tues_word:weeks[2], wed_word:weeks[3], thur_word:weeks[4], fri_word:weeks[5],
+      	sat_word:weeks[6],};
+      	var appoints = {"devicename" :["Room 1", "Room 2", "Room 3"],
+      	"start" : ["14:00", "19:00", "19:00"],
+      	"end" : ["17:00", "21:00", "21:00"],
+      	"onoff" : ["0", "1", "1"],
+      	"appid" : ["a1", "a2", "a2"],
+      	"repeat" : [[-1], [2, 3],[-1]],
+      	"date" : ["20160505", "", "20160505"]};
+      	var liinner = "<div class=\"mui-slider-right mui-disabled\">"+
+				"<a class=\"mui-btn mui-btn-red\">#Delete#</a>"+
+			"</div>" +
+			"<div class=\"mui-slider-handle\">" +
+				"<div class=\"timer-lbl\" style=\"float: left;width:80%\">" +
+				"<span style=\"font-size: 16px;display:table-cell;color:#848484;width:15%;margin-left:12px;\">#devicename</span>" +
+			//	"<span style = \"width:5%;display:table-cell;\"></span>" +
+				"<span style = \"font-size:16px;display:table-cell;color:#36424a;width:15%\">#start — #end</span></div>" +
+				"<div style=\"float: right;margin-top:10px;\">" +
+					"<div class=\"mui-switch #onoff mui-switch-orange mui-switch-mini\">" +
+						"<div class=\"mui-switch-handle\"></div>" +
+					"</div>" +
+				"</div>" +
+			"</div>";
+			var liinner3 = "<div class=\"mui-slider-right mui-disabled\">"+
+				"<a class=\"mui-btn mui-btn-red\">#Delete#</a>"+
+			"</div>" +
+			"<div class=\"mui-slider-handle\" style=\"line-height: 30px;margin-top:5px;\" >" +
+				"<div class=\"timer-lbl\"  style=\"float: left;width:80%\"><span style=\"font-size: 16px;display:table-cell;color:#848484;width:15%;margin-left:12px;\">#devicename</span>"+
+	//			"<span style = \"width:5px;display:table-cell;\"></span>" +
+				"<span style = \"font-size:16px;display:table-cell;color:#36424a;width:15%\">#start — #end</span>" +
+				"<br/><span><h5 style=\"font-size: 14px;margin-top:-10px\">#weeks</h5></span></div>" +
+				"<div style=\"float: right;\">" +
+					"<br/>" +
+					"<div style=\"margin-bottom:10px;\" class=\"mui-switch #onoff mui-switch-orange mui-switch-mini\">" +
+						"<div class=\"mui-switch-handle\"></div>" +
+					"</div>" +
+				"</div>" +
+			"</div>";
+			var table = document.body.querySelector('.mui-table-view');
+			var content = document.body.querySelector('.mui-content');
+			var ul_content = document.body.querySelector('#uls');
+			
+			function load() {
+				content.innerHTML = "<ul id = \"uls\" class = \"mui-table-view\" style = \"margin-top:20px;\"></ul>";
+				ul_content = document.body.querySelector('#uls');
+				(function($) {
+				
+				var btnArray = [wordMap.cancel_word, wordMap.ok_word];				
+				  $('#uls').on('tap', '.timer-lbl', function(event) {
+//						if (flg) {
+//							window.timer.pageChangeM("3", this.name, this.tag, this.id);
+//						}
+//						flg = true;
+                        var li_li = this.parentNode.parentNode;
+						window.timer.pageChangeM("3", li_li.name, li_li.tag, li_li.id);
+					});
+					$('#uls').on('toggle', '.mui-switch', function(event) {
+						
+						flg = false;
+						var elem = this;
+						var li_li = elem.parentNode.parentNode.parentNode;
+//						alert("li_li.className = " + li_li.className);
+						if (li_li.className != "mui-table-view-cell li_active") {
+//							alert("active");
+                             window.timer.openTask(li_li.name, li_li.id);
+							li_li.className = "mui-table-view-cell li_active";
+							this.className = "mui-switch mui-active mui-switch-orange mui-switch-mini";
+							
+						} else {
+//							alert("inactive");
+							window.timer.closeTask(li_li.name, li_li.id);
+							li_li.className = "mui-table-view-cell li_inactive";
+							this.className = "mui-switch mui-switch-orange mui-switch-mini";
+						}
+					});
+					$('#uls').on('tap', '.mui-btn', function(event) {
+//						alert(flg + " .mui-btn in tap");
+						flg = false;
+					var elem = this;
+					var li = elem.parentNode.parentNode;
+					btnArray = [wordMap.cancel_word, wordMap.ok_word];	
+					mui.confirm('', sure_to_delete, btnArray, function(e) {
+						
+						if (e.index == 0) {
+							setTimeout(function() {
+								$.swipeoutClose(li);
+							}, 0);
+							
+						} else {
+							window.timer.delTimer(li.name, li.id);
+						}
+					});
+				});
+
+				})(mui);
+
+				window.timer.getTimerList();
+			}
+			function addappoint() {
+//				alert("addappoint");
+				window.timer.pageChange("2");
+			}
+			function setValueIos(data) {
+				data = JSON.parse(data);
+				setValue(data);
+			}
+				function setLabelIos(data) {
+				data = JSON.parse(data);
+				setLabel(data);
+			}
+			function setLabel(data) {
+				wordMap = data;
+				no_device = data.no_device;
+				add_scheduling = data.add_scheduling;
+				delete_word = data.delete_word;
+				sure_to_delete = data.sure_to_delete;
+				weeks = [wordMap.sun_word, wordMap.mon_word, wordMap.tues_word,
+				wordMap.wed_word, wordMap.thur_word, wordMap.fri_word, wordMap.sat_word];
+				document.title = wordMap.my_scheduling;
+			}
+			function setValue(data) {
+//				alert("in setValue(" + JSON.stringify(data) + ")," + data.length);
+				ul_content.innerHTML = "";
+				for (var i = 0; i < data.length; i++) {
+//					alert(data[i].name + data[i].timePoint + data[i].timeCycle)
+					var li = document.createElement('li');
+					
+					var inner;
+					var dname = data[i].name;
+					if (dname.length > 18) {
+						dname = dname.substr(0, 15) + "...";
+					}
+					if (data[i].timeCycle == "once") {
+						inner = liinner.replace("#Delete#", delete_word).replace("#devicename", dname).
+					    replace("#start", data[i].timePoint).replace("#end", data[i].endTime);
+					} else {
+						var repeatweek = "";
+						var cycles = data[i].timeCycle.replace("week[", "").replace("]", "").split(",");
+						for (var j = 0; j < cycles.length; j++) {
+							repeatweek += weeks[cycles[j]] + " ";
+						}
+						inner = liinner3.replace("#Delete#", delete_word).replace("#devicename", dname).
+					replace("#start", data[i].timePoint).replace("#end", data[i].endTime).
+					replace("#weeks", repeatweek);
+					}
+					
+					if (data[i].status == "1") {
+						li.className = 'mui-table-view-cell li_active';
+						inner = inner.replace("#onoff", "mui-active");
+					} else {
+						li.className = 'mui-table-view-cell li_inactive';
+						inner = inner.replace("#onoff", "");
+					}
+					li.innerHTML = inner;
+					li.id = data[i].taskId;
+					li.name = data[i].deviceId;
+					li.tag = data[i].name;
+					
+					ul_content.appendChild(li);
+					mui('.mui-switch')['switch']();
+				}
+//		alert(ul_content.children.length);
+				if (ul_content.children.length == 0) {
+								content.innerHTML = "<div style = \"width:100%;text-align: center;margin:50% auto;\">" +
+//			                        "<span class=\"mui-icon mui-icon-search\"></span>" +
+			                        "<div style = \"height:30px;\"></div>" +
+		                            "<p style = \"font-size:20px;font-family:pingfang;color:#c8c8c8;\">" + no_device + "</p>" +
+		                            "</div>" +
+//                                  "<div class=\"mui-content-padded\">  " +
+		                            "<button type=\"button\" class=\"mui-btn mui-btn-orange\" style = \"font-size:20px;position:fixed;bottom:40px;height:50px; width:90%; margin-left:5%;\" onclick=\"addappoint()\">" + add_scheduling + "</button>" +
+		                            "";//"</div>";
+				}
+				
+
+				
+			}
+							      	
+    </script>
+</body>
+</html>

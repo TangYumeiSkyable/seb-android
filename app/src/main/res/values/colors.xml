@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="title_bg">#ffffff</color>-->
+    <color name="title_bg">#2b3034</color>
+
+    <color name="title_text">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="color_24465E">#264A63</color>
+    <color name="black">#000000</color>
+
+    <color name="alertdialog_line">#d0d4db</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+
+    <color name="bg_grey">#f2f2f2</color>
+
+    <color name="blue_text">#4887d4</color>
+     <color name="disable_text">#a6a6a6</color>  
+    <color name="blue_bg">#e1f2fe</color>
+    <color name="disable_bg">#e0e0e0</color>
+    <color name="gray_line">#d0d4db</color>
+    <color name="info_text">#bdc2c8</color>
+    <!--  -->
+    <color name="theme">#00a3ff</color>
+    <color name="theme2">#00a3ff</color>
+    <color name="getCode_gray">#878787</color>
+    <color name="btn_orange">#009dc2</color>
+    <color name="btn_gray">#b2b2b2</color>
+    <color name="transparent_50">#AA000000</color>
+    <color name="transparent_100">#00000000</color>
+    <!--  -->
+    <color name="bg">#eeeeee</color>
+    
+    <!-- text color -->
+    <color name="login_text_bg">#ffffff</color>
+    <color name="hint_login_color">#BDC3C8</color>
+
+    <color name="other_login_text">#8d9199</color>
+    <color name="get_code_text">#f97d3a</color>
+    <color name="more_setting_text">#36424a</color>
+    <color name="more_gray_text">#848484</color>
+    <color name="more_href_text">#3a94f9</color>
+    <color name="default_text">#36424a</color>
+    <color name="gray_text">#848484</color>
+    <color name="red_text">#ff2323</color>
+    <color name="gray_info">#73757a</color>
+    <color name="gray_tab">#848484</color>
+    <color name="blue_line">#a3cdf8</color>
+
+    <!-- The divider -->
+    <color name="divid">#3f000000</color>
+    
+    <color name="textcolor">#5D5D5D</color>
+
+
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+
+    <!-- Qr code -->
+    <color name="lightgreen">#99CC33</color>
+    <color name="green">#00CC00</color>
+
+        <!-- Qr code scanning -->
+    <color name="viewfinder_laser">#ff8BC34A</color>
+    <color name="viewfinder_mask">#7f000000</color>
+
+
+    <color name="label_text_dark_gray">#848484</color>
+    <color name="input_hint">#c8c8c8</color>
+    <color name="line_gray">#c8c8c8</color>
+
+    <color name="dark_blue">#0587a7</color>
+    <color name="default_blue">#009dc2</color>
+    <color name="unable_gray">#848484</color>
+    <color name="btn_text_white">#f2f2f2</color>
+    <color name="link_input_text">#36424a</color>
+    <color name="purple">#957ecf</color>
+    <color name="red">#ff3300</color>
+    <color name="mode_gray">#82888E</color>
+    <color name="color_009dc2">#009dc2</color>
+    <color name="color_957ecf">#957ecf</color>
+    <color name="color_ff3300">#ff3300</color>
+    <color name="color_c8c8c8">#c8c8c8</color>
+    <color name="color_F2F2F2">#F2F2F2</color>
+    <color name="color_0E3cf5">#0e3cf5</color>
+</resources>
+

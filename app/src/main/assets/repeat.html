@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Repeat Setting</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<style>
+		body {
+			background-color: #f2f2f2;
+			font-size: 16px;
+			font-family: pingfang;
+		}
+			.mui-checkbox input[type=checkbox]:before{content:''}
+			.mui-checkbox input[type=checkbox]:checked:before{content:'\e472'}
+			.mui-checkbox input[type=checkbox] {
+				right:28px;
+			}
+			.mui-checkbox input[type=checkbox]:checked:before {
+				content:'\e472';
+				color:rgba(0,0,0,0);
+				background-image: url('images/ico_right_sel.png');
+				background-size:contain;
+				background-repeat: no-repeat;
+			}
+			.mui-checkbox input[type=checkbox]:checked+div{
+				color: #009dc2;
+			}
+			.mui-checkbox input[type=checkbox]+div{
+				color:#36424a;
+			}
+			.mui-table-view-cell:after {
+				background-color: #848484;
+			}
+			li.mui-table-view-cell {
+				padding:0px 20px;
+				line-height: 52px;
+				color: #36424a;
+			}
+			.mui-table-view {
+				padding:8px 0;
+			}
+		</style>
+	</head>
+	<body onload="window.timer.getRepeat()">
+		
+		<div class="mui-content">
+			
+			<div style = "height:20px;"></div>
+
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-checkbox mui-right" style="margin-right:20px;">
+						<input name="checkbox" type="checkbox" value="0" style="margin-right:-25px;">
+						<div id="sunday_word" style = "float:left;margin-left: 12px;">Sunday</div>
+						
+					</li>
+					<li class="mui-table-view-cell mui-checkbox mui-right" style="margin-right:20px;">
+						<input name="checkbox" type="checkbox" value="1" style="margin-right:-25px;">
+						<div id="monday_word" style = "float:left;margin-left: 12px;">Monday</div>
+						
+					</li>
+					<li class="mui-table-view-cell mui-checkbox mui-right" style="margin-right:20px;">
+						<input name="checkbox" type="checkbox" value="2" style="margin-right:-25px;">
+						<div id="tuesday_word" style = "float:left;margin-left: 12px;">Tuesday</div>
+						
+					</li>
+					<li class="mui-table-view-cell mui-checkbox mui-right" style="margin-right:20px;">
+						<input name="checkbox" type="checkbox" value="3" style="margin-right:-25px;">
+						<div id="wednesday_word" style = "float:left;margin-left: 12px;">Wednesday</div>
+						
+					</li>
+					<li class="mui-table-view-cell mui-checkbox mui-right" style="margin-right:20px;">
+						<input name="checkbox" type="checkbox" value="4" style="margin-right:-25px;">
+						<div  id="thursday_word" style = "float:left;margin-left: 12px;">Thursday</div>
+						
+					</li>
+					<li class="mui-table-view-cell mui-checkbox mui-right" style="margin-right:20px;">
+						<input name="checkbox" type="checkbox" value="5" style="margin-right:-25px;">
+						<div id="friday_word" style = "float:left;margin-left: 12px;">Friday</div>
+						
+					</li>
+					<li class="mui-table-view-cell mui-checkbox mui-right" style="margin-right:20px;">
+						<input name="checkbox" type="checkbox" value="6" style="margin-right:-25px;">
+						<div id="saturday_word" style = "float:left;margin-left: 12px;">Saturday</div>
+						
+					</li>
+			   </ul>
+
+		</div>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script>
+	    var repeats = [false, false, false, false, false, false, false];
+	    var weeks = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+	    var wordMap;
+	    var device, start, end, week;
+	    var cbs = document.body.querySelectorAll('input');
+	    var url = document.location.href;
+	    function goBack() {
+	    	history.go(-1);
+	    }
+	    	function setLabelIos(data) {
+				data = JSON.parse(data);
+				setLabel(data);
+			}
+	    function setLabel(data) {
+	    	
+				wordMap = data;
+				document.title = wordMap.repeat_setting;
+				weeks = [wordMap.sunday_word, wordMap.monday_word, wordMap.tuesday_word,
+				wordMap.wednesday_word, wordMap.thursday_word, wordMap.friday_word, wordMap.saturday_word];
+				
+				$("#sunday_word").html(wordMap.sunday_word);
+				$("#monday_word").html(wordMap.monday_word);
+				$("#tuesday_word").html(wordMap.tuesday_word);
+				$("#wednesday_word").html(wordMap.wednesday_word);
+				$("#thursday_word").html(wordMap.thursday_word);
+				$("#friday_word").html(wordMap.friday_word);
+				$("#saturday_word").html(wordMap.saturday_word);
+				
+		}
+	    function setValue(data) {
+//	    	alert("data=" + data);
+	    	if (data != "once") {
+	    		var repeat = data.substring(data.indexOf("[")+ 1, data.indexOf("]"));
+	    		var array = repeat.split(",");
+	    		for (var i = 0; i < array.length; i++) {
+	    			repeats[array[i]] = true;
+	    			cbs[array[i]].checked = true;
+	    		}
+	    	}
+	    	
+	    }
+	    function get_week() {
+	    	for (var i = 0; i < cbs.length; i++) {
+	    		if (cbs[i].checked) {
+	    			repeats[i] = true;
+	    		} else {
+	    			repeats[i] = false;
+	    		}
+	    	}
+	    	week = "";
+	    	var repeat = "week["
+			for (var i = 0; i < repeats.length; i++) {
+				if (repeats[i]) {
+					week += weeks[i] + " ";
+					repeat += i + ",";
+				}
+			}
+			if (!week) {
+				week = "Once";
+				repeat = "once";
+			} else {
+				repeat = repeat.substr(0, repeat.length - 1) + "]";
+			}
+//			alert("week=" + week + ",repeat=" + repeat);
+			window.timer.returnRepeat(week, repeat);
+	    }
+	    if(url.indexOf("?")!=-1) {
+                     urlParam = url.split("?")[1];
+                     paramList = urlParam.split("&");
+
+                     paramList.forEach(function (everyParam) {
+                        //alert(everyParam);
+                        if (everyParam.indexOf("=") != -1 && everyParam.split("=")[0] == "device") {
+                           device = decodeURI(everyParam.split("=")[1]);
+                        } else if (everyParam.indexOf("=") != -1 && everyParam.split("=")[0] == "start") {
+                           start = decodeURI(everyParam.split("=")[1]);
+                        }  else if (everyParam.indexOf("=") != -1 && everyParam.split("=")[0] == "end") {
+                           end = decodeURI(everyParam.split("=")[1]);
+                        }  else if (everyParam.indexOf("=") != -1 && everyParam.split("=")[0] == "repeat") {
+                           week = decodeURI(everyParam.split("=")[1]);
+                           var ws = week.split(" ");
+                           for (var i = 0; i < ws.length; i++) {
+                           	  for (var j = 0; j < weeks.length; j++) {
+                           	  	if (ws[i] == weeks[j]) {
+                           	  		cbs[j].checked = true;
+                           	  		repeats[j] = true;
+                           	  	}
+                           	  }
+                           }
+                        }
+                     });
+                }
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		mui('.mui-table-view').on('change', 'input', function() {
+//			alert(this.checked);
+            if (this.checked) {
+				repeats[parseInt(this.value)] = true;
+			} else {
+				repeats[parseInt(this.value)] = false;
+			}
+			
+//			alert(repeats[parseInt(this.value)]);
+		});
+		mui('#header').on('tap', '.mui-pull-left', function() {
+			week = "";
+			for (var i = 0; i < repeats.length; i++) {
+				if (repeats[i]) {
+					week += weeks[i] + " ";
+				}
+			}
+			if (!week) {
+				week = "Once";
+			}
+			self.location= "appointment-item.html?device=" + device + "&start=" + start +
+		   	    "&end=" + end + "&repeat=" + week;
+		});
+	</script>
+</html>

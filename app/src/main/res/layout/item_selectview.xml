@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="132px"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:paddingLeft="112px"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_height="132px"
+        android:textSize="@dimen/dimen_px_48"
+        android:textColor="@color/default_text"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

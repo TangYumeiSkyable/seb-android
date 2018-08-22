@@ -1,0 +1,95 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_grey"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical" >
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/account_ll"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_px_60"
+        android:gravity="center_horizontal">
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:text="@string/airpurifier_more_show_suporttreater_text"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/dimen_px_48"
+                android:layout_height="wrap_content"
+                android:textColor="@color/default_text"
+                android:layout_marginTop="72px"/>
+            <ImageView
+                android:id="@+id/share_img"
+                android:layout_width="600px"
+                android:layout_height="600px"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="138px"
+                android:src="@drawable/qcode"/>
+            <TextView
+                android:id="@+id/tv_info"
+                android:layout_width="match_parent"
+                android:text="@string/airpurifier_more_show_fiveminutesrefreshago_text"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_text"
+                android:textSize="@dimen/dimen_px_36"
+                android:layout_marginTop="@dimen/dimen_px_60"
+                android:layout_marginBottom="100px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="@dimen/dimen_px_60"
+            android:background="@color/line_gray"></View>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_setting"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="156px">
+
+            <TextView
+                android:id="@+id/share_refresh"
+                android:layout_width="wrap_content"
+                android:text="@string/airpurifier_more_show_sharethroughphone_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="102px"
+                android:textSize="@dimen/dimen_px_48"
+                android:layout_height="wrap_content"
+                android:textColor="@color/default_text"/>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/line_gray"></View>
+        <TextView
+            android:layout_width="900px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72px"
+            android:textSize="@dimen/dimen_px_42"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/airpurifier_more_show_emailtip_text"
+            android:textColor="@color/more_gray_text"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

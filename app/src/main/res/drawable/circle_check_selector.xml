@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+<!-- togglebutton -->
+    <item android:drawable="@drawable/ico_right_nor" android:state_checked="false"/>
+    <item android:drawable="@drawable/ico_right_sel" android:state_checked="true"/>
+
+</selector>

@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Scheduling</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name = "format-detection" content = "telephone=no">
+
+	<!--标准mui.css-->
+	<link rel="stylesheet" href="css/mui.min.css">
+	<!--App自定义的css-->
+	<link rel="stylesheet" type="text/css" href="css/app.css" />
+	<link href="css/mui.picker.css" rel="stylesheet" />
+	<link href="css/mui.poppicker.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/mui.picker.min.css" />
+	<style>
+                                    body {
+                                        background-color: #f2f2f2;
+                                    }
+                                #middlePopover {
+                                    height: 400px;
+                                }
+                                #middlePopover2 {
+                                    height: 190px;
+                                }
+                                #middlePopover3 {
+                                    height: 230px;
+                                }
+                                .none {
+                                    display: none;
+                                }
+                                .mui-popover {
+                                    border-radius: 20px;
+                                    top: 80px !important;
+                                }
+                                #middlePopover2 .mui-table-view-cell {
+                                    padding:11px 0;
+                                }
+                                #middlePopover3 .mui-table-view-cell {
+                                    padding:11px 0;
+                                }
+                                .mui-radio input[type=radio] {
+                                    right:0px;
+                                }
+                                .mui-radio input[type=radio]:checked:before {
+                                    content:'\e472';
+                                    color:rgba(0,0,0,0);
+                                    background-image: url('images/ico_right_sel.png');
+                                    background-repeat: no-repeat;
+                                    background-size:contain;
+                                }
+                                .mui-radio input[type=radio]:checked+div{
+                                    color: #009dc2;
+                                }
+                                .mui-radio input[type=radio]+div{
+                                    color:#36424a;
+                                }
+                                .mui-radio input[type=radio]:before{content:''}
+
+                                .mui-dtpicker{
+                                    position:fixed;z-index:999999;border-top:solid 1px #ccc;top:30%;
+                                    background-color: #fff;
+                                    width:70%;
+                                    margin-left: 15%;
+                                    border-radius: 5px;
+                                    border:none;
+                                    height: 308px;
+                                }
+                                .t-btn {
+                                    width:40%;
+                                    text-align: center;
+                                    color:#f97d3a;
+                                    float:left;
+                                    line-height:40px;
+                                    border-radius: 50px;
+                                    margin:10px 5%;
+                                }
+                                .ok {
+                                    background-color: #0587a7;
+                                }
+                                .cancel {
+                                    background-color: #36424a;
+                                }
+                                .t-btn a {
+                                    color:#f2f2f2;
+                                }
+
+                                .mui-dtpicker-body{
+                                    /*border-top:1px #d0d4db solid;*/
+                                    /*border-bottom:1px #d0d4db solid;*/
+                                    background-color: #fff;
+                                }
+                                .mui-pciker-rule-ft {
+                                    border-top:none;
+                                    border-bottom: none;
+                                }
+                                .mui-picker{
+                                    background-color: #fff;
+                                }
+                                .mui-popover-arrow {
+                                    display: none;
+                                }
+                                .mui-btn-orange{border:1px solid #009dc2;
+                                    background-color: #009dc2;
+                                    font-family: pingfang;
+                                    font-size: 18px;
+                                    border-radius: 50px;}
+                                .mui-btn-outlined.mui-btn-orange{color:#f2f2f2}
+                                .mui-popup-buttons {
+                                    background-color: rgba(255,255,255,.95);
+                                    height: 60px;
+                                }
+                                .mui-popup-button:first-child {
+                                    background-color: #36424a;
+                                    border-radius: 50px;
+                                    width: 90%;
+                                    margin: 5px 3% 5px 7%;
+                                }
+                                .mui-popup-button:last-child {
+                                    background-color: #009dc2;
+                                    border-radius: 50px;
+                                    width: 90%;
+                                    margin: 5px 7% 5px 3%;
+                                }
+                                .mui-popup-inner:after {
+                                    display: none;
+                                }
+                                .mui-popup-button.mui-popup-button-bold {
+                                    font-weight: 100;
+                                }
+                                .mui-popup-button {
+                                    color:#f2f2f2;
+                                    font-family: pingfang;
+                                }
+                                .mui-popup-title {
+                                    color:#393941;
+                                    font-family: pingfang;
+                                }
+                                li a  {
+                                    color:#393941;
+                                }
+                                </style>
+</head>
+<body id = "body" onload="window.timer.getTimer()">
+<!--<header id="header" class="mui-bar mui-bar-nav">
+ <a class="mui-icon mui-icon-closeempty mui-pull-left"></a>
+ <h1 class="mui-title">Add Reservation</h1>
+ <a class="mui-icon mui-icon-checkmarkempty mui-pull-right"></a>
+ </header>-->
+<div class="mui-content" style = "margin-top:20px;">
+	<ul class="mui-table-view" id = "devcie" style = "line-height: 25px;">
+
+		<li class="mui-table-view-cell" style="margin-right:20px;">
+			<a id = "href_mid" href="#middlePopover2"  class="mui-navigate-right" style="margin-right:-35px;">
+				<span id="choose_device" style = "font-size: 14px; color:#393941;font-family: pingfang;">Choose Device</span>
+				<span id = "device_h" style = "float:right;margin-right:25px;margin-top:2px;font-family: pingfang;color:#b5bac4;font-size: 12px;">
+                            room 1
+                        </span>
+			</a>
+		</li>
+		<!--</ul>
+         <p class="mui-content-padded" style="margin: 5px 10px 5px 10px;color:#000000;font-size:16px;">开启时间</p>
+         <ul class="mui-table-view" id = "start" style = "line-height: 35px;">-->
+		<li class="mui-table-view-cell" id = "start_li" style="margin-right:20px;">
+			<a class="mui-navigate-right" style="margin-right:-35px;">
+				<span id="on_time" style = "font-size: 14px; color:#393941;font-family: pingfang;">On time</span>
+				<span id = "start" style = "float:right;margin-right:25px;margin-top:2px;font-family: pingfang;color:#b5bac4;font-size: 12px;">
+                            10:37</span>
+			</a>
+		</li>
+		<!--</ul>-->
+		<!--<p class="mui-content-padded" style="margin: 5px 10px 5px 10px;color:#000000;font-size:16px;">关闭时间</p>
+         <ul class="mui-table-view" id = "end" style = "line-height: 35px;">-->
+		<li class="mui-table-view-cell" id = "end_li" style="margin-right:20px;">
+			<a class="mui-navigate-right" style="margin-right:-35px;">
+				<span id="off_time" style = "font-size: 14px; color:#393941;font-family: pingfang;">Off time</span>
+				<span id = "end" style = "float:right;margin-right:25px;margin-top:2px;font-family: pingfang;color:#b5bac4;font-size: 12px;">
+                            13:37</span>
+			</a>
+		</li>
+		<!--</ul>
+         <h4 class="mui-content-padded" style="margin: 15px 10px 15px 10px;"></h4>
+         <ul class="mui-table-view" id = "repeat" style = "line-height: 35px;">-->
+		<li class="mui-table-view-cell" id = "repeat_li" style="margin-right:20px;">
+			<a class="mui-navigate-right" style="margin-right:-35px;">
+				<span id="repeat_word" style = "font-size: 14px; color:#393941;font-family: pingfang;">Repeat</span>
+				<span id = "repeatcount" style = "float:right;margin-right:25px;margin-top:2px;font-family: pingfang;color:#b5bac4;font-size: 12px;">Once</span>
+			</a>
+		</li>
+	</ul>
+	<ul class="mui-table-view" style = "line-height: 25px;margin-top: 20px;">
+		<li class="mui-table-view-cell" style="margin-right:20px;">
+			<a id = "href_mode" href="#middlePopover3"  class="mui-navigate-right" style="margin-right:-35px;">
+				<span id="choose_mode" style = "font-size: 14px; color:#393941;font-family: pingfang;">Choose mode</span>
+				<span id = "device_mode" style = "float:right;margin-right:25px;margin-top:2px;font-family: pingfang;color:#b5bac4;font-size: 12px;">
+                            auto day
+                        </span>
+			</a>
+		</li>
+	</ul>
+
+	<h4 class="mui-content-padded" style="margin: 25px 10px 25px 10px;"></h4>
+	<button class="none" onclick="del()" id = "btn_del" style="position:fixed;bottom:40px;width:90%;margin-left:5%;height:50px;" type="button" >Delete scheduling</button>
+	<div id="middlePopover2" class="mui-popover">
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<ul class="mui-table-view">
+					<li style = "text-align: center;" class="mui-table-view-cell">
+						<span style = "color:#393941; font-family: pfmedium;font-size: 17px;">设备名称</span></li>
+				</ul>
+				<ul class="mui-table-view" style = "">
+					<li class="mui-table-view-cell mui-radio mui-right">
+						<div style = "float:left; color:#393941; font-family: pingfang;font-size: 15px;">卧室1</div>
+						<input name="radio" type="radio" value="Room 1" checked>
+					</li>
+				</ul>
+				<ul class="mui-table-view" style = "border-top:1px #d0d4db solid;">
+					<li class="mui-table-view-cell mui-radio mui-right">
+						<div style = "float:left; color:#393941; font-family: pingfang;font-size: 15px;">卧室2</div>
+						<input name="radio" type="radio" value="Room 2">
+					</li>
+				</ul>
+				<ul class="mui-table-view" style = "border-top:1px #d0d4db solid;">
+					<li class="mui-table-view-cell mui-radio mui-right">
+						<div style = "float:left; color:#393941; font-family: pingfang;font-size: 15px;">客厅</div>
+						<input name="radio" type="radio" value="Living Room">
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="middlePopover3" class="mui-popover">
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<ul class="mui-table-view" style="border-top-right-radius:0px;border-top-left-radius:0px;">
+					<li style = "text-align: center;" class="mui-table-view-cell">
+						<span id="device_mode_word" style = "color:#36424a; font-family: pfmedium;font-size: 17px;">Device mode</span></li>
+				</ul>
+				<ul class="mui-table-view" style = "margin:0 15px;border-top-right-radius:0px;border-top-left-radius:0px;">
+					<li class="mui-table-view-cell mui-radio mui-right">
+						<input name="mode" type="radio" value="auto day">
+						<div id="auto_day" style = "float:left; font-family: pingfang;font-size: 15px;">auto day</div>
+					</li>
+				</ul>
+				<ul class="mui-table-view" style = "margin:0 15px;border-top:1px #848484 solid;border-top-right-radius:0px;border-top-left-radius:0px;">
+					<li class="mui-table-view-cell mui-radio mui-right">
+						<input name="mode" type="radio" value="auto night">
+						<div id="auto_night" style = "float:left; font-family: pingfang;font-size: 15px;">auto night</div>
+					</li>
+				</ul>
+				<ul class="mui-table-view" style = "margin:0 15px;border-top:1px #848484 solid;border-top-right-radius:0px;border-top-left-radius:0px;">
+					<li class="mui-table-view-cell mui-radio mui-right">
+						<input name="mode" type="radio" value="boost">
+						<div id="boost_word" style = "float:left;  font-family: pingfang;font-size: 15px;">boost</div>
+
+					</li>
+
+				</ul>
+				<ul class="mui-table-view" style = "margin:0 15px;border-top:1px #848484 solid;border-top-right-radius:0px;border-top-left-radius:0px;">
+					<li class="mui-table-view-cell mui-radio mui-right">
+						<input name="mode" type="radio" value="silent">
+						<div id="silent_word" style = "float:left; font-family: pingfang;font-size: 15px;">silent</div>
+
+					</li>
+
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	<p id = "set_time_warning" style = "margin-left:15px;margin-right:15px;">If you set the starting time earlier than the current time, your scheduling will start the next day, not today.</p>
+</div>
+<script src="js/mui.min.js"></script>
+<script src="js/mui.picker.js"></script>
+<script src="js/mui.poppicker.js"></script>
+<script src="js/mui.picker.min.js"></script>
+<script src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" charset="UTF-8">
+            mui.init();
+            var wordMap = {once_word:"Once"};
+            var weeks = ["Sun.", "Mon.", "Tues.", "Wed.", "Thur.", "Fri.", "Sat."];
+            var appoints = {"devicename" :["Room 1", "Room 2"],
+                "start" : ["14:00", "19:00"],
+                "end" : ["17:00", "21:00"],
+                "onoff" : ["0", "1"],
+                "appid" : ["a1", "a2"],
+                "repeat" : [[4], [2, 3]],
+                "date" : ["20160505", ""]};
+        var id;
+        var starttime;
+        var endtime;
+        var taskIds;
+        var st_hour, st_min, ed_hour, ed_min;
+        var href_mid = document.getElementById("href_mid");
+        var device_li = document.getElementById("devcie");
+        var device_h = document.getElementById("device_h");
+        var repeat_count = document.getElementById("repeatcount");
+        var start_li = document.getElementById("start");
+        var end_li = document.getElementById("end");
+        var midPop = document.getElementById("middlePopover");
+        var midPop2 = document.getElementById("middlePopover2");
+        var body = document.getElementById("body");
+        var btn_del = document.getElementById("btn_del");
+        var repeat_li = document.getElementById("repeat_li");
+        var content = document.querySelector(".mui-content");
+        var pop2html = midPop2.innerHTML;
+        var radios = document.querySelector("radio");
+        var device_mode = document.getElementById("device_mode");
+
+        var device_name;
+        var deviceList;
+        var did;
+        var deviceUlItem = "<ul id = \"#deviceId\" class=\"mui-table-view\" style = \"margin:0 15px;border-top:1px #848484 solid;border-top-right-radius:0px;border-top-left-radius:0px;\">" +
+        "<li class=\"mui-table-view-cell mui-radio mui-right\">" +
+        "<input name=\"radio\" type=\"radio\" value=\"#deviceName\" checked>" +
+        "<div style = \"float:left;  font-family: pingfang;font-size: 15px;\">#deviceName</div>" +
+
+        "</li>" +
+        "</ul>";
+        var deviceUlItem_noborder = "<ul id = \"#deviceId\" class=\"mui-table-view\" style = \"margin:0 15px;border-top-right-radius:0px;border-top-left-radius:0px;\">" +
+        "<li class=\"mui-table-view-cell mui-radio mui-right\">" +
+        "<input name=\"radio\" type=\"radio\" value=\"#deviceName\" checked>" +
+        "<div style = \"float:left;  font-family: pingfang;font-size: 15px;\">#deviceName</div>" +
+
+        "</li>" +
+        "</ul>";
+        // 0：某个设备入口；1：我的预约入口
+        var flg = 0;
+
+        var nowtime = new Date();
+        var beformin = nowtime.getMinutes();
+        nowtime.setMinutes(beformin+5);
+        var year = nowtime.getFullYear();
+        var month = nowtime.getMonth() + 1;
+        if (month < 10 || month.length == 1) {
+            month = "0" + month;
+        }
+        var day = nowtime.getDate();
+        var tomorrow_time = new Date(nowtime.valueOf() + 1*24*60*60*1000);
+        var thirdday_time = new Date(tomorrow_time.valueOf() + 1*24*60*60*1000);
+        var today = dateToYmd(nowtime);
+        var tomorrow = dateToYmd(tomorrow_time);
+        var thirdday = dateToYmd(thirdday_time);
+
+        midPop2.style = midPop2.style + ";height:50px;";
+        function  dateToYmd(time) {
+            var y = time.getFullYear();
+            var m = time.getMonth() + 1;
+            var d = time.getDate();
+
+            if (m < 10) {
+                m = "0" + m;
+            }
+            if (d < 10) {
+                d = "0" + d;
+            }
+            var date_str = y + "-" + m + "-" + d + " ";
+            return date_str;
+        }
+        function setTimeType() {
+            $(".mui-picker").each(function() {
+                                  if ($(this).attr("data-id") != "picker-h" && $(this).attr("data-id") != "picker-i") {
+                                  $(this).attr("style", "display:none;");
+                                  } else {
+                                  $(this).attr("style", "width:50%");
+
+                                  }
+
+                                  });
+                                  $(".mui-dtpicker").attr("data-type", "time");
+                                  $(".mui-dtpicker").attr("style", "height:308px;");
+
+        }
+        function setLabelIos(data) {
+            //alert("setLabelIos");
+            data = JSON.parse(data);
+            setLabel(data);
+        }
+        function setLabel(data) {
+            wordMap = data;
+            weeks = [wordMap.sun_word, wordMap.mon_word, wordMap.tues_word,
+                     wordMap.wed_word, wordMap.thur_word, wordMap.fri_word, wordMap.sat_word];
+                     $("#choose_device").html(wordMap.choose_device);
+                     $("#choose_mode").html(wordMap.choose_mode);
+                     $("#on_time").html(wordMap.on_time);
+                     $("#off_time").html(wordMap.off_time);
+                     $("#repeat_word").html(wordMap.repeat_word);
+                     $("#repeatcount").html(wordMap.once_word);
+
+                     $("#device_mode_word").html(wordMap.device_mode);
+                     $("#auto_day").html(wordMap.auto_day);
+                     $("#auto_night").html(wordMap.auto_night);
+                     $("#boost_word").html(wordMap.boost_word);
+                     $("#silent_word").html(wordMap.silent_word);
+                     $("#device_mode").html(wordMap.auto_day);
+   					 $("#btn_del").html(wordMap.delete_scheduling);
+                     $("#set_time_warning").html(wordMap.time_warning);
+
+        }
+        function setDeviceIos(f, data, page) {
+            data = JSON.parse(data);
+            setDevice(f, data, page);
+        }
+        function setDefault(id, name) {
+            //           alert("id=" + id + ", name=" + name);
+            device_name = name;
+            did = id;
+            device_h.innerHTML = name;
+        }
+        function setDevice(f, data, page) {
+            //             alert("set dev:f=" + f + ",data="  + JSON.stringify(data) + ",page=" + page);
+            flg = f;
+            if (flg == 0) {
+                href_mid.href = "#";
+                if (page == 2) {
+                    device_h.innerHTML = data;
+                    device_name = data;
+                }
+
+            } else {
+
+                deviceList = data;
+                if (page == 2) {
+                    href_mid.href = "#middlePopover2";
+                    device_name = data[0].deviceName;
+                    did = data[0].deviceId;
+                    device_h.innerHTML = data[0].deviceName;
+                    $("#middlePopover2").remove();
+                    select_device();
+                } else {
+                    href_mid.href = "#";
+                }
+
+            }
+        }
+
+
+        function set_repeat(week) {
+            week = week.replace("Monday","Mon.").replace("Tuesday","Tues.").replace("Wednesday","Wed.")
+            .replace("Thurday","Thur.").replace("Friday","Fri.").replace("Saturday","Sat.").replace("Sunday","Sun.");
+            repeat_count.innerHTML = week;
+        }
+        function setValueIos(data) {
+            data = JSON.parse(data);
+            setValue(data);
+        }
+        function setValue(data) {
+
+            btn_del.className = "mui-btn mui-btn-orange mui-btn-outlined";
+            <!--               alert("setvalue:" + JSON.stringify(data));-->
+            for (var i = 0; i < data.length; i++) {
+                did = data[i].deviceId;
+                device_name = data[i].name;
+                taskIds = data[i].taskId;
+                device_h.innerHTML = data[i].name;
+                start_li.innerHTML = data[i].timePoint;
+                end_li.innerHTML = data[i].endTime;
+
+                if(data[i].devicMode=="null"){
+                    device_mode.innerHTML = "";
+                }else{
+                    device_mode.innerHTML = data[i].devicMode;
+                }
+
+                starttime = data[i].timePoint;
+                endtime = data[i].endTime;
+                st_hour = parseInt(starttime.split(":")[0], 10);
+                st_min = parseInt(starttime.split(":")[1], 10);
+                ed_hour = parseInt(endtime.split(":")[0], 10);
+                ed_min = parseInt(endtime.split(":")[1], 10);
+                if (data[i].timeCycle == "once") {
+                    repeat_count.innerHTML = wordMap.once_word;
+                } else {
+                    var repeat = "";
+                    var cycles = data[i].timeCycle.replace("week[", "").replace("]", "").split(",");
+                    for (j = 0; j < cycles.length; j++) {
+                        repeat += weeks[cycles[j]];
+                        if (j != cycles.length - 1) {
+                            repeat += " ";
+                        }
+                    }
+                    repeat_count.innerHTML = repeat;
+                }
+                var cbs = document.getElementsByName("radio");
+
+                for (var j = 0; j < cbs.length; j++) {
+                    if (cbs[j].value == data[i].name) {
+                        cbs[j].checked = true;
+                    }
+                }
+
+                var wkMode = document.getElementsByName("mode");
+                for (var j = 0; j < wkMode.length; j++) {
+                    if (wkMode[j].value == data[i].devicMode) {
+                        wkMode[j].checked = true;
+                    }
+                }
+            }
+
+        }
+        function addTimer() {
+            //          alert("timer" + device_h.innerHTML.replace(/[\n]/ig,'').replace(/[\t]/ig,''));
+            starttime = start_li.innerHTML;
+            endtime = end_li.innerHTML;
+            var model=0;
+
+
+
+            if(device_mode.innerHTML==wordMap.auto_day){
+                model=3;
+            }else if(device_mode.innerHTML==wordMap.auto_night){
+                model=2;
+            }else if(device_mode.innerHTML==wordMap.boost_word){
+                model=4;
+            }else if(device_mode.innerHTML==wordMap.silent_word){
+                model=1;
+            }else{
+                model=0;
+            }
+            var st_full;
+            var ed_full;
+            var now = new Date();
+            // 设置的起始时间大于当前时间
+            if ((st_hour > now.getHours()) || ((now.getHours() == st_hour) && st_min > now.getMinutes())) {
+                st_full = today + starttime+ ":00";
+                // 设置的关闭时间大于开启时间
+                if ((ed_hour > st_hour) || ((ed_hour == st_hour) && ed_min > st_min)) {
+                    ed_full = today + endtime+ ":00";
+                } else{
+                    ed_full = tomorrow + endtime+ ":00";
+                }
+            } else {
+                st_full = tomorrow + starttime+ ":00";
+                // 设置的关闭时间大于开启时间
+                if ((ed_hour > st_hour) || ((ed_hour == st_hour) && ed_min > st_min)) {
+                    ed_full = tomorrow + endtime+ ":00";
+                } else{
+                    ed_full = thirdday + endtime+ ":00";
+                }
+            }
+            //            alert("tomorrow=" + tomorrow + ",thirdday=" + thirdday);
+            //            alert("st_hour : st_min=" + st_hour + ":" + st_min + ",ed_hour : ed_min= " + ed_hour + ":"+ ed_min +  ",st_full =" + st_full + ",ed_full=" + ed_full);
+            //            if (flg == 0) {
+            //                window.timer.addTask(encodeURI(device_h.innerHTML.replace(/[\n]/ig,'').replace(/[\t]/ig,'')),
+            //          st_full, ed_full);
+            //            } else {
+            //                window.timer.addTask(did, encodeURI(device_h.innerHTML.replace(/[\n]/ig,'').replace(/[\t]/ig,'')),
+            //          st_full, ed_full);
+            //            }
+            window.timer.addTask(did, encodeURI(device_h.innerHTML.replace(/[\n]/ig,'').replace(/[\t]/ig,'')),model,
+                                 st_full, ed_full);Localizable.strings
+        }
+        function modifyTimer() {
+            //          alert(today);
+            starttime = start_li.innerHTML;
+            endtime = end_li.innerHTML;
+            var st_full;
+            var ed_full;
+            var model=0;
+
+            if(device_mode.innerHTML==wordMap.auto_day){
+                model=3;
+            }else if(device_mode.innerHTML==wordMap.auto_night){
+                model=2;
+            }else if(device_mode.innerHTML==wordMap.boost_word){
+                model=4;
+            }else if(device_mode.innerHTML==wordMap.silent_word){
+                model=1;
+            }else{
+                model=0;
+            }
+
+            var now = new Date();
+            // 设置的起始时间大于当前时间
+            if ((st_hour > now.getHours()) || ((now.getHours() == st_hour) && st_min > now.getMinutes())) {
+                st_full = today + starttime+ ":00";
+                // 设置的关闭时间大于开启时间
+                if ((ed_hour > st_hour) || ((ed_hour == st_hour) && ed_min > st_min)) {
+                    ed_full = today + endtime+ ":00";
+                } else{
+                    ed_full = tomorrow + endtime+ ":00";
+                }
+            } else {
+                st_full = tomorrow + starttime+ ":00";
+                // 设置的关闭时间大于开启时间
+                if ((ed_hour > st_hour) || ((ed_hour == st_hour) && ed_min > st_min)) {
+                    ed_full = tomorrow + endtime+ ":00";
+                } else{
+                    ed_full = thirdday + endtime+ ":00";
+                }
+            }
+            //            alert("st_hour : st_min=" + st_hour + ":" + st_min + ",ed_hour : ed_min= " + ed_hour + ":"+ ed_min +  ",st_full =" + st_full + ",ed_full=" + ed_full);
+            //            if (flg == 0) {
+            //                window.timer.modifyTask(encodeURI(device_h.innerHTML.replace(/[\n]/ig,'').replace(/[\t]/ig,'')),
+            //          st_full, ed_full);
+            //            } else {
+            //                window.timer.modifyTask(did, encodeURI(device_h.innerHTML.replace(/[\n]/ig,'').replace(/[\t]/ig,'')),
+            //          st_full, ed_full);
+            //            }
+            window.timer.modifyTask(did, encodeURI(device_h.innerHTML.replace(/[\n]/ig,'').replace(/[\t]/ig,'')),
+                                    model,st_full, ed_full);
+
+        }
+        function delTimer() {
+            //          if (flg == 0) {
+            //              window.timer.delTimer();
+            //          } else {
+            //              window.timer.delTimer(did, taskIds);
+            //          }
+            window.timer.delTimer(did, taskIds);
+        }
+        function cancel_d() {
+            var bg = document.querySelector(".mui-backdrop.mui-active");
+            var e = document.createEvent('MouseEvents');
+            e.initMouseEvent("click", true, true, document.defaultView, 0, 0, 0, 0, 0,false, false, false, false, 0, null);
+
+            if (!!bg) {
+                bg.dispatchEvent(e);
+                body.removeChild(bg);
+            }
+
+            midPop2.className = "mui-popover";
+            midPop2.style = "";
+
+            $("#middlePopover2").remove();
+            select_device();
+        }
+
+        function select_device() {
+            var div = document.createElement('div');
+            div.className = "mui-popover";
+            div.id = "middlePopover2";
+            var uls = "";
+            pop2html = "<div class=\"mui-scroll-wrapper\">" +
+            "<div class=\"mui-scroll\">" +
+            "<ul class=\"mui-table-view\">" +
+            "<li style = \"text-align: center;\" class=\"mui-table-view-cell\">" +
+            "<span style = \"font-family: pfmedium;font-size: 17px;\">"+ wordMap.device_name +"</span></li>" +
+            "</ul>" +
+            "#devicelist" +
+            "</div></div>";
+            var uiItem;
+            for (var i = 0; i < deviceList.length; i++) {
+                if (i == 0) {
+                    uiItem = deviceUlItem_noborder;
+                } else {
+                    uiItem = deviceUlItem;
+                }
+                uls += uiItem.replace("#deviceId", deviceList[i].deviceId)
+                .replace("#deviceName", deviceList[i].deviceName)
+                .replace("#deviceName", deviceList[i].deviceName);
+            }
+            pop2html = pop2html.replace("#devicelist", uls);
+            div.innerHTML = pop2html;
+
+            content.appendChild(div);
+
+            radios = document.querySelectorAll("input");
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].value == device_h.innerHTML) {
+                    radios[i].checked = true;
+                } else {
+                    radios[i].checked = false;
+                }
+            }
+            //            div.height = 50 + 45*deviceList.length;
+            mui('#middlePopover2').on('change', 'input', function() {
+                                      //            alert(this.value);
+                                      var ul = this.parentNode.parentNode;
+                                      did = ul.id;
+                                      device_h.innerHTML = this.value;
+                                      cancel_d();
+                                      radios = document.querySelectorAll("input");
+                                      for (var i = 0; i < radios.length; i++) {
+                                      if (radios[i].value == device_h.innerHTML) {
+                                      radios[i].checked = true;
+                                      }
+                                      }
+                                      });
+                                      midPop2 = div;
+                                      var pop2Height = $("#ul_device").css('height');
+                                      var height = 53+ 52*deviceList.length;
+                                      if(parseInt(pop2Height) != 0) {
+                                          if(pop2Height != undefined && parseInt(pop2Height) != 0) {
+                                              height = parseInt(pop2Height);
+                                          }
+                                      }
+                                      //            alert("height=" + height);
+                                      $("#middlePopover2").css({"height": + height + "px"});
+        }
+        function del () {
+            var btnArray = [wordMap.cancel_word, wordMap.ok_word];
+            mui.confirm('', wordMap.sure_to_delete, btnArray, function(e) {
+                        if (e.index != 0) {
+                        window.timer.delTimer(did, taskIds);
+                        }
+                        });
+        }
+        var liinner = "<div class=\"mui-slider-right mui-disabled\">"+
+        "<a class=\"mui-btn mui-btn-red\">Delete</a>"+
+        "</div>" +
+        "<div class=\"mui-slider-handle\">" +
+        "<div style=\"float: left;\"><span>#devicename</span></br><span>#start--#end</span></div>" +
+        "<div style=\"float: right;\">" +
+        "<div class=\"mui-switch #onoff mui-switch-green mui-switch-mini\">" +
+        "<div class=\"mui-switch-handle\"></div>" +
+        "</div>" +
+        "</div>" +
+        "</div>";
+        mui('body').on('shown', '.mui-popover', function(e) {
+                       //console.log('shown', e.detail.id);//detail为当前popover元素
+                       });
+                       mui('body').on('hidden', '.mui-popover', function(e) {
+
+                                      //console.log('hidden', e.detail.id);//detail为当前popover元素
+                                      });
+                                      mui('#middlePopover2').on('change', 'input', function() {
+                                                                //            alert(this.value);
+                                                                device_h.innerHTML = this.value;
+                                                                cancel_d();
+                                                                radios = document.querySelectorAll("input");
+                                                                for (var i = 0; i < radios.length; i++) {
+                                                                if (radios[i].value == device_h.innerHTML) {
+                                                                radios[i].checked = true;
+                                                                }
+                                                                }
+                                                                });
+                                                                mui('#middlePopover3').on('change', 'input', function() {
+                                                                                          document.getElementById("middlePopover3").style = "display:none";
+                                                                                          });
+                                                                                          mui('#repeat_li').on('tap', 'a', function() {
+                                                                                                               window.timer.pageChange("4");
+                                                                                                               //                   self.location= "repeat.html?device=" + device_h.innerHTML + "&start=" + start_li.innerHTML +
+                                                                                                               //                   "&end=" + end_li.innerHTML + "&repeat=" + repeat_count.innerHTML;
+                                                                                                               });
+                                                                                                               function jumpToRepeat() {
+                                                                                                                   self.location= "repeat.html";
+                                                                                                               }
+        (function($) {
+         function getTimeData(test) {
+         var child = test;
+         var t = child.innerHTML;
+         while (!!child) {
+         t = child.innerHTML;
+         child = child.firstElementChild;
+         }
+         return t;
+         }
+         mui('#middlePopover3').on('change', 'input', function() {
+
+									console.log(window.jQuery)
+
+                                    var target = window.jQuery(this)
+                                    var value = target.next().html()
+
+
+                                   if(this.checked){
+                                   //document.querySelector("#device_mode").innerHTML = this.value;
+                                   document.querySelector("#device_mode").innerHTML = value;
+                                   }else{
+                                   document.querySelector("#device_mode").innerHTML = "";
+                                   }
+
+                                   var bg = document.querySelector(".mui-backdrop.mui-active");
+                                   if (!!bg) {
+                                   body.removeChild(bg);
+                                   }
+
+                                   document.querySelector("#middlePopover3").className = "mui-popover";
+
+                                   });
+         var btnArray = ['Cancel', 'Sure'];
+
+
+         var device_li = document.getElementById("devcie");
+
+
+         //              var nowtime = new Date();
+         starttime = (nowtime.getHours() < 10 ? "0" : "") + nowtime.getHours()
+         + ":" + (nowtime.getMinutes() < 10 ? "0" : "") + nowtime.getMinutes();
+         var endhour = (nowtime.getHours() + 3)%24;
+         endtime = (endhour < 10 ? "0" : "") + endhour + ":" +
+         (nowtime.getMinutes() < 10 ? "0" : "") + nowtime.getMinutes();
+         st_hour = nowtime.getHours();
+         st_min = nowtime.getMinutes();
+         ed_hour = endhour;
+         ed_min = st_min;
+         if (!id) {
+         start_li.innerHTML = starttime;
+         end_li.innerHTML = endtime;
+         //                  btn_del.className = "none";
+         }  else {
+         for (var i = 0; i <appoints.appid.length; i++) {
+         if (id == appoints.appid[i]) {
+         device_h.innerHTML = appoints.devicename[i];
+         start_li.innerHTML = appoints.start[i];
+         end_li.innerHTML = appoints.end[i];
+         starttime = appoints.start[i];
+         endtime = appoints.end[i];
+         if (!!appoints.date[i]) {
+         repeat_count.innerHTML = wordMap.once_word;
+         } else {
+         var repeat = "";
+         for (j = 0; j < appoints.repeat[i].length; j++) {
+         repeat += weeks[appoints.repeat[i][j]];
+         if (j != appoints.repeat[i].length - 1) {
+         repeat += " ";
+         }
+         var cbs = document.getElementsByName("checkbox");
+         //                                  alert(cbs[2].value + "," + weeks[appoints.repeat[i][2]]);
+         for (var k = 0; k < cbs.length; k++) {
+
+         if (cbs[k].value == weeks[appoints.repeat[i][j]]) {
+         cbs[k].checked = true;
+         }
+         }
+         }
+         repeat_count.innerHTML = repeat;
+         }
+         var cbs = document.getElementsByName("radio");
+
+         for (var j = 0; j < cbs.length; j++) {
+         if (cbs[j].value == appoints.devicename[i]) {
+         cbs[j].checked = true;
+         }
+         }
+
+         var wkMode = document.getElementsByName("mode");
+         for (var j = 0; j < wkMode.length; j++) {
+         if (wkMode[j].value == data[i].devicMode) {
+         wkMode[j].checked = true;
+         }
+         }
+         }
+         }
+         }
+
+
+         $('#start_li').on('tap', 'a', function(event) {
+                           setTimeout(function(){
+                                      var optionsJson = '{"type":"time", "value":"'+ nowtime.getFullYear() + "-" + (nowtime.getMonth() + 1) + "-" + nowtime.getDate() + " " + starttime +'"}' || '{}';
+                                      var options = JSON.parse(optionsJson);
+                                      //                        var id = this.getAttribute('id');
+                                      /*
+                                       * 首次显示时实例化组件
+                                       * 示例为了简洁，将 options 放在了按钮的 dom 上
+                                       * 也可以直接通过代码声明 optinos 用于实例化 DtPicker
+                                       */
+                                      var picker = new $.DtPicker(options);
+                                      picker.show(function(rs) {
+                                                  picker.dispose();
+                                                  });
+                                      var backdrop = document.createElement("div");
+                                      backdrop.className = "mui-backdrop mui-active";
+                                      body.appendChild(backdrop);
+                                      backdrop.addEventListener('click', function(event) {
+                                                                picker.dispose();
+                                                                setTimeout(function(){
+                                                                           body.removeChild(backdrop);
+                                                                           },300);
+
+                                                                });
+                                      var t_title = document.body.querySelector('.mui-dtpicker-title');
+                                      t_title.innerHTML = "<p style='height:5px;'></p><p style = 'text-align: center;color:#393941;font-family: pfmedium;font-size: 17px;'>" + wordMap.on_time +"</p>";
+                                      var t_header = document.body.querySelector('.mui-dtpicker-header');
+                                      var t_pt = document.body.querySelector('.mui-dtpicker');
+                                      //                        t_pt.style = "width:86%;margin-left:7%;border:1px #d0d4db  solid;background-color:#fff;";
+                                      t_pt.removeChild(t_header);
+                                      var t_footer = document.createElement("div");
+                                      t_footer.style = "width:100%;";
+                                      t_footer.innerHTML = "<div class = 't-btn cancel' style = 'border-right:1px #d0d4db  solid'><a>" + wordMap.cancel_word +"</a></div><div class = 't-btn ok'><a>" + wordMap.save_word +"</a></div>";
+                                      t_pt.appendChild(t_footer);
+
+                                      setTimeType();
+                                      $('.mui-dtpicker').on('tap', '.ok', function(event) {
+                                                            var highlights = document.body.querySelectorAll('.highlight');
+                                                            var rs = getTimeData(highlights[highlights.length - 2]) + ":" + getTimeData(highlights[highlights.length - 1]);
+                                                            //                            alert(rs);
+                                                            st_hour = parseInt(getTimeData(highlights[highlights.length - 2]), 10);
+                                                            st_min = parseInt(getTimeData(highlights[highlights.length - 1]), 10);
+                                                            starttime = rs;
+                                                            start_li.innerHTML = rs;
+                                                            picker.dispose();
+                                                            setTimeout(function(){
+                                                                       body.removeChild(backdrop);
+                                                                       },300);
+                                                            });
+                                      $('.mui-dtpicker').on('tap', '.cancel', function(event) {
+                                                            picker.dispose();
+                                                            setTimeout(function(){
+                                                                       body.removeChild(backdrop);
+                                                                       },300);
+                                                            });
+                                      },300);
+                           });
+
+
+
+
+         $('#end_li').on('tap', 'a', function(event) {
+                         setTimeout(function(){
+                                    var optionsJson = '{"type":"time", "value":"'+ nowtime.getFullYear() + "-" + (nowtime.getMonth() + 1) + "-" + nowtime.getDate() + " "+ endtime +'"}' || '{}';
+                                    var options = JSON.parse(optionsJson);
+                                    //                        var id = this.getAttribute('id');
+                                    /*
+                                     * 首次显示时实例化组件
+                                     * 示例为了简洁，将 options 放在了按钮的 dom 上
+                                     * 也可以直接通过代码声明 optinos 用于实例化 DtPicker
+                                     */
+                                    var picker = new $.DtPicker(options);
+                                    picker.show(function(rs) {
+                                                picker.dispose();
+                                                });
+                                    var backdrop = document.createElement("div");
+                                    backdrop.className = "mui-backdrop mui-active";
+                                    body.appendChild(backdrop);
+                                    backdrop.addEventListener('click', function(event) {
+                                                              picker.dispose();
+                                                              setTimeout(function(){
+                                                                         body.removeChild(backdrop);
+                                                                         },300);
+
+                                                              });
+                                    var t_title = document.body.querySelector('.mui-dtpicker-title');
+                                    t_title.innerHTML = "<p style='height:5px;'></p><p style = 'text-align: center;color:#393941;font-family: pfmedium;font-size: 17px;'>" + wordMap.off_time +"</p>";
+                                    var t_header = document.body.querySelector('.mui-dtpicker-header');
+                                    var t_pt = document.body.querySelector('.mui-dtpicker');
+                                    //                        t_pt.style = "width:86%;margin-left:7%;border:1px #d0d4db  solid;background-color:#fff;";
+
+                                    t_pt.removeChild(t_header);
+                                    var t_footer = document.createElement("div");
+                                    t_footer.style = "width:100%;";
+                                    t_footer.innerHTML = "<div class = 't-btn cancel' style = 'border-right:1px #d0d4db  solid'><a>" + wordMap.cancel_word +"</a></div><div class = 't-btn ok'><a>" + wordMap.save_word +"</a></div>";
+                                    t_pt.appendChild(t_footer);
+
+                                    setTimeType();
+                                    $('.mui-dtpicker').on('tap', '.ok', function(event) {
+                                                          var highlights = document.body.querySelectorAll('.highlight');
+                                                          var rs = getTimeData(highlights[highlights.length - 2]) + ":" + getTimeData(highlights[highlights.length - 1]);
+                                                          //                            alert(rs);
+                                                          ed_hour = parseInt(getTimeData(highlights[highlights.length - 2]), 10);
+                                                          ed_min = parseInt(getTimeData(highlights[highlights.length - 1]), 10);
+                                                          end_li.innerHTML = rs;
+                                                          endtime = rs;
+                                                          picker.dispose();
+                                                          setTimeout(function(){
+                                                                     body.removeChild(backdrop);
+                                                                     },300);
+                                                          });
+                                    $('.mui-dtpicker').on('tap', '.cancel', function(event) {
+                                                          picker.dispose();
+                                                          setTimeout(function(){
+                                                                     body.removeChild(backdrop);
+                                                                     },300);
+                                                          });
+                                    },300);
+                         });
+
+         //                var repeatPicker = new $.PopPicker();
+         //                repeatPicker.setData([{
+         //                        value: '1',
+         //                        text: 'Every Sunday'
+         //                    }, {
+         //                        value: '2',
+         //                        text: 'Every Monday'
+         //                    }, {
+         //                        value: '3',
+         //                        text: 'Every Tuesday'
+         //                    }]);
+         //
+         //
+         //              var menuWrapper = document.getElementById("middlePopover");
+         //              var menuWrapper = document.getElementById("menu-wrapper");
+         //                var menu = document.getElementById("menu");
+         //                var menuWrapperClassList = menuWrapper.classList;
+         //                $('#repeat').on('tap', '.mui-table-view-cell', function(event) {
+         //                    document.body.classList.add('menu-open');
+         //                    menuWrapper.className = 'menu-wrapper fade-in-down animated mui-active';
+         //                    menu.className = 'menu bounce-in-down animated';
+         //                    backdrop.style.opacity = 1;
+         //                    repeatPicker.show(function(items) {
+         //                      repeat_count.innerHTML = items[0].text;
+         //                        });
+         //                });
+         })(mui);
+            </script>
+</body>
+</html>

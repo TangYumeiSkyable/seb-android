@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="156px"
+        android:layout_marginLeft="@dimen/dimen_px_60"
+        android:layout_marginRight="@dimen/dimen_px_60"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/item_userimg"
+            android:layout_width="96px"
+            android:layout_height="96px"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_big_avator" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/dimen_px_30"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="13"
+                android:singleLine="true"
+                android:textColor="@color/more_gray_text"
+                android:textSize="@dimen/dimen_px_48" />
+
+            <TextView
+                android:id="@+id/tv_operation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12px"
+                android:text="@string/airpurifier_more_show_cancelsharealign_text"
+                android:textColor="@color/more_setting_text"
+                android:textSize="@dimen/dimen_px_48" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

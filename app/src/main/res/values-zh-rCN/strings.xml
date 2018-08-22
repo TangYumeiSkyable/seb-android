@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_public_cancel">取消</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_devicemodelnumber_text">%s</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_percentage">\%%</string>
+</resources>

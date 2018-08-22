@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132px"
+        >
+        <TextView
+            android:id="@+id/tv_phone_lbl"
+            android:layout_width="900px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/dimen_px_42"
+            android:layout_marginLeft="@dimen/dimen_px_90"
+            android:textColor="@color/default_text"
+            android:text = "@string/airpurifier_login_show_email_text"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+
+    <Button
+        android:id="@+id/phone_next"
+        android:layout_marginTop="120px"
+        style="@style/btn_style"
+        android:textSize="@dimen/dimen_px_48"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/airpurifier_login_show_login_text" />
+
+</com.zhy.autolayout.AutoLinearLayout>

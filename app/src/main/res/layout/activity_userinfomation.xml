@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dadada"></View>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/ar_userguide"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_px_156"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_px_42"
+            android:text="@string/airpurifier_more_userinfomation_user_guide"
+            android:textColor="@color/more_setting_text"
+            android:textSize="@dimen/dimen_px_48" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_px_78"
+            android:src="@drawable/ico_more" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dadada"></View>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/ar_faq"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_px_156"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_px_42"
+            android:text="@string/airpurifier_more_userinfomation_FAQ"
+            android:textColor="@color/more_setting_text"
+            android:textSize="@dimen/dimen_px_48" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_px_78"
+            android:src="@drawable/ico_more" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dadada"></View>
+</com.zhy.autolayout.AutoLinearLayout>

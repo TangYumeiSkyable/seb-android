@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dimen_px_36"
+        android:paddingLeft="@dimen/dimen_px_60"
+        android:paddingRight="@dimen/dimen_px_60"
+        android:paddingTop="@dimen/dimen_px_36">
+
+        <TextView
+            android:id="@+id/tv_pm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24px"
+            android:text="PM2.5"
+            android:textSize="@dimen/dimen_px_48" />
+
+        <TextView
+            android:id="@+id/tv_pmitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24px"
+            android:layout_marginLeft="@dimen/dimen_px_60"
+            android:layout_toRightOf="@id/tv_pm"
+            android:textColor="@color/btn_orange"
+            android:textSize="@dimen/dimen_px_48" />
+
+        <TextView
+            android:id="@+id/tv_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Sunday"
+            android:textColor="@color/line_gray"
+            android:textSize="@dimen/dimen_px_36" />
+
+        <TextView
+            android:layout_width="960px"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_week"
+            android:layout_marginTop="@dimen/dp_10"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/airpurifier_more_show_pmitems_text"
+            android:textSize="40px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <Button
+        android:id="@+id/btn_openair"
+        style="@style/LoginBtnStyle"
+        android:layout_width="900px"
+        android:layout_height="156px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="174px"
+        android:layout_marginLeft="@dimen/dimen_px_90"
+        android:layout_marginRight="@dimen/dimen_px_90"
+        android:text="@string/airpurifier_more_show_openair_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_px_48" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

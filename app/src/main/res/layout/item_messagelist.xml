@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_px_30"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_read"
+            android:layout_width="18px"
+            android:layout_height="18px"
+            android:layout_marginBottom="24px"
+            android:layout_marginLeft="@dimen/dimen_px_60"
+            android:layout_marginTop="70px"
+            android:src="@drawable/unread"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24px"
+            android:layout_marginLeft="@dimen/dimen_px_36"
+            android:layout_marginTop="@dimen/dimen_px_48"
+            android:layout_toRightOf="@id/iv_read"
+            android:textSize="@dimen/dimen_px_48"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="960px"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:ellipsize="end"
+            android:lineSpacingExtra="9px"
+            android:lines="2"
+            android:textSize="@dimen/dimen_px_48" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_content"
+            android:layout_marginBottom="@dimen/dimen_px_48"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="@dimen/dimen_px_48"
+            android:textSize="@dimen/dimen_px_36" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

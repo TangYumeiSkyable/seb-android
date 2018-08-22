@@ -1,0 +1,194 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Filter Condition</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<style type="text/css">
+
+           body, html {
+           	background-color: #f2f2f2;
+           	position: relative;
+           }
+			.category {
+				color:#fff;
+				font-family: pingfang;
+				font-size: 16px;
+			}
+			.left {
+				float:right;
+				color:#fff;
+				font-family: pingfang;
+				font-size: 20px;
+			}
+			.progress {
+				height : 10px;
+				border-radius: 5px;
+			}
+			.progress div {
+				height : 10px;
+				border-radius: 5px;
+			}
+			.state {
+				float:right;
+				color:#3a94f9;
+				font-family: pingfang;
+				font-size: 18px;
+			}
+			
+		</style>
+
+	</head>
+
+	<body>
+		
+		<div id = "content" class="mui-content" style = "background-color: #f2f2f2;padding:20px; padding-top:0;osition: relative;">
+			<div style = "margin-top:20px;">
+				<span id = "deviceName_#num">Filter Condition</span>
+			</div>
+			<div style = "height: 28%; min-height:195px; margin-top:15px;position: relative; ">
+				<div style = "height : 70%; min-height:135px; background-color: rgba(0,157,194,0.8);border-radius: 5px 5px 0 0; padding-left: 25px; padding-right: 25px; padding-top: 15px;padding-bottom: 20px;">
+					<div class = "category">#pre_filter#</div>
+					<div style = "height : 15px;"></div>
+					<div class = "left" style = "float:right;"><span id = "pre_filter_#num">100</span>%</div>
+				    <div style = "height : 35px;"></div>
+				    <div class = "progress" style = "background-color: #f2f2f2;">
+				    	<div id = "pre_filter_pro_#num" style = "width:100%; background-color: #009dc2; height:100%;">
+				    		
+				    	</div>
+				    </div>
+				</div>
+				<div style = "height : 30%;min-height:60px;background-color: #fff;border-radius:0 0 5px 5px ;padding:20px; ">
+					<a id = "pre_filter_link_#num" class = "state"><span id = "pre_filter_state_#num">remember to clean the filter</span></a>
+				</div>
+			</div>
+			<div style = "height : 28%; min-height:195px;margin-top:15px;position: relative; ">
+				<div style = "height : 70%;min-height:135px;position: relative; background-color: rgba(240,155,70,0.8);border-radius: 5px 5px 0 0; padding-left: 25px; padding-right: 25px; padding-top: 15px;padding-bottom: 20px;">
+					<div class = "category">#active_filter#</div>
+					<div style = "height : 15px;"></div>
+					<div class = "left" style = "float:right;"><span id = "active_filter_#num">100</span>%</div>
+				    <div style = "height : 35px;"></div>
+				    <div class = "progress" style = "background-color: #f2f2f2;">
+				    	<div id = "active_filter_pro_#num" style = "width:100%; background-color: #f09b46; height:100%;">
+				    		
+				    	</div>
+				    </div>
+				</div>
+				<div style = "height : 30%;min-height:60px;background-color: #fff;border-radius:0 0 5px 5px ;padding:20px; ">
+					<a id = "active_filter_link_#num" onclick="window.filter.toSupor(2)" class = "state"><span id = "active_filter_state_#num">To buy</span>>></a>
+				</div>
+				<div style = "height : 35px;"></div>
+			</div>
+			<div style = "height : 28%;min-height:195px; margin-top:15px;position: relative; ">
+				<div style = "height : 70%; min-height:135px;background-color: rgba(150,150,150,0.8);border-radius: 5px 5px 0 0; padding-left: 25px; padding-right: 25px; padding-top: 15px;padding-bottom: 20px;">
+					<div class = "category">#hepa_filter#</div>
+					<div style = "height : 15px;"></div>
+					<div class = "left" style = "float:right;"><span id = "hepa_#num">100</span>%</div>
+				    <div style = "height : 35px;"></div>
+				    <div class = "progress" style = "background-color: #f2f2f2;">
+				    	<div id = "hepa_pro_#num" style = "width:100%; background-color: #969696; height:100%;">
+				    		
+				    	</div>
+				    </div>
+				</div>
+				<div style = "height : 30%;min-height:60px;background-color: #fff;border-radius:0 0 5px 5px ;padding:20px; ">
+					<a id = "hepa_link_#num" onclick="window.filter.toSupor(2)" class = "state"><span id = "hepa_state_#num">To buy</span>>></a>
+				</div>
+			</div>
+			<div style = "height : 28%;min-height:195px; margin-top:15px;position: relative; ">
+				<div style = "height : 70%; min-height:135px;background-color: rgba(149,126,207,0.8);border-radius: 5px 5px 0 0; padding-left: 25px; padding-right: 25px; padding-top: 15px;padding-bottom: 20px;">
+					<div class = "category">#nano_filter#</div>
+					<div style = "height : 15px;"></div>
+					<div class = "left" style = "float:right;"><span id = "nano_#num">82</span>%</div>
+				    <div style = "height : 35px;"></div>
+				    <div class = "progress" style = "background-color: #f2f2f2;">
+				    	<div id = "nano_pro_#num" style = "width:82%; background-color: #957ecf; height:100%;">
+				    		
+				    	</div>
+				    </div>
+				</div>
+				<div style = "height : 30%;min-height:60px;background-color: #fff;border-radius:0 0 5px 5px ;padding:20px; ">
+					<a id = "nano_link_#num" onclick="window.filter.toSupor(2)" class = "state"><span id = "nano_state_#num">To buy</span>>></a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/mui.min.js"></script>
+
+	<script src="js/jquery-1.8.2.min.js"></script>
+
+	<script>
+		mui.init();
+		var html = $("#content").html();
+		$("#content").empty();
+		var pre_filter, carbon, hepa, nano;
+			function setLabelIos(data) {
+				data = JSON.parse(data);
+				setLabel(data);
+			}
+		function setLabel(data) {
+	    	
+				wordMap = data;
+				document.title = wordMap.filter_condition;
+			
+		}
+		function setValueIos(data) {
+			data = JSON.parse(data);
+			setValue(data);
+		}
+		function setValue(data) {
+//			alert(JSON.stringify(data));
+			$("#content").empty();
+			for (var i = 0; i < data.length; i++) {
+				$("#content").append(html.replace("#pre_filter#", wordMap.pre_filter)
+				.replace("#active_filter#", wordMap.active_filter).replace("#hepa_filter#", wordMap.hepa_filter)
+				.replace("#nano_filter#", wordMap.nano_filter).replace(/#num/g, data[i].deviceId));
+				$("#deviceName_"+ data[i].deviceId).html(data[i].deviceName);
+				pre_filter = data[i].filter_initial;
+				carbon = data[i].filter_activecarbon;
+				hepa = data[i].filter_HEPA;
+				nano = data[i].filter_nano;
+				if (pre_filter > 1000) {
+					pre_filter = 1000;
+				}
+				
+				if (carbon > 1000) {
+					carbon = 1000;
+				}
+				if (hepa > 1000) {
+					hepa = 1000;
+				}
+				if (nano > 1000) {
+					nano = 1000;
+				}
+				pre_filter = Math.round(parseFloat(pre_filter)/10.0);
+				carbon = Math.round(parseFloat(carbon)/10.0);
+				hepa = Math.round(parseFloat(hepa)/10.0);
+				nano = Math.round(parseFloat(nano)/10.0);
+
+				$("#pre_filter_state_" + data[i].deviceId).html(wordMap.clean_filter);
+				$("#active_filter_state_" + data[i].deviceId).html(wordMap.to_buy);
+				$("#hepa_state_" + data[i].deviceId).html(wordMap.to_buy);
+				$("#nano_state_" + data[i].deviceId).html(wordMap.to_buy);
+
+				$("#pre_filter_"+ data[i].deviceId).html(pre_filter);
+				$("#pre_filter_pro_"+ data[i].deviceId).attr("style", "width:" + pre_filter + "%; background-color: #009dc2;");
+				$("#active_filter_"+ data[i].deviceId).html(carbon);
+				$("#active_filter_pro_"+ data[i].deviceId).attr("style", "width:" + carbon + "%; background-color: #f09b46;");
+				$("#hepa_"+ data[i].deviceId).html(hepa);
+				$("#hepa_pro_"+ data[i].deviceId).attr("style", "width:" + hepa + "%; background-color: #969696;");
+				$("#nano_"+ data[i].deviceId).html(nano);
+				$("#nano_pro_"+ data[i].deviceId).attr("style", "width:" + nano + "%; background-color: #957ecf;");
+			}
+			
+			
+		}
+	</script>
+
+</html>

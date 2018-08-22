@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titlebar_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:background="@color/dark_blue"
+    android:orientation="horizontal" >
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/header_left_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:layout_alignParentLeft="true" >
+
+        <TextView
+              android:id="@+id/header_left_btn"
+              android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="@dimen/dimen_px_42"
+	        android:paddingLeft="@dimen/dimen_px_30"
+	        android:textColor="@color/title_text"
+	        android:textSize="@dimen/dimen_px_48" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/header_right_rl"
+        android:layout_width="@dimen/dimen_px_480"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" 
+        android:paddingRight="@dimen/dimen_px_24"
+        >
+        <TextView
+        android:id="@+id/header_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+
+        android:paddingLeft="20dp"
+        android:textColor="@color/title_text"
+        android:textSize="@dimen/dimen_px_48" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    
+
+    <TextView
+        android:id="@+id/header_right2_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_px_24"
+        android:layout_toLeftOf="@id/header_right_rl"
+        android:textColor="@color/title_text"
+        android:textSize="@dimen/dimen_px_42" />
+      
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/title_text"        
+        android:textSize="@dimen/dimen_px_48" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

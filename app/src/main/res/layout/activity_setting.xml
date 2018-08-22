@@ -1,0 +1,213 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/dimen_px_60"
+        android:background="@color/line_gray"></View>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/account_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/airpurifier_setting_item_height"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_px_60"
+        android:paddingRight="@dimen/dimen_px_60">
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_px_42"
+            android:text="@string/airpurifier_more_show_msgsend_text"
+            android:textColor="@color/more_gray_text"
+            android:textSize="@dimen/dimen_px_48" />
+
+        <com.rihuisoft.loginmode.view.SwitchView
+            android:id="@+id/switchview_indoor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="960px"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/dimen_px_60"
+            android:layout_marginRight="@dimen/dimen_px_60"
+            android:background="@color/line_gray"></View>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/home_setting_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/airpurifier_setting_item_height"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_px_60"
+        android:paddingRight="@dimen/dimen_px_60">
+
+        <TextView
+            android:id="@+id/tv_airwarning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_px_42"
+            android:text="@string/airpurifier_more_show_airqualityalerm_text"
+            android:textColor="@color/more_gray_text"
+            android:textSize="@dimen/dimen_px_48" />
+
+        <com.rihuisoft.loginmode.view.SwitchView
+            android:id="@+id/switchview_outdoor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="960px"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/dimen_px_60"
+            android:layout_marginRight="@dimen/dimen_px_60"
+            android:background="@color/line_gray"></View>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/add_thermostat_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/airpurifier_setting_item_height"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_px_60"
+        android:paddingRight="@dimen/dimen_px_60">
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_px_42"
+            android:text="@string/airpurifier_more_show_memberupdatemetion_text"
+            android:textColor="@color/more_gray_text"
+            android:textSize="@dimen/dimen_px_48" />
+
+        <com.rihuisoft.loginmode.view.SwitchView
+            android:id="@+id/switchview_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="960px"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/dimen_px_60"
+            android:layout_marginRight="@dimen/dimen_px_60"
+            android:background="@color/line_gray"></View>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/add_wifi_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/airpurifier_setting_item_height"
+        android:background="@color/white"
+        android:paddingBottom="24px"
+        android:paddingLeft="@dimen/dimen_px_60"
+        android:paddingRight="@dimen/dimen_px_60">
+
+        <TextView
+            android:id="@+id/tv_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_px_42"
+            android:text="@string/airpurifier_more_show_wifiupdatemetion_text"
+            android:textColor="@color/more_gray_text"
+            android:textSize="@dimen/dimen_px_48" />
+
+
+        <com.rihuisoft.loginmode.view.SwitchView
+            android:id="@+id/switchview_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"></View>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/dimen_px_60"
+        android:background="@color/line_gray"></View>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/support_ll"
+        android:layout_width="match_parent"
+        android:layout_height="132px"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_px_60"
+        android:paddingRight="@dimen/dimen_px_60">
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_px_42"
+            android:text="@string/airpurifier_more_show_softversion_text"
+            android:textColor="@color/more_gray_text"
+            android:textSize="@dimen/dimen_px_48" />
+
+        <TextView
+            android:id="@+id/tv_verno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14px"
+            android:textColor="@color/more_setting_text"
+            android:textSize="@dimen/dimen_px_42" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"></View>
+</com.zhy.autolayout.AutoLinearLayout>

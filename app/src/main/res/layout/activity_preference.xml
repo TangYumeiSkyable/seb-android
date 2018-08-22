@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dadada"></View>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/personaldata"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/dimen_px_156">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/airpurifier_more_show_personaldatapolicy_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_px_42"
+            android:textSize="@dimen/dimen_px_48"
+            android:layout_height="wrap_content"
+            android:textColor="@color/more_setting_text"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ico_more"
+            android:layout_marginRight="@dimen/dimen_px_78" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dadada"></View>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_legalnotice"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/dimen_px_156">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/airpurifier_more_show_legals_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_px_42"
+            android:textSize="@dimen/dimen_px_48"
+            android:layout_height="wrap_content"
+            android:textColor="@color/more_setting_text"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ico_more"
+            android:layout_marginRight="@dimen/dimen_px_78" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dadada"></View>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_uesofcookies"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/dimen_px_156">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/airpurifier_more_show_cookies_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_px_42"
+            android:textSize="@dimen/dimen_px_48"
+            android:layout_height="wrap_content"
+            android:textColor="@color/more_setting_text"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ico_more"
+            android:layout_marginRight="@dimen/dimen_px_78" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dadada"></View>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_termsofuse"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/dimen_px_156">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/airpurifier_more_show_termsofuse_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_px_42"
+            android:textSize="@dimen/dimen_px_48"
+            android:layout_height="wrap_content"
+            android:textColor="@color/more_setting_text"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ico_more"
+            android:layout_marginRight="@dimen/dimen_px_78" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dadada"></View>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_settings"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/dimen_px_156">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/airpurifier_more_show_notification_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_px_42"
+            android:textSize="@dimen/dimen_px_48"
+            android:layout_height="wrap_content"
+            android:textColor="@color/more_setting_text"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ico_more"
+            android:layout_marginRight="@dimen/dimen_px_78" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dadada"></View>
+</com.zhy.autolayout.AutoLinearLayout>

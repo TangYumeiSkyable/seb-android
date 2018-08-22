@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- When the default background image-->
+    <item android:drawable="@color/default_blue" />
+    <!-- There is no focus background image -->
+    <!--<item_filter android:state_window_focused="false"
+        android:drawable="@color/default_orange" /> -->
+    <!-- The touch mode gain and click the background image -->
+    <!--<item_filter android:state_focused="true" android:state_pressed="true"   android:drawable= "@color/wallet_bright_foreground_holo_dark" /> -->
+    <!-- Click the background picture in touch mode-->
+    <!--<item_filter android:state_focused="false" android:state_pressed="true"   android:drawable="@color/wallet_bright_foreground_holo_dark" /> -->
+    <!--The selected image background-->
+    <!--<item_filter android:state_selected="true"   android:drawable="@color/wallet_bright_foreground_holo_dark" /> -->
+    <!--Gains focus when the image background-->
+    <!--<item_filter android:state_focused="true"   android:drawable="@color/wallet_bright_foreground_holo_dark" /> -->
+</selector>

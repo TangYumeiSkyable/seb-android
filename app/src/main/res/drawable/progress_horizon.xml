@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:oneshot="false">
+    <item android:drawable="@drawable/ico_p1" android:duration="400"/>
+    <item android:drawable="@drawable/ico_p2" android:duration="400"/>
+    <item android:drawable="@drawable/ico_p3" android:duration="400"/>
+    <item android:drawable="@drawable/ico_p4" android:duration="400"/>
+    <item android:drawable="@drawable/ico_p5" android:duration="400"/>
+</animation-list>

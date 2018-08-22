@@ -1,0 +1,55 @@
+<resources>
+
+    <attr name="cropImageStyle" format="reference" />
+
+    <declare-styleable name="CropImageView">
+        <attr name="highlightColor" format="reference|color" />
+        <attr name="showThirds" format="boolean" />
+        <attr name="showHandles">
+          <enum name="changing" value="0" />
+          <enum name="always" value="1" />
+          <enum name="never" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircularImage">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <attr name="indicator_style" />
+
+    <attr name="indicator_width" format="dimension" />
+    <attr name="indicator_height" format="dimension" />
+    <attr name="indicator_margin" format="dimension" />
+    <attr name="indicator_gravity">
+        <enum name="CENTER" value="17" />
+        <enum name="LEFT" value="3" />
+        <enum name="RIGHT" value="5" />
+    </attr>
+    <attr name="indicator_moving_background" format="reference|color" />
+    <attr name="indicator_background" format="reference|color" />
+    <attr name="indicator_isSnap" format="boolean" />
+
+    <attr name="indicator_moving_src" format="reference|color" />
+    <attr name="indicator_src" format="reference|color" />
+
+    <declare-styleable name="BaseIndicator">
+        <attr name="indicator_width" />
+        <attr name="indicator_height" />
+        <attr name="indicator_margin" />
+        <attr name="indicator_gravity" />
+        <attr name="indicator_moving_background" />
+        <attr name="indicator_background" />
+        <attr name="indicator_moving_src" />
+        <attr name="indicator_src" />
+        <attr name="indicator_isSnap" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchView">
+        <attr name="hasShadow" format="boolean"/>
+        <attr name="primaryColor" format="color"/>
+        <attr name="primaryColorDark" format="color"/>
+        <attr name="isOpened" format="boolean"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,32 @@
+<resources>
+
+    <!--
+        Base application theme for API 19+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 19+ devices.
+    -->
+    <!-- Application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--The status bar color-->
+        <item name="colorPrimaryDark">@color/dark_blue</item>
+        <!--The Toolbar color-->
+        <item name="colorPrimary">@color/dark_blue</item>
+        <!--Return key style-->
+        <item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle</item>
+        <!--Navigation at the bottom of the color-->
+        <item name="android:navigationBarColor">@color/dark_blue</item>
+        <item name="android:windowTranslucentNavigation" >true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--<span style="white-space:pre"></span>-->
+        <item name="android:typeface">monospace</item>
+    </style>
+    <style name="AppTheme.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+    <style name="circle_text_style">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

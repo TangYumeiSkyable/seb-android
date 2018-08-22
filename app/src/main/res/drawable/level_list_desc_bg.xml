@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/img_p2"
+        android:maxLevel="2"/>
+    <item
+        android:drawable="@drawable/img_p4"
+        android:maxLevel="4"/>
+    <item
+        android:drawable="@drawable/img_p5"
+        android:maxLevel="5"/>
+    <item
+        android:drawable="@drawable/img_p6"
+        android:maxLevel="6"/>
+    <item
+        android:drawable="@drawable/img_p7"
+        android:maxLevel="7"/>
+    <item
+        android:drawable="@drawable/img_p8"
+        android:maxLevel="8"/>
+    <item
+        android:drawable="@drawable/img_p10"
+        android:maxLevel="10"/>
+    <item
+        android:drawable="@drawable/img_p11"
+        android:maxLevel="11"/>
+    <item
+        android:drawable="@drawable/img_p13"
+        android:maxLevel="13"/>
+    <item
+        android:drawable="@drawable/img_p15"
+        android:maxLevel="15"/>
+
+</level-list>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/ico_face_happy"
+        android:maxLevel="1"/>
+    <item
+        android:drawable="@drawable/ico_face_general"
+        android:maxLevel="2"/>
+    <item
+        android:drawable="@drawable/ico_face_sad"
+        android:maxLevel="3"/>
+
+</level-list>

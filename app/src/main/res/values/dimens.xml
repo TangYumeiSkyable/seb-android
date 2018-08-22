@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_space_nomal">10dp</dimen>
+    <dimen name="activity_space_middle">5dp</dimen>
+    <dimen name="activity_btn_space">20dp</dimen>
+    <dimen name="activity_btn_APspace">30dp</dimen>
+
+    
+    <!-- text size -->
+    <dimen name="text_size_normal">16dp</dimen>
+    <dimen name="text_size_middle">14dp</dimen>
+    <dimen name="text_size_min">12dp</dimen>
+    <dimen name="text_size_mini">10dp</dimen>
+
+    <dimen name="crop__bar_height">48dp</dimen>
+
+    <!-- share activity-->
+    <dimen name="share_img">238dp</dimen>
+    <dimen name="popmenu_width">100dp</dimen>
+    <dimen name="popmenu_yoff">5dp</dimen>
+
+    <!-- barcode -->
+    <dimen name="barcode_cross_length">54dp</dimen>
+    <dimen name="barcode_cross_width">1.3dp</dimen>
+
+    <dimen name="small_text">16sp</dimen>
+    <dimen name="middle_text">18sp</dimen>
+    <dimen name="big_text">20sp</dimen>
+    <dimen name="dimen_px_1">1px</dimen>
+    <dimen name="dimen_px_6">6px</dimen>
+    <dimen name="dimen_px_12">12px</dimen>
+    <dimen name="dimen_px_18">18px</dimen>
+    <dimen name="dimen_px_24">24px</dimen>
+    <dimen name="dimen_px_30">30px</dimen>
+    <dimen name="dimen_px_36">36px</dimen>
+    <dimen name="dimen_px_42">42px</dimen>
+    <dimen name="dimen_px_44">44px</dimen>
+    <dimen name="dimen_px_48">48px</dimen>
+    <dimen name="dimen_px_60">60px</dimen>
+    <dimen name="dimen_px_f60">-60px</dimen>
+    <dimen name="dimen_px_66">66px</dimen>
+    <dimen name="dimen_px_72">72px</dimen>
+    <dimen name="dimen_px_78">78px</dimen>
+    <dimen name="dimen_px_90">90px</dimen>
+    <dimen name="dimen_px_95">95px</dimen>
+    <dimen name="dimen_px_120">120px</dimen>
+    <dimen name="dimen_px_126">126px</dimen>
+    <dimen name="dimen_px_132">132px</dimen>
+    <dimen name="dimen_px_138">138px</dimen>
+    <dimen name="dimen_px_150">150px</dimen>
+    <dimen name="dimen_px_156">156px</dimen>
+    <dimen name="dimen_px_162">162px</dimen>
+    <dimen name="dimen_px_174">174px</dimen>
+    <dimen name="dimen_px_180">180px</dimen>
+    <dimen name="dimen_px_210">210px</dimen>
+    <dimen name="dimen_px_320">320px</dimen>
+    <dimen name="dimen_px_480">480px</dimen>
+    <dimen name="dimen_px_804">804px</dimen>
+    <dimen name="dimen_px_840">840px</dimen>
+    <dimen name="dimen_px_900">900px</dimen>
+    <dimen name="dimen_px_954">954px</dimen>
+    <dimen name="dimen_px_960">960px</dimen>
+    <dimen name="dimen_px_972">972px</dimen>
+    <dimen name="dimen_px_1080">1080px</dimen>
+    <dimen name="dimen_px_1314">1314px</dimen>
+    <dimen name="dimen_px_1554">1554px</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="circle_size">10dp</dimen>
+    <dimen name="circle_space">5dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_53">53dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="airpurifier_setting_item_height">60dp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_100">100dp</dimen>
+    <dimen name="dimen_60dp">60dp</dimen>
+
+    <dimen name="dimen_0dp">0dp</dimen>
+
+</resources>

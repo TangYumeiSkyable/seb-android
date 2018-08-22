@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_phonerl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_px_60"
+        android:layout_marginRight="@dimen/dimen_px_60"
+        android:layout_marginTop="132px">
+
+        <TextView
+            android:id="@+id/tv_phone_lbl"
+            android:layout_width="250px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_px_42"
+            android:text="@string/airpurifier_login_show_email_text"
+            android:textSize="@dimen/dimen_px_48" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="570px"
+            android:layout_height="126px"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="@dimen/dimen_px_48"
+            android:layout_toRightOf="@id/tv_phone_lbl"
+            android:background="@drawable/radius_white_bg_blue_border"
+            android:gravity="center"
+            android:hint="@string/airpurifier_register_show_pwd_placeholder"
+            android:paddingBottom="12dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="12dp"
+            android:singleLine="true"
+            android:textColor="@color/link_input_text"
+            android:textColorHint="@color/input_hint"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/dimen_px_42" />
+
+        <ImageView
+            android:id="@+id/delete_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/phone"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:src="@drawable/ico_delete"
+            android:visibility="visible" />
+
+        <ToggleButton
+            android:id="@+id/tb_email_checked"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:button="@null"
+            android:checked="false"
+            android:drawableRight="@drawable/circle_check_selector"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:textColor="@color/link_input_text"
+            android:textOff=""
+            android:textOn="" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <!-- Verification code -->
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_psd1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_px_60"
+        android:layout_marginRight="@dimen/dimen_px_60"
+        android:layout_marginTop="54px">
+
+        <TextView
+            android:id="@+id/tv_vcode"
+            android:layout_width="250px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_px_42"
+            android:text="@string/airpurifier_login_show_pwd_text"
+            android:textSize="@dimen/dimen_px_48" />
+
+        <EditText
+            android:id="@+id/login_edit_pwd"
+            style="@style/EditTextStyle"
+            android:layout_width="570px"
+            android:layout_height="126px"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="@dimen/dimen_px_48"
+            android:layout_toRightOf="@id/tv_vcode"
+            android:hint="@string/airpurifier_register_show_pwd_placeholder"
+            android:maxLength="30"
+            android:password="true"
+            android:singleLine="true"
+            android:textSize="@dimen/dimen_px_42" />
+
+        <ImageView
+            android:id="@+id/iv_password_visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/login_edit_pwd"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:src="@drawable/selector_psw_is_visible"
+            android:visibility="visible" />
+
+        <ToggleButton
+            android:id="@+id/show_password"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:button="@null"
+            android:checked="false"
+            android:drawableRight="@drawable/circle_check_selector"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:textColor="@color/link_input_text"
+            android:textOff=""
+            android:textOn="" />
+        <!-- android:background="@drawable/send_code_button" -->
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_psd2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="54px"
+        android:layout_marginLeft="@dimen/dimen_px_60"
+        android:layout_marginRight="@dimen/dimen_px_60"
+        android:layout_marginTop="54px">
+
+        <TextView
+            android:id="@+id/tv_psd_lbl"
+            android:layout_width="250px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_px_42"
+            android:text="@string/airpurifier_login_show_registeconfirmpwd_text"
+            android:textSize="@dimen/dimen_px_48" />
+
+        <ToggleButton
+            android:id="@+id/show_confirm_password"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:button="@null"
+            android:checked="false"
+            android:drawableRight="@drawable/circle_check_selector"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:textColor="@color/link_input_text"
+            android:textOff=""
+            android:textOn="" />
+
+        <EditText
+            android:id="@+id/confirm_pwd"
+            style="@style/EditTextStyle"
+            android:layout_width="570px"
+            android:layout_height="126px"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="@dimen/dimen_px_48"
+            android:layout_toEndOf="@+id/tv_psd_lbl"
+            android:layout_toRightOf="@+id/tv_psd_lbl"
+            android:hint="@string/airpurifier_register_show_pwd_placeholder"
+            android:maxLength="30"
+            android:password="true"
+            android:singleLine="true"
+            android:textSize="@dimen/dimen_px_42" />
+
+
+        <ImageView
+            android:id="@+id/iv_confirm_password_visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/confirm_pwd"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:src="@drawable/selector_psw_is_visible" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="102px"
+        android:layout_marginRight="102px"
+        android:text="@string/airpurifier_login_show_registepasswordrule_text"
+        android:textColor="@color/more_gray_text" />
+
+    <Button
+        android:id="@+id/phone_next"
+        style="@style/btn_style"
+        android:layout_width="900px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="54px"
+        android:background="@drawable/selectors_btn_disabled"
+        android:text="@string/airpurifier_login_show_button_submittext"
+        android:textSize="@dimen/dimen_px_48" />
+
+</com.zhy.autolayout.AutoLinearLayout>

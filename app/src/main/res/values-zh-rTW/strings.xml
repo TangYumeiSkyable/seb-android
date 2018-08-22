@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_cm_san_qrcode">請掃瞄機身背面的QR碼</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_cm_san_qrcode_msg">請允許 Tefal 訪問您的相機, 在您的隱私設置/相機</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_public_ok">確認</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_public_cancel">取消</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_public_refuse">拒絕</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_public_confirm">確認</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_public_nodata">沒有資料</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_public_fail">失敗</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_public_success">成功</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_cookies_title">Cookie</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_cookies_more">設定</string>
+    <!-- Forgot password -->
+    <string name="airpurifier_login_show_forgetpwd_text">忘記密碼</string>
+    <!-- Registered users -->
+    <string name="airpurifier_login_show_register_text">建立帳戶</string>
+    <!-- The login -->
+    <string name="airpurifier_login_show_button_text">登入</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_email_hint">輸入電郵地址</string>
+    <!-- Please enter the password -->
+    <string name="airpurifier_login_show_pwd_hint">輸入密碼</string>
+    <!-- Account or password is not correct -->
+    <string name="airpurifier_login_show_toswrongpwdaccount_text">帳戶或密碼不正確</string>
+    <!-- Network error -->
+    <string name="airpurifier_login_show_tosneterror_text">網絡連線錯誤</string>
+    <!-- Are logged in, please wait... -->
+    <string name="airpurifier_login_show_toslogining_text">登入中，請稍候……</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_registepasswordrule_text">至少8個字元，須包括1個大階字母、1個細階字母及1個數字。</string>
+    <!-- login -->
+    <string name="airpurifier_login_show_email_text">電郵</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_currentpassword_text">目前密碼</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_pwd_text">密碼</string>
+    <!-- submit -->
+    <string name="airpurifier_login_show_button_submittext">提交</string>
+    <!-- This number has been registered -->
+    <string name="airpurifier_login_show_registertosphonealreadyregidter_text">此帳戶已存在</string>
+    <!-- Mobile phone number is invalid -->
+    <string name="airpurifier_login_show_registertosinvalidphonenumber_text">電郵地址不正確</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_registerwelcome_text">歡迎來到 Tefal 宇宙! 請先閱讀協定並確認接受。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_register_agreementtitle_text">Tefal 使用者協定</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_registeracceptagreement_text">確認</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_registerreadagreement_text">我已閱讀並同意《Tefal使用者協議》。</string>
+    <!-- Confirm password -->
+    <string name="airpurifier_login_show_registeconfirmpwd_text">確認密碼</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_changepassword_text">重設密碼</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_login_text">登入</string>
+    <!-- Retrieve password -->
+    <string name="airpurifier_login_show_reset_title_text">找回密碼</string>
+    <!-- Registration failed -->
+    <string name="airpurifier_login_show_registertosregistfailed_text">登入失敗</string>
+    <!-- No equipment -->
+    <string name="airpurifier_login_show_tosnodevice_text">沒有裝置</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_register_show_registertext_title">註冊</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_register_findpwd">找回密碼</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_register_show_pwd_placeholder">請在這裡輸入</string>
+    <!-- registered -->
+    <string name="airpurifier_register_show_inputemailaddress_hint">輸入電郵地址</string>
+    <!-- You haven't connected devices -->
+    <string name="airpurifier_more_show_havenodevice_text">您未連接裝置</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_rightcovers_text">前蓋已打開，請檢查。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_deviceFailure_text">裝置發生錯誤</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_settings_text">設定</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_nothank_text">不，謝謝</string>
+    <!-- Open the booking -->
+    <string name="airpurifier_dialog_show_openopintment_text">啟動設定</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_dialog_show_slidingremind_text">滑動可切換至其他產品</string>
+    <!-- Head portrait -->
+    <string name="airpurifier_more_show_head_text">頭像</string>
+    <!-- nickname -->
+    <string name="airpurifier_more_show_nickname_text">暱稱</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_change_password_text">更改密碼</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_area">裝置的空間</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_start">開始</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_end">結束</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_worktime">工作日</string>
+    <!-- Exit from the current account -->
+    <string name="airpurifier_more_show_exitcurrentaccount_text">登出</string>
+    <!-- Are you sure you want to exit? -->
+    <string name="airpurifier_more_show_areyousureexit_text">確定退出？</string>
+    <!-- Improve the personal information -->
+    <string name="airpurifier_more_show_personaltitle_text">填妥個人資料</string>
+    <!-- Taking pictures -->
+    <string name="airpurifier_more_show_takephoto_text">拍照</string>
+    <!-- From the album to choose -->
+    <string name="airpurifier_more_show_selectfromalbum_text">從圖片庫選擇</string>
+    <!-- Modify the nickname -->
+    <string name="airpurifier_more_show_modifyName_title">修改暱稱</string>
+    <!-- Please enter a name -->
+    <string name="airpurifier_more_show_modifyname_hint">輸入產品名稱</string>
+    <!-- Exit from the current account -->
+    <string name="airpurifier_push_alert_pm_no">沒有其他警告</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_push_alert_pm_yes">立即啟動</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_push_alert_lv_yes">更改</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_push_msg">我們建議於回家前%s分鐘啟動空氣淨化器</string>
+    <!-- open -->
+    <string name="airpurifier_more_show_open_text"> 啟動</string>
+    <!-- close -->
+    <string name="airpurifier_more_show_close_text"> 關閉</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_preferences_text">偏好設定及法律問題</string>
+    <!-- A total of -->
+    <string name="airpurifier_more_show_gong_text">氣體</string>
+    <!-- A device -->
+    <string name="airpurifier_more_show_gongdevice_text"> 裝置</string>
+    <!-- My reservation -->
+    <string name="airpurifier_more_show_myorder_text"> 我的排程</string>
+    <!-- My news( -->
+    <string name="airpurifier_more_show_mynews_text">我的新聞</string>
+    <!-- Set up time -->
+    <string name="airpurifier_more_show_setbusinesstime_text">設定時間排程</string>
+    <!-- Free service hotline -->
+    <string name="airpurifier_more_show_freeaftersaleshotline_text">免費熱線</string>
+    <!-- After-sales service network -->
+    <string name="airpurifier_more_show_aftersalesservicenetwork_text">售後服務網絡</string>
+    <!-- Setting -->
+    <string name="airpurifier_more_show_setting_title">設定</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_theifuofproduct_text">用戶指南</string>
+    <!-- Equipment management -->
+    <string name="airpurifier_moredevice_show_mydevice_title">我的裝置</string>
+    <!-- model -->
+    <string name="airpurifier_moredevice_show_type_text">歐盟Rowenta XL</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_devicemodelnumber_text">%s</string>
+    <!-- Equipment information -->
+    <string name="airpurifier_moredevice_show_deviceinfo_text">裝置資訊</string>
+    <!-- Equipment qr code -->
+    <string name="airpurifier_moredevice_show_devicecode_text">產品共享</string>
+    <!-- Remove the binding equipment -->
+    <string name="airpurifier_more_show_sureremovebinddevice_text">解除配對</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_warning_text">警告</string>
+    <!-- Members of the management -->
+    <string name="airpurifier_moredevice_show_membermenage_text">共享資訊</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_devicemac_text">Mac位址</string>
+    <!-- Control failure -->
+    <string name="airpurifier_moredevice_show_controlfailed_text">檢查您的手機網絡</string>
+    <!-- Network anomalies -->
+    <string name="airpurifier_moredevice_show_netnormal_text">網絡錯誤</string>
+    <!-- Scan the qr code -->
+    <string name="airpurifier_moredevice_show_scanqrcode_text">掃描QR碼</string>
+    <!-- Manually add -->
+    <string name="airpurifier_moredevice_show_manuallyadd_text">手動新增</string>
+    <!-- My device -->
+    <string name="airpurifier_moredevice_show_deviceList_title">我的裝置</string>
+    <!-- Air purifier KJ600G_530 SUPOR -->
+    <string name="airpurifier_more_show_suporttreater_text">Tefal 空氣淨化器 %s</string>
+    <!-- open -->
+    <string name="airpurifier_moredevice_show_addsuccess">成功新增</string>
+    <!-- Select models -->
+    <string name="airpurifier_moredevice_show_choose_type">請選擇型號</string>
+    <!-- WIFI Settings -->
+    <string name="airpurifier_moredevice_show_wifi_set">Wi-Fi設定</string>
+    <!-- Equipment binding -->
+    <string name="airpurifier_moredevice_show_device_bind">裝置配對</string>
+    <!-- Work mode, long press light regulation and at the same time in the equipment side mesh Settings key 3 seconds (pictured above), the equipment after the "ding" 1, the WIFI light flash indicates that the equipment has to enter configuration mode.Type in the name wi-fi password, then click start configuration. -->
+    <string name="airpurifier_moredevice_show_usemethod_text">開啟空氣淨化器後，按住Wi-Fi按鈕3秒。當您聽到「叮」一聲時，Wi-Fi指示燈便會開始閃爍，表示機器處於配置模式。之後，請輸入網絡名稱及密碼，然後點擊「開始配置」。</string>
+    <!-- Add a new device -->
+    <string name="airpurifier_moredevice_show_addnewdevice_text">新增裝置</string>
+    <!-- The name of the -->
+    <string name="airpurifier_moredevice_show_name_text">姓名</string>
+    <!-- Password -->
+    <string name="airpurifier_moredevice_show_wifipwd_text">密碼</string>
+    <!-- Please remove the power supply equipment, connected the power again, and then click retry. -->
+    <string name="airpurifier_moredevice_show_pullelectricretry_text">請從插座拔掉裝置插頭，然後重新插上。</string>
+    <!-- I want to try again -->
+    <string name="airpurifier_moredevice_show_retry_text">再試一次</string>
+    <!-- Scan the qr code to add -->
+    <string name="airpurifier_moredevice_show_scanqrcode_add">請掃瞄機身背面的QR碼 </string>
+    <!-- Device name -->
+    <string name="airpurifier_more_show_modifydevicename_title">姓名</string>
+    <!-- The MAC address: -->
+    <string name="airpurifier_moredevice_show_macaddress_text">MAC位址</string>
+    <!-- Is the search equipment please wait patiently. -->
+    <string name="airpurifier_moredevice_show_searchdevicewait_text">正在搜尋裝置，請稍候……</string>
+    <!-- Add equipment -->
+    <string name="airpurifier_moredevice_show_adddevice_text">新增裝置</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_checkwifi_text">請檢查您的手機是否已開啟Wi-Fi，並檢查手機所連接的Wi-Fi是否和產品的相同。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_shareqrcode_text">透過QR碼或登入共享配對</string>
+    <!-- Refresh automatically after 5 minutes -->
+    <string name="airpurifier_more_show_fiveminutesrefreshago_text">此QR碼會在5分鐘後失效</string>
+    <!-- Through the mobile phone number to share -->
+    <string name="airpurifier_more_show_sharethroughphone_text"> 透過登入共享</string>
+    <!-- Cancel the alignment to share -->
+    <string name="airpurifier_more_show_cancelsharealign_text">取消</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_emailtip_text">請輸入正確的電郵地址。此使用者已安裝應用程式及建立帳戶。</string>
+    <!-- Mobile phone number to share -->
+    <string name="airpurifier_moredevice_show_phoneshare_text">共享電郵</string>
+    <!-- Sharing equipment failure -->
+    <string name="airpurifier_moredevice_show_devicesharefailed_text">裝置共享失敗</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_sharetophone_hint">請輸入電郵</string>
+    <!-- Modify the nickname failure -->
+    <string name="airpurifier_more_show_virifynicknamefailed_text">未能修改暱稱</string>
+    <!-- Confirm the change -->
+    <string name="airpurifier_more_show_modifyname_button">確認修改</string>
+    <!-- Select models -->
+    <string name="airpurifier_more_show_modifyname_text">建立帳戶</string>
+    <!-- Formaldehyde concentration -->
+    <string name="airpurifier_more_show_olfactory_text">甲醛濃度</string>
+    <!-- Equipment is not online -->
+    <string name="airpurifier_moredevice_show_devicenotonline_text">目前裝置不在線上</string>
+    <!-- To make an appointment time overlap -->
+    <string name="airpurifier_more_show_appointmenttimeoverlap_text">排程時間重疊</string>
+    <!-- The operation failure -->
+    <string name="airpurifier_more_show_operatorfailed_text">無法運作</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_addscheduling_text">新增排定時間</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_deleteword_text">刪除</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_suretodelete_text">確定刪除？</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_saveword_text">儲存</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_sundayword_text">星期日</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_mondayword_text">星期一</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_tuesdayword_text">星期二</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_wednesdayword_text">星期三</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_thursdayword_text">星期四</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_fridayword_text">星期五</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_saturdayword_text">星期六</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_myscheduling_tex">我的排程</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_editscheduling_tex">編輯排程</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_deletescheduling_tex">刪除排程</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_repeatsetting_tex">重複</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_sunword_text">星期日</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_monword_text">星期一</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_tuesword_text">星期二</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_wedword_text">星期三</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_thurword_text">星期四</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_friword_text">星期五</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_satword_text">星期六</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_choosedevice_text">選擇裝置</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_choosemode_text">選擇模式</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_ontime_text">開始</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_offtime_text">停止</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_repeatword_text">重複</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_devicename_tex">裝置名稱</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_devicemode_tex">裝置模式</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_autoday_tex">日間自動</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_autonight_tex">夜間自動</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_boostword_tex">加速</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_silentword_tex">靜音</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_onceword_tex">一次</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_filtercondition_tex">濾網狀態</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_prefilter_tex">初級濾網</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_activefilter_tex">活性碳濾網</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_hepafilter_tex">Allergy+濾網</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_nanofilter_tex">NanoCaptur濾網</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_overplus_tex">剩餘容量</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_tobuy_tex">購買</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_cleanfilter_tex">請清洗濾網</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_replacementremind_text">更換濾網提示</string>
+    <!-- Suggest open air purifier -->
+    <string name="airpurifier_more_show_openairpurifier_text">我們建議您啟動空氣淨化器</string>
+    <!-- Being pushed -->
+    <string name="airpurifier_more_show_msgsend_text">室內空氣質素</string>
+    <!-- Air quality report to the police -->
+    <string name="airpurifier_more_show_airqualityalerm_text">戶外空氣質素</string>
+    <!-- Parts update alert -->
+    <string name="airpurifier_more_show_memberupdatemetion_text">更換濾網</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_wifiupdatemetion_text">Wi-Fi模組更新</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_show_outdoortitle_text">戶外空氣質素</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_airquality_text">空氣質素水平</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_headline">標題</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_description">說明</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_fresh_headline">沒有風險</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_fresh_description">空氣很清新，適合進行戶外活動！</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_moderate_headline">長期接觸會造成危害</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_moderate_description">空氣污染達中等水平，較世衛所訂立的一年上限為高，長期曝露其中可能危害健康。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_high_headline">長期接觸對健康的影響</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_high_description">空氣污染達甚高水平，較世衛所訂立的24小時上限為高。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_very_headline">對健康的即時影響</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_very_description">空氣污染達甚高水平，敏感人士可能會即時感到不適，所有人長期曝露其中也會感到不適。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_excessive_headline">對敏感人士的即時影響</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_excessive_description">空氣污染已達嚴重水平，敏感人士會感受到即時影響，即使健康人士短時間曝露其中也可能出現症狀。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_extreme_headline">對所有人的即時影響</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_extreme_description">空氣污染已達嚴重水平，可對健康構成即時影響。 </string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_airpocalypse_headline">重大即時影響</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_air_airpocalypse_description">空氣災難！對所有人都有即時嚴重影響。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_fresh">清新空氣</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_moderate">污染水平中等</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_high">污染水平高</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_very">污染水平甚高</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_excessive">污染水平過高</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_extreme">污染水平嚴重</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_airpocalypse">空氣災難</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_openair_text">啟動空氣淨化器</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_personaldata_text">個人資料政策</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_legalnotice_text">法律公告</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_cookies_text">使用cookie</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_termsofuse_text">使用條款</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_notifications_text">通知設定</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_agree_text">我同意</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_cookiestitle_text">您的cookie選擇</string>
+    <!-- Formaldehyde concentration -->
+    <string name="airpurifier_more_show_cookiestitleTwoitem_text">使用應用程式期間，可能會有cookies儲存在您的裝置上。這些cookies用以儲存資料，當中部分是存取特定應用程式內容及／或服務所必須的。請對每類cookies作出選擇，完成後點擊«確認並繼續»。您可隨時在應用程式«設定»中的«使用cookies»頁面，修改這項設定。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_cookiestitles_text">受眾測量</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_cookiestitleitem_text">我們採用受眾測量方法分析傳輸量、趨勢及使用量，並偵測應用程式的異常情況，藉以改善您的使用體驗。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_adjust_show_modifycity_text">修改顯示城市</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_updatedevice_title">更新貼士</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_updatedevice_content">目前版本為%1$s，您可以更新至版本%2$s。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_update_tip_msg_start">發現新版本，請執行更新</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_update_tip_goto">更新</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_update_tip_quit">退出</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_air_remind_f">外面的空氣很清新,\n打開窗吧</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_air_remind_s">外面的空氣污染達甚高水平，應盡量遠離主要道路，只要遠離數十米已經大有不同！</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_air_remind_t">外面的空氣污染達甚高水平，應避免在戶外進行劇烈運動。\n應盡量遠離主要道路，只要遠離數十米已經大有不同！</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_air_remind_fo">外面空氣有毒 :-( 應盡量留在室內\n如果呼吸困難或心臟不適，應立即求醫</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_upload_the_avatars">圖片上載失敗</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_avatars_for_failure">頭像顯示失敗</string>
+    <!-- change password -->
+    <string name="airpurifier_personal_updatePassword_success">成功更新密碼</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_personal_updatePassword_error">未能更新密碼</string>
+    <!-- Application name -->
+    <string name="airpurifier_application_show_appname_text">Pure Air</string>
+    <!-- Enter the password for 6 to 30 -->
+    <string name="airpurifier_login_show_registerentercode_text">至少8個字元，須包括1個大階字母、1個細階字母及1個數字。</string>
+    <!-- The two passwords don't match -->
+    <string name="airpurifier_login_show_registercodenotconsistent_text">密碼不一致</string>
+    <!-- Password is changed -->
+    <string name="airpurifier_login_show_verifypwdsuccess_text">成功更改密碼</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_location_show_locationfailed_text">定位失敗</string>
+    <!-- ifu -->
+    <string name="airpurifier_ifuactivity_show_success_text">成功</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_ifuactivity_show_syncContent_text">內容同步</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_inactivity_show_Finishingactivityduetoinactivity_text">由於長期擱置，裝置正在關閉。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_invalidmail_toast">電郵地址無效</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_psdinfo_text">我們已將確認電郵發送至您的電郵地址%s，請查收。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_passwordresetfail_text">未能更改密碼</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_demi_text">半</string>
+    <!-- network anomaly -->
+    <string name="airpurifier_login_show_registernetworkanomaly_text">網絡發生錯誤，請檢查您的網絡連線</string>
+    <!-- Please check the network environment! -->
+    <string name="airpurifier_login_show_isnetwork_text">請檢查網絡！</string>
+    <!-- Login successful -->
+    <string name="airpurifier_login_show_tosloginsuccess_text">已成功登入</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_tospressagainexit_text">再點擊一下以離開</string>
+    <!-- No news -->
+    <string name="airpurifier_more_show_tosnomsg_text">沒有新聞</string>
+    <!-- This number is not registered -->
+    <string name="airpurifier_login_show_tosphonenotregidter_text">此電郵並未註冊</string>
+    <!-- Registered successfully -->
+    <string name="airpurifier_login_show_tosregistsuccessful_text">成功註冊</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_selfcheck_check_title_text">自我檢查模式</string>
+    <!-- more -->
+    <string name="airpurifier_more_show_invaliddevice_text">裝置無效</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_cancel_button">取消</string>
+    <!-- Stop check -->
+    <string name="airpurifier_more_show_checkend_text">停止檢查</string>
+    <!-- Uploaded successfully -->
+    <string name="airpurifier_more_show_uplode_success">成功上載</string>
+    <!-- Upload failed -->
+    <string name="airpurifier_more_show_uplode_failed">上載失敗</string>
+    <!-- More and more -->
+    <string name="airpurifier_more_show_titlemore_text">更多</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_zero_text">0</string>
+    <!-- A total of 2 equipment -->
+    <string name="airpurifier_more_show_twodevice_text">沒有裝置</string>
+    <!-- Mesh state -->
+    <string name="airpurifier_more_show_sievestate_text">濾網狀態</string>
+    <!-- With reference to air quality standards -->
+    <string name="airpurifier_more_show_airqualitystandardconsult_text">用戶指南</string>
+    <!-- change password -->
+    <string name="airpurifier_more_show_changepwd_text">更改密碼</string>
+    <!-- Change Password title -->
+    <string name="airpurifier_more_show_changepwdtitle_text">更改密碼</string>
+    <!-- current password -->
+    <string name="airpurifier_more_show_currentpwd_text">目前密碼</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_fragment_wifi1_text">1. 啟用產品，然後按住藍色Wi-Fi按鈕3秒。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_fragment_wifi2_text">2. 產品發出「叮」一聲，同時Wi-Fi指示燈閃爍，表示機器處於配置模式。 </string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_fragment_wifi3_text">3. 輸入家中的Wi-Fi密碼。</string>
+    <!-- Software version -->
+    <string name="airpurifier_more_show_softversion_text">軟件版本</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_typeki_text">歐盟Rowenta XL</string>
+    <!-- poor -->
+    <string name="airpurifier_more_show_poor_text">劣</string>
+    <!-- 1 bedroom -->
+    <string name="airpurifier_moredevice_show_room1_text">房間1</string>
+    <!-- Configuration failed. Let's see here may be wrong: -->
+    <string name="airpurifier_moredevice_show_configerrorseewhere_text">配置失敗。讓我們找出錯誤：</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_runregularornot_text">(1) 機器是否運作正常？</string>
+    <!-- (2)The wi-fi network connection open? -->
+    <string name="airpurifier_moredevice_show_wificonnectregular_text">(2) 是否已開啟Wi-Fi連線？</string>
+    <!-- Remove the binding equipment -->
+    <string name="airpurifier_moredevice_show_unbinddevice_button">解除裝置的綁定</string>
+    <!-- ! Missing context ! -->
+    <string name="add_a_product">新增產品</string>
+    <!-- ok -->
+    <string name="airpurifier_moredevice_show_sure_button">確認</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_confirm_text">確認</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_refuse_text">拒絕</string>
+    <!-- Please enter a name -->
+    <string name="airpurifier_moredevice_show_hintwifi_hint">帳戶</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_modulenumber_text">%s</string>
+    <!-- Qr code scanning device, supor add equipment for you -->
+    <string name="airpurifier_barcode_show_laser_tip">請掃瞄機身背面的QR碼</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_notification_show_title_text">稱謂</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_notification_show_message_text">訊息</string>
+    <!-- (Hey hey, secretly listen to tell you, I am a custom) -->
+    <string name="airpurifier_notification_show_content_text">自訂訊息</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_tenminutsstartsupor_text">我們建議於回家前10分鐘於客廳啟動空氣淨化器。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_adjust_show_currentcity_text">目前城市</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_adjust_show_none_text">沒有</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_socialize_show_useexistingaccountcomment_text">使用目前帳戶留言</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_socialize_show_netloadfailed_text">網絡載入失敗，請再試一次。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_socialize_show_qqzone_text">QQqzone</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_needchange_text">需要更換</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_dialog_show_cue_text">提示</string>
+    <!-- Open the purifier to success -->
+    <string name="airpurifier_more_show_opensupotrsuccess_text">已啟動空氣淨化器</string>
+    <!-- A new user -->
+    <string name="airpurifier_more_show_newuser_text">新使用者</string>
+    <!-- Please enter a nickname under 12 -->
+    <string name="airpurifier_more_show_enternickname_text">請輸入一個不多於12個英文字母的暱稱</string>
+    <!-- Please enter a nickname -->
+    <string name="airpurifier_more_show_pleaseenternickname_text">請輸入暱稱</string>
+    <!-- Please enter the device name -->
+    <string name="airpurifier_more_show_pleaseenterdevicename_text">請輸入裝置名稱</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_suredeletemember_text">確定刪除「%s」?</string>
+    <!-- Have no legal power -->
+    <string name="airpurifier_more_show_noauthority_text">不允許</string>
+    <!-- Equipment binding Equipment -->
+    <string name="airpurifier_more_show_binddevice_text">BindDevice</string>
+    <!-- Unbundling success -->
+    <string name="airpurifier_more_show_ubbindsuccess_text">成功移除</string>
+    <!-- Unbundling failure -->
+    <string name="airpurifier_more_show_ubbindfailed_text">未能移除</string>
+    <!-- Cancel to share success -->
+    <string name="airpurifier_more_show_cancelsharesuccess_text">成功取消共享</string>
+    <!-- Cancel the sharing failure -->
+    <string name="airpurifier_more_show_cancelsharefailed_text">未能取消共享</string>
+    <!-- Sharing of success -->
+    <string name="airpurifier_moredevice_show_sharesuccessful_text">成功共享</string>
+    <!-- The user does not exist -->
+    <string name="airpurifier_moredevice_show_usernotexist_text">使用者不存在</string>
+    <!-- Please enter a correct phone number -->
+    <string name="airpurifier_moredevice_show_pleaseenterrightphone_text">請輸入正確的電郵</string>
+    <!-- Successfully adding timing -->
+    <string name="airpurifier_more_show_adddingtimesuccess_text">成功新增排程</string>
+    <!-- Modify the timing success -->
+    <string name="airpurifier_more_show_verifydingtimesuccess_text">成功修改排程</string>
+    <!-- Timing was removed successfully -->
+    <string name="airpurifier_more_show_deletedingtimesuccess_text">成功刪除排程</string>
+    <!-- Open the timing success -->
+    <string name="airpurifier_more_show_open_dingtime_success_text">成功啟用排程</string>
+    <!-- Closing time success -->
+    <string name="airpurifier_more_show_closedingtimesuccess_text">成功關閉排程</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_bindsuccessfuly_text">已成功配對</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_bindfailed_text">配對失敗</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_qrcodeidwrong_text">QR碼不正確</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_qrcodeisoverdue_text">QR碼已過期</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_moredevice_show_additionfailed_text">新增失敗</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_theleft_text">左</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_getit_text">明白了</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_scanqrcode_text"> 掃描QR碼</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_callconfirm_text">確定致電「%s」？</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_updatetipmsg_text">目前版本為 V%s，</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_nodevice_text">沒有裝置</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_noscheduling_text">目前沒有排程</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_cancelword_text">取消</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_cookiesmsg_text">「Pure Air」透過通知功能來向您傳送室內及戶外污染高峰警示，以及隨時為您提供適當的建議，助您呼吸到純淨的空氣。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_notification_text">通知設定</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_personaldatapolicy_text">個人資料政策</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_legals_text">法律公告</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_ifu_title">用戶指南</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_more_text">更多</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_preference_text">偏好設定</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_legal_text">法律</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_filtertitile_text">更換濾網提示</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_filteritemone_text">的濾網 </string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_filteritemtwo_text">已使用了</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_filteritemthree_text">\t 小時，消耗率達</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_percentage">\%%</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_pmtitle_text">我們建議您啟動空氣淨化器</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_pmitem_text">的空氣質素 </string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_pmitem_text2"> 欠佳。我們建議您減少戶外活動，並啟動您的空氣淨化器</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_pmitems_text">我們建議您減少戶外活動。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_tvno2">NO₂</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_tvpm25">PM2.5</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_tvo3">O₃</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_tvpm10">PM10</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_pm25">PM2.5指直徑少於2.5微米的粒子，可輕易穿透肺細胞的細胞膜。 </string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_o3">臭氧（O₃）是氧的其中一種形式，每粒分子含有三粒原子，而非一般含有兩粒原子。臭氧在高層大氣時，會吸收紫外線，對地球生物具有保護作用。可是，如果臭氧接近地球表面，就會變成有害的污染物，引起呼吸道疾病，例如哮喘。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_no2">二氧化氮（NO₂）是其中一種高度活性氣體，主要經燃燒燃料釋放到空氣中。吸入含高濃度二氧化氮的空氣，可對人體呼吸系統的呼吸道造成刺激。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_pm10">PM10是指直徑少於10微米的粒子。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_no_camera_permission">沒有相機權限，請前往設定授予權限</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_no_storage_permission">沒有儲存裝置權限，請前往設定授予權限</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_no_phone_permission">沒有手機權限，請前往設定授予權限</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_update_tip_title">更新貼士</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_update_tip_msg2"> 您可以更新至版本V%s</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_update_success">已成功更新</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_update_failed">更新失敗</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_airquality_notification_1_a">外面的空氣很清新，好好享受戶外活動吧！</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_airquality_notification_1_b">外面的空氣很清新，打開窗吧！</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_airquality_notification_3_a">外面的空氣污染處於高水平，應避免在戶外進行劇烈運動。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_airquality_notification_3_b">外面的空氣受到污染，應盡量遠離主要道路，只要遠離數十米已經大有不同！</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_airquality_notification_4_a">外面的空氣污染達甚高水平，應避免在戶外進行劇烈運動。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_airquality_notification_4_b">外面的空氣污染達甚高水平，應盡量遠離主要道路，只要遠離數十米已經大有不同！</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_airquality_notification_5_a">空氣有毒 :-(\n應盡量留在室內</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_outdoor_airquality_notification_5_b">如果呼吸困難或心臟不適，應立即求醫</string>
+    <!-- loading... -->
+    <string name="airpurifier_personal_loading">正在上載檔案……</string>
+    <!-- ! Missing context ! -->
+    <string name="circle_pm25_des">微細懸浮粒子及致敏原</string>
+    <!-- ! Missing context ! -->
+    <string name="pm25_unit">微克／立方米</string>
+    <!-- ! Missing context ! -->
+    <string name="circle_gas_des">氣體</string>
+    <!-- ! Missing context ! -->
+    <string name="air_quality_A">純淨的空氣</string>
+    <!-- ! Missing context ! -->
+    <string name="firmware_version">韌體版本</string>
+    <!-- ! Missing context ! -->
+    <string name="start">開始</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p2">請確保您的手機已連接家中的Wi-Fi網絡。</string>
+    <!-- ! Missing context ! -->
+    <string name="need_connect_wifi">您未連線至家中的Wi-Fi網絡。請將您的智能手機連線至Wi-Fi。\n</string>
+    <!-- ! Missing context ! -->
+    <string name="know">我明白了</string>
+    <!-- ! Missing context ! -->
+    <string name="select_product">請選擇裝置</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p4">啟動您的空氣淨化器</string>
+    <!-- ! Missing context ! -->
+    <string name="next">更多詳情</string>
+    <!-- ! Missing context ! -->
+    <string name="active_wifi">使用中的Wi-Fi</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p5">按住Wi-Fi按鈕3秒，您會聽到兩下「叮」一聲，同時Wi-Fi按鈕閃爍，表示Wi-Fi已開啟。</string>
+    <!-- ! Missing context ! -->
+    <string name="turn_on">啟動產品</string>
+    <!-- ! Missing context ! -->
+    <string name="fragment_p6_title">連線至空氣淨化器</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p6"> 1) 前往您的Wi-Fi設定，並等待一個名為「AIR PURIFIER XXXX」的網絡出現\n 2) 請依照機身背面的貼紙所述連線至網絡 \n 3) 返回「Pure Air」應用程式。</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p6_bt_text">前往Wi-Fi設定</string>
+    <!-- ! Missing context ! -->
+    <string name="connect">連線中……　</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p8">即將完成……</string>
+    <!-- ! Missing context ! -->
+    <string name="name">姓名</string>
+    <!-- ! Missing context ! -->
+    <string name="password">密碼</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_desc_p9">檢查Wi-Fi是否您家中的Wi-Fi熱點，然後輸入密碼</string>
+    <!-- ! Missing context ! -->
+    <string name="fragment_p9_title">連線至家中的Wi-Fi</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p9_bt">新增裝置</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p10">您的空氣淨化器正在連線至家中的Wi-Fi網絡……</string>
+    <!-- ! Missing context ! -->
+    <string name="adresse_mac">MAC位址</string>
+    <!-- ! Missing context ! -->
+    <string name="devicename">裝置名稱</string>
+    <!-- ! Missing context ! -->
+    <string name="confirm">確認</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p13_desc">現在，您的空氣淨化器毋需經智能手機也能連接網絡。只要安裝「Pure Air」應用程式，您便能隨時隨地控制您的空氣淨化器！</string>
+    <!-- ! Missing context ! -->
+    <string name="ok">確認</string>
+    <!-- ! Missing context ! -->
+    <string name="fragment_p12_title">為您的空氣淨化器命名</string>
+    <!-- ! Missing context ! -->
+    <string name="fragment_p13_title">恭喜！</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p15_desc">糟糕！您的應用程式未連接「AIR PURIFIER」Wi-Fi網絡。</string>
+    <!-- ! Missing context ! -->
+    <string name="fragment_p15_title">未能連線至空氣淨化器</string>
+    <!-- ! Missing context ! -->
+    <string name="fragment_p14_one">檢查您所輸入的密碼是否正確無誤</string>
+    <!-- ! Missing context ! -->
+    <string name="fragment_p14_two">檢查您家中的Wi-Fi是否運作正常</string>
+    <!-- ! Missing context ! -->
+    <string name="fragment_p14_three">如果機器上的Wi-Fi指示燈沒有閃爍，請按住Wi-Fi按鈕3秒。</string>
+    <!-- ! Missing context ! -->
+    <string name="fragment_p14_four">如果沒有任何方法奏效，請嘗試重新啟動機器。</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p11">您的空氣淨化器現已連線至家中的Wi-Fi網絡。</string>
+    <!-- ! Missing context ! -->
+    <string name="link_wifi_name_error">請連線至指定Wi-Fi網絡</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p1">您的帳戶並未綁定任何裝置。</string>
+    <!-- ! Missing context ! -->
+    <string name="fail">未能更改裝置名稱</string>
+    <!-- ! Missing context ! -->
+    <string name="moderate">中</string>
+    <!-- ! Missing context ! -->
+    <string name="pollution">污染</string>
+    <!-- ! Missing context ! -->
+    <string name="high">高</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_p12">您可以為您的空氣淨化器命名。</string>
+    <!-- ! Missing context ! -->
+    <string name="device_list_fail">未能取得產品類型，請檢查您的網絡連線</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_success">Aplink連接成功</string>
+    <!-- ! Missing context ! -->
+    <string name="aplink_fail">Aplink連接失敗</string>
+    <!-- ! Missing context ! -->
+    <string name="binddevice_fail">BindDevice連接失敗</string>
+    <!-- ! Missing context ! -->
+    <string name="XL_default_name">Intense Pure Air XL Connect</string>
+    <!-- ! Missing context ! -->
+    <string name="xs_default_name">Intense Pure Air Connect</string>
+    <!-- ! Missing context ! -->
+    <string name="psw_not_empty">密碼不能留空</string>
+    <!-- ! Missing context ! -->
+    <string name="not_found">找不到</string>
+    <!-- ! Missing context ! -->
+    <string name="input_password">輸入密碼</string>
+    <!-- ! Missing context ! -->
+    <string name="relocation">地理位置追蹤</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_mydevice_device_name"> </string>
+    <!-- ! Missing context ! -->
+    <string name="placeholder">%s</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_nickname_hint">輸入暱稱</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_devices">裝置</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_userinfomation_user_guide">用戶指南</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_userinfomation_FAQ">常見問題</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_userinfomation">資料</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_contact_us">尋求協助：聯絡我們</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_get_country_list_fail">未能取得城市清單，請檢查您的網絡連線</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_failed_get_device_list">未能取得裝置清單，請檢查您的網絡連線</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_faq_failed_get_data">未能找回資料，請檢查您的網絡連線</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_regist_fail">註冊失敗</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_fail">登入失敗</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_regist_login_fail">您的帳戶已成功建立。請點擊「確認」以前往登入頁面。\n</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_loading">載入中，請稍候……</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_no_peimission">檢查您是否已在設定中啟用位置權限。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_aplink_request_permission_tip">為成功與產品建立連線，Android或會請求授予存取權限。請接受。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_aplink_fail_about_permission">檢查您是否已在設定中啟用位置權限。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_add_shchedule_tip">如果開始時間比目前時間早，該排程將於下一天開始。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_filtercondition_content_key">濾網狀態</string>
+    <!-- ! Missing context ! -->
+    <string name="no_permission">沒有權限</string>
+    <!-- ! Missing context ! -->
+    <string name="prefilter">初級濾網</string>
+    <!-- ! Missing context ! -->
+    <string name="active_carbon">活性碳濾網</string>
+    <!-- ! Missing context ! -->
+    <string name="hepa">Allergy+濾網</string>
+    <!-- ! Missing context ! -->
+    <string name="nanocapur">NanoCaptur濾網</string>
+    <!-- ! Missing context ! -->
+    <string name="umeng_message_alert_choose_ok">確認</string>
+    <!-- ! Missing context ! -->
+    <string name="immediately_turn_on">立即啟動</string>
+    <!-- ! Missing context ! -->
+    <string name="no_more_warn">沒有其他警告</string>
+    <!-- ! Missing context ! -->
+    <string name="to_change">待更改</string>
+    <!-- ! Missing context ! -->
+    <string name="UmengMessageAlertDialog_content_one">您的裝置</string>
+    <!-- ! Missing context ! -->
+    <string name="UmengMessageAlertDialog_content_two">濾網消耗率已超過</string>
+    <!-- ! Missing context ! -->
+    <string name="UmengMessageAlertDialog_content_three">\%%。為確保良好的空氣淨化質素，請予以更換。</string>
+    <!-- ! Missing context ! -->
+    <string name="severe_pollution">污染水平高</string>
+    <!-- ! Missing context ! -->
+    <string name="umeng_message_alert_excellent">佳</string>
+    <!-- ! Missing context ! -->
+    <string name="umeng_message_alert_good">良好</string>
+    <!-- ! Missing context ! -->
+    <string name="umeng_message_alert_terrible">劣</string>
+    <!-- ! Missing context ! -->
+    <string name="umeng_message_alert_advises">We advise you to turn on your air purifier</string>
+    <!-- ! Missing context ! -->
+    <string name="umeng_message_alert_off_duty">關閉</string>
+    <!-- ! Missing context ! -->
+    <string name="umeng_message_alert_on_duty">啟動</string>
+    <!-- ! Missing context ! -->
+    <string name="umeng_message_alert_content_four">We advise you to turn on your air purifier</string>
+    <!-- ! Missing context ! -->
+    <string name="umeng_message_alert_content_five">前10分鐘\n</string>
+    <!-- ! Missing context ! -->
+    <string name="umeng_message_alert_choose_cancel">取消</string>
+    <!-- ! Missing context ! -->
+    <string name="umeng_message_alert_current_air_quality">目前空氣質素</string>
+    <!-- ! Missing context ! -->
+    <string name="logout_failed">登出失敗</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_user_agreement_content">及個人資料政策。</string>
+    <!-- ! Missing context ! -->
+    <string name="request_permission_tip">必須啟用Wi-Fi和定位服務</string>
+    <!-- ! Missing context ! -->
+    <string name="request_permission_has">已啟用Wi-Fi和定位服務</string>
+    <!-- ! Missing context ! -->
+    <string name="request_permission_titile">Wi-Fi和定位服務</string>
+    <!-- ! Missing context ! -->
+    <string name="request_permission_wifi_online">已啟用Wi-Fi</string>
+    <!-- ! Missing context ! -->
+    <string name="request_permission_wifi_offline">已停用Wi-Fi</string>
+    <!-- ! Missing context ! -->
+    <string name="request_location_has">已啟用定位服務</string>
+    <!-- ! Missing context ! -->
+    <string name="request_location_no">已停用定位服務</string>
+    <!-- ! Missing context ! -->
+    <string name="request_location_wifi_button">啟用Wi-Fi</string>
+    <!-- ! Missing context ! -->
+    <string name="request_location_location_button">啟用定位服務</string>
+    <!-- ! Missing context ! -->
+    <string name="request_location_location_and_wifi">更多詳情</string>
+    <!-- ! Missing context ! -->
+    <string name="request_permission_more_info_title">功能</string>
+    <!-- ! Missing context ! -->
+    <string name="request_permission_more_info2">在此過程中, 它將需用使用位置許可權來獲取附近 WiFi 網路的資訊。</string>
+    <!-- ! Missing context ! -->
+    <string name="request_permission_more_info1">與產品的配對是使用您的本地 WiFi 網路進行的。產品將使用您手機的WiFi連接您的互聯網盒。</string>
+    <!-- ! Missing context ! -->
+    <string name="request_permission_can_next_text">你的裝置已準備好進行配對。你可以表下 \”下一步\”</string>
+    <!-- ! Missing context ! -->
+    <string name="password_not_secured_enough">您的密碼不夠安全。請選擇一個更複雜的密碼：避免名字，姓氏，電子郵件</string>
+    <!-- ! Missing context ! -->
+    <string name="locate_fail">定位失敗</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_moderate_new">適度污染</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_airquality_high_new">高污染</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_connect_fail_retry">重試</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_show_personalDataPolicy_text">及個人資料政策。</string>
+    <!-- ! Missing context ! -->
+    <string name="Reigist_Changepwd_errorcode_2015_toast_text">您的密碼不夠安全。請選擇一個更複雜的密碼：避免名字，姓氏，電子郵件</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_cropimage_show_cropsaving_text">正在保存圖片</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_cropimage_show_cropwait_text">請稍候。。。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_crop_show_pick_error_text">沒有可用的圖像源</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_crop_show_done_text">確認</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_crop_show_cancel_text">取消</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_more_show_cookiestitle2item_text">使用應用程式期間，可能會有cookies儲存在您的手機上。這些cookies用以儲存資料，當中部分是存取特定應用程式內容及／或服務所必須的。請選擇要使用哪些cookies。您可隨時在應用程式«設定»中的«使用cookies»頁面，修改這項設定。</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_cookies_title_android">Cookie</string>
+    <!-- ! Missing context ! -->
+    <string name="airpurifier_login_cookies_msg_android">當您點擊「確認」，表示您同意使用受眾測量cookies改進您的使用體驗。</string>
+</resources>

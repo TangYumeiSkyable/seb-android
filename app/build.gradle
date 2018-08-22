@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+android {
+    signingConfigs {
+        config {
+            keyAlias 'rihuisoft'
+            keyPassword '123456'
+            storeFile file('./rihuisoft.keystore')
+            storePassword '123456'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    compileSdkVersion 25
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.groupeseb.airpurifier"
+        minSdkVersion 16
+        targetSdkVersion 23
+        multiDexEnabled true
+        flavorDimensions "versionCode"
+        setProperty("archivesBaseName", "SEB-${versionName}-${releaseTime()}")
+    }
+    productFlavors {
+        Asia {
+            buildConfigField("Boolean","isAsiaBranch",'true')
+            applicationId "com.groupeseb.airpurifier"
+            versionName "2.0.0"
+            versionCode 10
+            setProperty("archivesBaseName", "SEB-${versionName}-${releaseTime()}")
+            resValue "string", "app_name", "Pure Air"
+        }
+        Eur_America {
+            buildConfigField("Boolean","isAsiaBranch",'false')
+            applicationId "com.groupeseb.airpurifier"
+            versionCode 1
+            versionName "1.0.0"
+            setProperty("archivesBaseName", "SEB-${versionName}-${releaseTime()}")
+            resValue "string", "app_name", "Pure Air"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            proguardFiles 'proguard-rules.pro'
+            versionNameSuffix new Date().format("-MMdd")
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+def releaseTime() {
+    return new Date().format("YYYYMMdd-(HH-mm)")
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:25.4.0'
+    compile 'com.android.support:appcompat-v7:25.4.0'
+    compile 'com.google.code.gson:gson:2.8.1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.zhy:autolayout:1.4.5'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.1'
+    compile('com.crashlytics.sdk.android:crashlytics:2.9.1@aar') {
+        transitive = true;
+    }
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    implementation 'com.google.zxing:core:3.3.2'
+    compile 'com.umeng.sdk:common:latest.integration'
+
+    implementation 'com.jakewharton:butterknife:8.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+}

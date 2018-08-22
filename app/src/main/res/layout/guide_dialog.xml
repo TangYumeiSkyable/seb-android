@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="624px"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+    <ImageView android:id="@+id/iv_guide"
+        android:layout_width="552px"
+        android:layout_height="198px"
+        android:src="@drawable/img_remind"
+        android:scaleType ="centerInside"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dimen_px_60"
+            android:text="@string/airpurifier_dialog_show_slidingremind_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_px_48"/>
+    <Button
+        android:id="@+id/btn_ikonw"
+        android:layout_width="378px"
+        android:layout_height="126px"
+        android:background="@drawable/guide_buttom"
+        android:textColor="@color/white"
+        android:text="@string/airpurifier_public_ok"
+        android:layout_marginTop="120px"
+        />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <!--<ImageView android:id="@id/ivNavigater_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/navigater_center" android:layout_centerInParent="true" />-->
+
+</com.zhy.autolayout.AutoRelativeLayout>

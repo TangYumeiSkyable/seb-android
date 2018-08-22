@@ -1,0 +1,143 @@
+{
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"worktime.html",
+			"filterstate.html",
+			"appointment-item.html",
+			"appointment-list.html",
+			"network-list.html",
+			"register-protocol.html"
+		],
+		"refer": [
+			"appointment-list.html",
+			"worktime.html",
+			"outdoor.html",
+			"appointment-item.html",
+			"register-protocol.html",
+			"filterstate.html",
+			"network-list.html",
+			"province-list.html",
+			"message-list.html"
+		]
+	},
+	"appointment-list.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/app.css",
+			"appointment-item.html",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"appointment-item.html"
+		]
+	},
+	"province-list.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.indexedlist.css",
+			"js/mui.indexedlist.js",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"city-list.html"
+		]
+	},
+	"city-list.html": {
+		"resources": [
+			"js/mui.min.js",
+			"js/mui.indexedlist.js"
+		]
+	},
+	"filterstate.html": {
+		"resources": [
+			"js/mui.zoom.js",
+			"images/muwu.jpg",
+			"images/yuantiao.jpg",
+			"js/mui.min.js",
+			"images/shuijiao.jpg",
+			"js/mui.previewimage.js"
+		]
+	},
+	"message-list.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/app.css",
+			"message-remind.html"
+		],
+		"refer": [
+			"message-remind.html",
+			"message-advice.html"
+		]
+	},
+	"message-remind.html": {
+		"resources": [
+			"js/mui.min.js"
+		]
+	},
+	"message-advice.html": {
+		"resources": [
+			"js/mui.min.js"
+		]
+	},
+	"network-list.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/app.css",
+			"fonts/mui.ttf"
+		]
+	},
+	"worktime.html": {
+		"resources": [
+			"js/mui.picker.js",
+			"js/mui.picker.min.js",
+			"js/mui.min.js",
+			"js/mui.poppicker.js",
+			"css/mui.picker.min.css",
+			"css/mui.poppicker.css",
+			"css/mui.picker.css",
+			"css/app.css",
+			"css/mui.min.css",
+			"fonts/mui.ttf"
+		]
+	},
+	"outdoor.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/app.css",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"province-list.html"
+		]
+	},
+	"appointment-item.html": {
+		"resources": [
+			"js/mui.picker.js",
+			"js/mui.picker.min.js",
+			"js/mui.min.js",
+			"js/mui.poppicker.js",
+			"fonts/mui.ttf",
+			"css/mui.picker.min.css",
+			"css/mui.poppicker.css",
+			"css/mui.picker.css",
+			"css/app.css",
+			"css/mui.min.css"
+		]
+	},
+	"register-protocol.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/app.css"
+		]
+	},
+	"date.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/app.css"
+		]
+	}
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_px_60"
+        android:layout_marginLeft="@dimen/dimen_px_60"
+        android:layout_marginRight="@dimen/dimen_px_60"
+        >
+
+        <EditText
+            android:id="@+id/edt_tel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_px_18"
+            android:gravity="center"
+            android:background="@drawable/edittext_bg"
+            android:hint="@string/airpurifier_moredevice_show_sharetophone_hint"
+            android:textColor="@color/link_input_text"
+            android:textColorHint="@color/hint_login_color"
+            android:textSize="@dimen/dimen_px_30" />
+    </RelativeLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_sure"
+        style="@style/btn_style"
+        android:enabled="false"
+        android:text="@string/airpurifier_public_ok" />
+</LinearLayout>
